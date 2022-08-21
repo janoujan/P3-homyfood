@@ -11,7 +11,7 @@
     <meta
       name="description"
       content="Homyfood! un site de réservation de repas dans notre sélection de restaurants d'exception."
-    />    
+    />
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary" />
     <!-- Open Graph data -->
@@ -42,42 +42,110 @@
       rel="stylesheet"
     />
     <!--fontawesome-->
-   <script src="https://kit.fontawesome.com/1b77b1188a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1b77b1188a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-        <a class="header__arrow" href="accueil.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <img class="header__logo" src="images/ohmyfood.png" alt="Homyfood! logo" />
+      <a class="header__arrow" href="accueil.html"
+        ><i class="fa-solid fa-arrow-left"></i
+      ></a>
+      <img
+        class="header__logo"
+        src="images/ohmyfood.png"
+        alt="Homyfood! logo"
+      />
     </header>
     <main>
-        <section id="presentation">
-            <output class="presentation__position" placeholder="Paris,Belleville">
-                <i class="fa-solid fa-location-dot"></i>
-            </output>
-            <div id="presentation__description">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            </div>
-            <button id="presentation__btn" type="button">Explorer nos restaurants</button>
-        </section>
-        <section id="instructions">
-            <h1>Fonctionnement</h1>
-            <div class="instructions__number">1</div>
-            <button class="instructions__btn" name="restaurant" type="button">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                Choisissez un restaurant
-            </button>
-            <div class="instructions__number">2</div>
-            <button class="instructions__btn" name="menu" type="button">
-                <i class="fa-solid fa-list"></i>
-                Composez votre menu
-            </button>
-            <div class="instructions__number">3</div>
-            <button class="instructions__btn" name="reservation" type="button">
-                <i class="fa-solid fa-store"></i>
-                Dégustez au restaurant
-            </button>
-        </section>
+      <section id="presentation">
+        <output class="presentation__position" placeholder="Paris,Belleville">
+          <i class="fa-solid fa-location-dot"></i>
+        </output>
+        <div id="presentation__description">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
+          </p>
+        </div>
+        <button id="presentation__btn" type="button">
+          Explorer nos restaurants
+        </button>
+      </section>
+      <section id="instructions">
+        <h2>Fonctionnement</h2>
+        <div class="instructions__number">1</div>
+        <button class="instructions__btn" name="restaurant" type="button">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          Choisissez un restaurant
+        </button>
+        <div class="instructions__number">2</div>
+        <button class="instructions__btn" name="menu" type="button">
+          <i class="fa-solid fa-list"></i>
+          Composez votre menu
+        </button>
+        <div class="instructions__number">3</div>
+        <button class="instructions__btn" name="reservation" type="button">
+          <i class="fa-solid fa-store"></i>
+          Dégustez au restaurant
+        </button>
+      </section>
+      <section id="restaurants">
+        <h2>Restaurants</h2>
+        <figure class="card">
+          <img
+            class="card__photo"
+            src="images/palette.jpg"
+            alt="assiette du restaurant La palette du goût"
+          />
+          <div class="card__insert">Nouveau</div>
+          <figcaption class="card__caption">
+            <h3 class="card__caption_name">La palette du goût</h3>
+            <p class="card__caption_place">Ménilmontant</p>
+            <i class="fa-regular fa-heart"></i>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img
+            class="card__photo"
+            src="images/note.jpg"
+            alt="assiette du restaurant La note enchantée"
+          />
+          <div class="card__insert">Nouveau</div>
+          <figcaption class="card__caption">
+            <h3 class="card__caption_name">La note enchantée</h3>
+            <p class="card__caption_place">Charonne</p>
+            <i class="fa-regular fa-heart"></i>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img
+            class="card__photo"
+            src="images/française.jpg"
+            alt="assiette du restaurant A la Française"
+          />
+          <div class="card__insert">Nouveau</div>
+          <figcaption class="card__caption">
+            <h3 class="card__caption_name">A la Française</h3>
+            <p class="card__caption_place">Cité Rouge</p>
+            <i class="fa-regular fa-heart"></i>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img
+            class="card__photo"
+            src="images/delice.jpg"
+            alt="assiette du restaurant Le délice des sens"
+          />
+          <div class="card__insert">Nouveau</div>
+          <figcaption class="card__caption">
+            <h3 class="card__caption_name">Le délice des sens</h3>
+            <p class="card__caption_place">Folie-Méricourt</p>
+            <i class="fa-regular fa-heart"></i>
+          </figcaption>
+        </figure>
+      </section>
     </main>
   </body>
 </html>
