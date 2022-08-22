@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    flex-direction: row;
+    & a {
+        display: none;
+    }
+    & img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
