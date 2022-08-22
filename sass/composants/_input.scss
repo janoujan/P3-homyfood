@@ -1,0 +1,15 @@
+#presentation {
+    border: 2px red solid;
+    width: 100%;
+    height: fit-content;
+}
+
+.presentation__position {
+    border: 2px solid green;
+
+    &_input {
+        border: 2px solid blue;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

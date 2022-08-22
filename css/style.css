@@ -44,9 +44,19 @@ p {
   margin-bottom: 5px;
 }
 
-input.presentation__position {
+#presentation {
   border: 2px red solid;
-  width: 50%;
+  width: 100%;
+  height: fit-content;
+}
+
+.presentation__position {
+  border: 2px solid green;
+}
+.presentation__position_input {
+  border: 2px solid blue;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
