@@ -1,0 +1,22 @@
+{
+  "name": "homyfood",
+  "version": "1.0.0",
+  "description": "un site fictif de reservations de repas en ligne. Dans le cadre d'un projet d'une formation OpenClassroom.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janoujan/homyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janoujan/homyfood/issues"
+  },
+  "homepage": "https://github.com/janoujan/homyfood#readme",
+  "devDependencies": {
+    "sass": "^1.54.5"
+  }
+}
