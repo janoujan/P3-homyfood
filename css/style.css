@@ -1,5 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h2,
+h3,
+p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 #presentation {
   border: 1px solid red;
+  background-color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
