@@ -6,9 +6,5 @@
 
 @import "./layouts/header";
 
-@import "./pages/accueil.scss";
+@import "./composants/output";
 
-#presentation {
-    border: 1px solid red;
-    background-color: $primary_color;
-}
