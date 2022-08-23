@@ -135,4 +135,52 @@ p {
   box-shadow: 0px 3px 6px #acabab;
 }
 
+.instruction__btn {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 90%;
+  height: 75px;
+  margin: auto;
+  margin-left: 4%;
+  margin-bottom: 8%;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 6px 12px 2px #dad6d6;
+}
+.instruction__btn_number {
+  padding: 2%;
+  padding-inline: 3.5%;
+  margin-left: -6%;
+  border-radius: 100%;
+  color: #fefeff;
+  background-color: #9356DC;
+  opacity: 1;
+}
+.instruction__btn i {
+  margin-inline: 5%;
+  padding-right: 2%;
+  opacity: 0.5;
+  font-size: x-large;
+}
+.instruction__btn:hover {
+  color: #9356DC;
+  opacity: 1;
+}
+.instruction__btn_name {
+  width: 100%;
+  font-size: larger;
+  font-weight: 600;
+  color: #1d0101;
+  opacity: 1;
+  padding-left: 0%;
+  margin-left: -23%;
+}
+.instruction__btn:hover {
+  background-color: #f2eafb;
+  color: #6c27be;
+  opacity: 10;
+}
+
 /*# sourceMappingURL=style.css.map */
