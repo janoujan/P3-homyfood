@@ -1,11 +1,24 @@
 h1,
 h3 {
     font-family: 'Shrikhand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $black-color;
 }
 
 h2,
 h4,
 p,
-input{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+input {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $black-color;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: x-large;
+}
+
+p {
+    opacity: 0.6;
+    font-weight: medium;
 }
