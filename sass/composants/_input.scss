@@ -1,15 +1,29 @@
-#presentation {
-    border: 2px red solid;
-    width: 100%;
-    height: fit-content;
-}
-
 .presentation__position {
-    border: 2px solid green;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    height: 45px;
+    max-height: 45px;
+    background: linear-gradient(to bottom, #CFCFCF 0%, $darkgrey_color 15%, $darkgrey_color 100%);
+
+    & i {
+        position: relative;
+        margin-left: 25%;
+        font-size: medium;
+    }
 
     &_input {
-        border: 2px solid blue;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
+        margin-left: 20px;
+        background-color: $darkgrey_color;
+        color: $black_color;
+        font-size: medium;
+        font-weight: 500;
+        border: none;
+
+        &::placeholder {
+            opacity: 1;
+        }
     }
 }
