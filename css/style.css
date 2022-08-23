@@ -65,8 +65,16 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   background-color: #f6f6f6;
+}
+
+#instructions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .presentation__position {
