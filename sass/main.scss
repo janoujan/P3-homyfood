@@ -1,5 +1,7 @@
 @import "./utils/variables";
 
+@import "./utils/mixins";
+
 @import "./base/base";
 
 @import "./base/typography";
@@ -16,4 +18,4 @@
 
 @import "./composants/presentation-btn.scss";
 
-@import "./composants/instructions-btn";
+@import "./composants/instructions-btn.scss";

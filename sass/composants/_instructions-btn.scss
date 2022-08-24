@@ -10,7 +10,7 @@
     background-color: $lightgrey_color;
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 6px 12px 2px #dad6d6;
+    @include btn-shadow ($color: $darkgrey_color);
 
 
     &_number {
@@ -30,11 +30,6 @@
         font-size: x-large;
     }
 
-    &:hover {
-        color: $primary_color;
-        opacity: 1;
-    }
-
     &_name {
         width: 100%;
         font-size: larger;
@@ -47,7 +42,8 @@
 
     &:hover {
         background-color: lighten($color: $primary_color, $amount: 35);
-        color: darken($color: $primary_color, $amount: 15);
-        opacity: 10;
+        color: $primary_color;
+        opacity: 1;
+        ;
     }
 }
