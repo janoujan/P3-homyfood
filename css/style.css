@@ -8,30 +8,28 @@ body {
 }
 
 h1,
-h3 {
+h4 {
   font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #1d0101;
+  color: #110000;
+  font-weight: 100;
 }
 
-h2,
-h4,
 p,
-input,
-div {
+div,
+button {
   font-family: "Roboto Condensed", sans-serif;
-  color: #1d0101;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  color: #110000;
 }
 
 h2 {
-  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #110000;
   font-size: x-large;
+  font-weight: 900;
 }
 
-p {
-  opacity: 0.6;
-  font-weight: medium;
+button {
+  font-size: large;
 }
 
 .header {
@@ -51,7 +49,7 @@ p {
 .header__arrow i {
   padding-left: 50%;
   font-size: x-large;
-  color: #1d0101;
+  color: #110000;
 }
 .header__title {
   margin-left: 4%;
@@ -106,7 +104,7 @@ p {
   margin: auto;
   margin-left: 20px;
   background-color: #eaeaea;
-  color: #1d0101;
+  color: #110000;
   font-size: medium;
   font-weight: 500;
   border: none;
@@ -125,13 +123,16 @@ p {
   margin-bottom: 20px;
 }
 #presentation__description h2 {
-  width: 70%;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 #presentation__description p {
-  width: 95%;
+  width: 100%;
   margin: auto;
+  text-justify: distribute;
+  opacity: 0.5;
+  font-size: larger;
 }
 
 #presentation__btn {
@@ -139,7 +140,6 @@ p {
   padding-inline: 23px;
   border-radius: 30px;
   color: #fefeff;
-  font-weight: 600;
   border: none;
   background: #9356DC;
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
@@ -147,51 +147,38 @@ p {
 }
 
 .instruction__btn {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10%;
+}
+.instruction__btn_number {
+  margin-right: -3%;
+  padding: 0.8%;
+  padding-inline: 2%;
+  background-color: #9356DC;
+  border-radius: 100%;
+  color: #fefeff;
+  font-weight: 500;
+  opacity: 1;
+  z-index: 100;
+}
+.instruction__btn_btn {
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 90%;
-  height: 75px;
-  margin: auto;
-  margin-left: 4%;
-  margin-bottom: 8%;
+  width: 92%;
+  border-radius: 20px;
   background-color: #f6f6f6;
   border: none;
-  border-radius: 20px;
-  color: #1d0101;
-  box-shadow: #dfdfdf 0px 4px 12px 3px;
-}
-.instruction__btn_number {
-  padding: 2%;
-  padding-inline: 3.5%;
-  margin-left: -6%;
-  border-radius: 100%;
-  color: #fefeff;
-  background-color: #9356DC;
-  opacity: 1;
+  box-shadow: #dfdede 0px 6px 12px 2px;
 }
 .instruction__btn i {
-  margin-inline: 5%;
-  padding-right: 2%;
-  opacity: 0.3;
-  color: #1d0101;
-  font-size: x-large;
-}
-.instruction__btn_name {
-  width: 100%;
+  color: #110000;
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: larger;
-  font-weight: 600;
-  color: #1d0101;
-  opacity: 1;
-  padding-left: 0%;
-  margin-left: -23%;
-}
-.instruction__btn:hover {
-  background-color: #f2eafb;
-}
-.instruction__btn:hover i {
-  color: #9356DC;
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .card {

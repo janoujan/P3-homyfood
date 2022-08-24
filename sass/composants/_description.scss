@@ -9,16 +9,15 @@
 
     & h2 {
         width: 60%;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        font-weight: 900;
-        font-size: x-large;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
 
     & p {
         width: 100%;
         margin: auto;
+        text-justify: distribute;
+        opacity: 0.5;
         font-size: larger;
-        text-justify: auto;        
     }
 }

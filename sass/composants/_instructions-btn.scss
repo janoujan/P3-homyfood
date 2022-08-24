@@ -1,54 +1,39 @@
 .instruction__btn {
+    width: 100%;
     display: flex;
     justify-content: left;
-    align-items: center;
-    width: 90%;
-    height: 75px;
-    margin: auto;
-    margin-left: 4%;
-    margin-bottom: 8%;
-    background-color: $lightgrey_color;
-    border: none;
-    border-radius: 20px;
-    color: $black_color;
-    @include btn-shadow($color: #dfdfdf, $shadow-size: 0px 4px 12px 3px);
-
+    margin-bottom: 10%;
 
     &_number {
-        padding: 2%;
-        padding-inline: 3.5%;
-        margin-left: -6%;
+        margin-right: -3%;
+        padding: 0.8%;
+        padding-inline: 2%;
+        background-color: $primary_color;
         border-radius: 100%;
         color: $white_color;
-        background-color: $primary_color;
+        font-weight: 500;
         opacity: 1;
+        z-index: 100;
+    }
+
+    &_btn {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 92%;
+        border-radius: 20px;
+        background-color: $lightgrey_color;
+        border: none;
+        @include btn-shadow($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px );
+
     }
 
     & i {
-        margin-inline: 5%;
-        padding-right: 2%;
-        opacity: 0.3;
         color: $black_color;
-        font-size: x-large;
-    }
-
-    &_name {
-        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
         font-size: larger;
-        font-weight: 600;
-        color: $black-color;
-        opacity: 1;
-        padding-left: 0%;
-        margin-left: -23%;
+        opacity: 0.4;
     }
 
-    &:hover {
-
-        background-color: lighten($color: $primary_color, $amount: 35%);
-
-        & i {
-            color: $primary_color;
-            opacity: 1;
-        }
-    }
 }

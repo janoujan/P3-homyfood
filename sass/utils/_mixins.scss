@@ -1,3 +1,8 @@
 @mixin btn-shadow ($color: $shadow_grey, $shadow-size: $shadow_size_btn) {
     box-shadow: $color $shadow-size;
 }
+
+@mixin typo-roboto {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $black-color;
+}
