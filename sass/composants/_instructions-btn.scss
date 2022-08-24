@@ -10,7 +10,7 @@
     background-color: $lightgrey_color;
     border: none;
     border-radius: 20px;
-    @include btn-shadow ($color: $darkgrey_color);
+    @include btn-shadow($color: #dfdfdf,$shadow-size: 0px 4px 12px 3px);
 
 
     &_number {
