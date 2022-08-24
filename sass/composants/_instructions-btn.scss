@@ -24,8 +24,15 @@
         border-radius: 20px;
         background-color: $lightgrey_color;
         border: none;
-        @include btn-shadow($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px );
+        @include btn-shadow($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
 
+        &:hover {
+            background-color: lighten($color: $primary_color, $amount: 35%);
+            & i {
+                color: $primary_color;
+                opacity: 1;
+            }
+        }
     }
 
     & i {
@@ -35,5 +42,4 @@
         font-size: larger;
         opacity: 0.4;
     }
-
 }

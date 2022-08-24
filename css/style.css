@@ -173,6 +173,13 @@ button {
   border: none;
   box-shadow: #dfdede 0px 6px 12px 2px;
 }
+.instruction__btn_btn:hover {
+  background-color: #f2eafb;
+}
+.instruction__btn_btn:hover i {
+  color: #9356DC;
+  opacity: 1;
+}
 .instruction__btn i {
   color: #110000;
   margin-left: 10%;
