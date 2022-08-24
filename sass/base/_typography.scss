@@ -10,7 +10,10 @@ div,
 button {
     @include typo-roboto;
     }
-
+h3 {
+    @include typo-roboto;
+    font-weight: 600;
+}
 h2 {
     @include typo-roboto;
     font-size: x-large;

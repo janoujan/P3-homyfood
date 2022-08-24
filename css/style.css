@@ -21,6 +21,12 @@ button {
   color: #110000;
 }
 
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #110000;
+  font-weight: 600;
+}
+
 h2 {
   font-family: "Roboto Condensed", sans-serif;
   color: #110000;
@@ -189,17 +195,18 @@ button {
 }
 
 .card {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   width: 90%;
   height: 100%;
   margin-left: 0px;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  box-shadow: #dfdede 0px 6px 12px 2px;
 }
 .card__photo {
-  border: 2px solid green;
   width: 100%;
-  max-height: 170px;
+  max-height: 160px;
   object-fit: cover;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
@@ -218,11 +225,36 @@ button {
   border-radius: 4%;
 }
 .card__caption {
-  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   height: 70px;
 }
 .card__caption_name {
-  border: 2px solid violet;
+  margin: 0px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.card__caption_place {
+  margin: 0px;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.card__caption i {
+  display: flex;
+  align-self: flex-end;
+  margin-top: -45px;
+  margin-right: 5%;
+  position: relative;
+  width: fit-content;
+  font-size: 160%;
+  font-weight: 100;
+}
+.card__caption i:hover {
+  color: #9356DC;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
