@@ -147,6 +147,7 @@ p {
   background-color: #f6f6f6;
   border: none;
   border-radius: 20px;
+  color: #1d0101;
   box-shadow: #dfdfdf 0px 4px 12px 3px;
 }
 .instruction__btn_number {
@@ -161,7 +162,8 @@ p {
 .instruction__btn i {
   margin-inline: 5%;
   padding-right: 2%;
-  opacity: 0.5;
+  opacity: 0.3;
+  color: #1d0101;
   font-size: x-large;
 }
 .instruction__btn_name {
@@ -175,6 +177,8 @@ p {
 }
 .instruction__btn:hover {
   background-color: #f2eafb;
+}
+.instruction__btn:hover i {
   color: #9356DC;
   opacity: 1;
 }

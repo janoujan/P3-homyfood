@@ -10,7 +10,8 @@
     background-color: $lightgrey_color;
     border: none;
     border-radius: 20px;
-    @include btn-shadow($color: #dfdfdf,$shadow-size: 0px 4px 12px 3px);
+    color: $black_color;
+    @include btn-shadow($color: #dfdfdf, $shadow-size: 0px 4px 12px 3px);
 
 
     &_number {
@@ -26,7 +27,8 @@
     & i {
         margin-inline: 5%;
         padding-right: 2%;
-        opacity: 0.5;
+        opacity: 0.3;
+        color: $black_color;
         font-size: x-large;
     }
 
@@ -41,9 +43,12 @@
     }
 
     &:hover {
-        background-color: lighten($color: $primary_color, $amount: 35);
-        color: $primary_color;
-        opacity: 1;
-        ;
+
+        background-color: lighten($color: $primary_color, $amount: 35%);
+
+        & i {
+            color: $primary_color;
+            opacity: 1;
+        }
     }
 }
