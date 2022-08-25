@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -366,6 +367,17 @@ footer h4 {
   font-size: medium;
   transition: 300ms;
   transition-delay: 450ms;
+}
+
+.starter__choice_name::before {
+  content: "Fricassée d'escargot";
+  content: "Foie gras de canard mi-cuit";
+  content: "Oeuf au plat";
+}
+.starter__choice_quote::before {
+  content: "Au piment d'Espelette";
+  content: "Et ses copeaux de truffe noire";
+  content: "Assaisonné à la truffe sur lit de caviar";
 }
 
 /*# sourceMappingURL=style.css.map */
