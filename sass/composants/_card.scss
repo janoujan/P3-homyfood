@@ -52,24 +52,19 @@
         & i {
             display: flex;
             align-self: flex-end;
-            margin-top: -45px;
+            margin-top: -10%;
             margin-right: 5%;
             position: relative;
             width: fit-content;
             font-size: 160%;
             font-weight: 100;
-            
-
-
-
+            color: $black_color;
 
             &:hover {
-                color: $primary_color;
+               color: $primary_color;
                 cursor: pointer;
                 font-weight: 600;
                 opacity: 1;
-
-
             }
         }
     }
