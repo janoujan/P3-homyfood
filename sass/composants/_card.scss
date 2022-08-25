@@ -49,24 +49,36 @@
             margin-top: 1%;
         }
 
-        & i {
+        & a {
             display: flex;
             align-self: flex-end;
             margin-top: -10%;
             margin-right: 5%;
             position: relative;
             width: fit-content;
-            font-size: 160%;
+            font-size: 150%;
             font-weight: 100;
-            color: $black_color;
+            text-decoration: none;
+            color: $white_color;
+            transition: color 1s;
 
             &:hover {
-               color: $primary_color;
-                cursor: pointer;
-                font-weight: 600;
-                opacity: 1;
+                transform: color 1s;
+                color: $primary_color;
             }
         }
-    }
 
+        & i {
+            color: black;
+            font-weight: 100;
+            transition: color 10ms;
+
+            &:hover {
+                color: $primary_color;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+
+    }
 }

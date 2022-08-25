@@ -241,22 +241,32 @@ button {
   margin-left: 2%;
   margin-top: 1%;
 }
-.card__caption i {
+.card__caption a {
   display: flex;
   align-self: flex-end;
   margin-top: -10%;
   margin-right: 5%;
   position: relative;
   width: fit-content;
-  font-size: 160%;
+  font-size: 150%;
   font-weight: 100;
-  color: #110000;
+  text-decoration: none;
+  color: #fefeff;
+  transition: color 1s;
+}
+.card__caption a:hover {
+  transform: color 1s;
+  color: #9356DC;
+}
+.card__caption i {
+  color: black;
+  font-weight: 100;
+  transition: color 10ms;
 }
 .card__caption i:hover {
   color: #9356DC;
-  cursor: pointer;
   font-weight: 600;
-  opacity: 1;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
