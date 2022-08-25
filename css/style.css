@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,7 +23,8 @@ h4 {
 
 p,
 div,
-button {
+button,
+a {
   font-family: "Roboto Condensed", sans-serif;
   color: #110000;
 }
@@ -43,6 +45,11 @@ h2 {
 
 button {
   font-size: large;
+}
+
+#handshake {
+  font-size: x-small;
+  align-self: center;
 }
 
 .header {
@@ -106,10 +113,12 @@ footer {
   justify-content: left;
   width: 100%;
   padding-left: 5%;
+  padding-bottom: 10%;
   background-color: #353535;
 }
 footer h4 {
-  margin-bottom: 2%;
+  margin-bottom: 4%;
+  font-size: x-large;
 }
 
 .presentation__position {
@@ -319,26 +328,44 @@ footer h4 {
 }
 
 .footer__list {
-  border: 2px solid yellow;
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
   width: 80%;
+  margin: 0%;
+  list-style-type: none;
+  list-style-position: outside;
 }
 .footer__link {
-  border: green 2px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-self: flex-start;
+  width: 100%;
+  margin-left: -2.4rem;
+}
+.footer__link a {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-left: -15%;
-  list-style: none;
-}
-.footer__link a {
-  border: 2px solid pink;
-  display: flex;
-  flex-direction: row;
   text-decoration: none;
   color: #fefeff;
   font-size: large;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  transition: transform 400ms, color 500ms;
+}
+.footer__link a:hover {
+  transform: scale(1.05);
+  color: #9356DC;
+}
+.footer__link i {
+  margin-right: 5%;
+  margin-top: 1%;
+  font-size: medium;
+  transition: 300ms;
+  transition-delay: 450ms;
 }
 
 /*# sourceMappingURL=style.css.map */

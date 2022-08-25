@@ -13,7 +13,8 @@ h4 {
 
 p,
 div,
-button {
+button,
+a {
     @include typo-roboto;
 }
 
@@ -31,4 +32,9 @@ h2 {
 
 button {
     font-size: large;
+}
+
+#handshake {
+    font-size: x-small;
+    align-self: center;
 }
