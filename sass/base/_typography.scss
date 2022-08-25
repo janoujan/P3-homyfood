@@ -17,7 +17,8 @@ button {
     @include typo-roboto;
 }
 
-h3 {
+h3,
+h5 {
     @include typo-roboto;
     font-weight: 600;
 }

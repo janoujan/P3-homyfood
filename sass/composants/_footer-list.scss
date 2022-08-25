@@ -1,0 +1,29 @@
+.footer {
+    
+    &__list {
+        border: 2px solid yellow;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    &__link {
+        border: green 2px solid;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: -15%;
+        list-style: none;
+        
+        & a {
+            border: 2px solid pink;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: $white_color;            
+            font-size: large;
+        }
+
+        
+    }
+}

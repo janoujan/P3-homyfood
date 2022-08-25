@@ -20,11 +20,11 @@
     }
 
     &__insert {
-        display: flex;
-        position: absolute;
+        display: inline-flex;
         align-self: flex-end;
+        position: relative;
         margin-right: 3%;
-        margin-top: 3%;
+        top: -150px;
         padding: 2%;
         padding-inline: 4%;
         color: $green_color;
@@ -48,15 +48,14 @@
         &_place {
             margin: 0px;
             margin-left: 2%;
-            margin-top: 1%;
+            margin-top: 0.2em;
         }
 
         & a {
             display: flex;
             align-self: flex-end;
-            margin-top: -10%;
+            margin-top: -35px;
             margin-right: 5%;
-            position: relative;
             width: fit-content;
             font-size: 150%;
             font-weight: 100;
