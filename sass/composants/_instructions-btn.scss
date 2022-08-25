@@ -21,7 +21,8 @@
         justify-content: left;
         align-items: center;
         width: 92%;
-        border-radius: 20px;
+        @include border-top-radius;
+        @include border-bottom-radius;
         background-color: $lightgrey_color;
         border: none;
         @include btn-shadow($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
