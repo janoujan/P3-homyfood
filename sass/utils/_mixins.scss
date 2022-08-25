@@ -6,3 +6,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: $black-color;
 }
+
+@mixin typo-shrikhand {
+    font-family: 'Shrikhand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

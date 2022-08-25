@@ -1,19 +1,27 @@
-h1,
-h4 {
-    font-family: 'Shrikhand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h1 {
+    @include typo-shrikhand;
     color: $black-color;
     font-weight: 100;
+}
+
+h4 {
+    @include typo-shrikhand;
+    color: $white_color;
+    font-weight: 100;
+    font-size: large;
 }
 
 p,
 div,
 button {
     @include typo-roboto;
-    }
+}
+
 h3 {
     @include typo-roboto;
     font-weight: 600;
 }
+
 h2 {
     @include typo-roboto;
     font-size: x-large;
