@@ -25,8 +25,8 @@
         top: -175px;
         padding: 2%;
         padding-inline: 4%;
-        color: $green_color;
-        background-color: lighten($color: $green_color, $amount: 50%);
+        color: $invert_secondary_color;
+        background-color: lighten($color: $invert_secondary_color, $amount: 55%);
         font-weight: 700;
         border-radius: 4%;
 
@@ -66,30 +66,18 @@
             align-self: flex-end;
             margin-top: -35px;
             margin-right: 5%;
-            width: fit-content;
+            width: min-content;
             font-size: 150%;
             font-weight: 100;
             text-decoration: none;
-            color: $white_color;
-            transition: color 1s;
+                        
+           
+                & i {
+                    border: 1px solid red;
 
-            &:hover {
-                transform: color 1s;
-                color: $primary_color;
+                }
             }
-        }
 
-        & i {
-            color: black;
-            font-weight: 100;
-            transition: color 10ms;
-
-            &:hover {
-                color: $primary_color;
-                font-weight: 600;
-                cursor: pointer;
-            }
         }
 
     }
-}

@@ -65,6 +65,7 @@ button {
 .header__arrow {
   width: fit-content;
   visibility: visible;
+  margin-left: 1.5em;
 }
 .header__arrow i {
   font-size: x-large;
@@ -160,6 +161,13 @@ footer h4 {
 
 .starter {
   border: 1px solid red;
+}
+.starter__choice_title {
+  border: 2px solid #008625;
+  background-image: linear-gradient(pink, pink);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 center;
 }
 
 .presentation__position {
@@ -299,8 +307,8 @@ footer h4 {
   top: -175px;
   padding: 2%;
   padding-inline: 4%;
-  color: #008766;
-  background-color: #87ffe2;
+  color: #008625;
+  background-color: #a0ffba;
   font-weight: 700;
   border-radius: 4%;
 }
@@ -312,10 +320,6 @@ footer h4 {
   top: -175px;
   padding: 2%;
   padding-inline: 4%;
-  color: #008766;
-  background-color: #87ffe2;
-  font-weight: 700;
-  border-radius: 4%;
   visibility: hidden;
 }
 .card__caption {
@@ -346,26 +350,13 @@ footer h4 {
   align-self: flex-end;
   margin-top: -35px;
   margin-right: 5%;
-  width: fit-content;
+  width: min-content;
   font-size: 150%;
   font-weight: 100;
   text-decoration: none;
-  color: #fefeff;
-  transition: color 1s;
 }
-.card__caption a:hover {
-  transform: color 1s;
-  color: #9356DC;
-}
-.card__caption i {
-  color: black;
-  font-weight: 100;
-  transition: color 10ms;
-}
-.card__caption i:hover {
-  color: #9356DC;
-  font-weight: 600;
-  cursor: pointer;
+.card__caption a i {
+  border: 1px solid red;
 }
 
 .footer__list {

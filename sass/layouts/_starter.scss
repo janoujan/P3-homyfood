@@ -1,3 +1,11 @@
 .starter {
     border: 1px solid red;
+
+    &__choice_title {
+        border: 2px solid $invert_secondary_color;
+        background-image: linear-gradient(pink, pink);
+        background-repeat: no-repeat;
+        background-size: 100% 1px;
+        background-position: 0 center;
+    }
 }

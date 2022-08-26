@@ -1,5 +1,7 @@
 $primary_color: #9356DC;
+$invert_primary_color: invert($primary_color);
 $secondary_color: #FF79DA;
+$invert_secondary_color: invert($secondary_color);
 $tertary_color: #99E2D0;
 $black_color: #110000;
 $white_color: #fefeff;
@@ -7,8 +9,8 @@ $darkgrey_color: #eaeaea;
 $lightgrey_color: #f6f6f6;
 $shadow_grey: #acabab;
 $shadow_size_btn: 0px 3px 6px;
-$green_color: #008766;
 $black_background: #353535;
+$heart: linear-gradient(15°, #FF79DA 0%, #9356DC 100%);
 $starter_name: ('1': "Fricassée d'escargot",
     '2': "Foie gras de canard mi-cuit",
     '3': "Oeuf au plat", );
