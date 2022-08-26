@@ -61,11 +61,11 @@ button {
   padding-bottom: 0px;
 }
 .header__arrow {
-  visibility: hidden;
   width: 20%;
   margin: 0px;
   margin-top: auto;
   margin-bottom: 15px;
+  visibility: visible;
 }
 .header__arrow i {
   padding-left: 50%;
@@ -370,14 +370,19 @@ footer h4 {
 }
 
 .starter__choice_name::before {
-  content: "Fricassée d'escargot";
-  content: "Foie gras de canard mi-cuit";
-  content: "Oeuf au plat";
-}
-.starter__choice_quote::before {
   content: "Au piment d'Espelette";
+}
+
+.starter__choice_name::before {
   content: "Et ses copeaux de truffe noire";
+}
+
+.starter__choice_name::before {
   content: "Assaisonné à la truffe sur lit de caviar";
+}
+
+.header__arrow#accueil {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

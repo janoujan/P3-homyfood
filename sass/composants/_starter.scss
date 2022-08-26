@@ -1,19 +1,30 @@
-.starter {
+// .starter {
 
-    &__choice {
+//     &__choice {
 
-        &_name::before {
+//         &_name::before {
 
-            @each $key,
-            $name in $starter_name {
-                content: $name;
-            }
-        }
+//             @each $key,$name in $starter_name {
+//                 content: $name;
+//             }
+//         }
 
-        &_quote::before {
-            @each $key, $quote in $starter_quote {
-                content: $quote;
-            }
-        }
-    }
-}
+//         &_quote::before {
+
+//             @each $key,$quote in $starter_quote {
+//                 .starter__choice_#{$quote}::before {
+//                     content: $quote;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+@each $key, $quote in $starter_quote {
+        .starter__choice_name::before {
+         content: $quote;
+     }
+ }
+        
