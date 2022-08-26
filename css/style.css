@@ -68,7 +68,7 @@ button {
   visibility: visible;
 }
 .header__arrow i {
-  padding-left: 50%;
+  padding-left: 25%;
   font-size: x-large;
   color: #110000;
 }
