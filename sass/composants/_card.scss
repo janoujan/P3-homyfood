@@ -63,20 +63,20 @@
 }
 
 .fa-solid.fa-heart {
-        display: inline-flex;
-        align-self: flex-end;
-        position: relative;
-        left: 80%;
-        top: -70px;
-        font-size: x-large;
-        font-weight: 100;
-        opacity: 0.8;
-        color: $black_background;
+    display: inline-flex;
+    align-self: flex-end;
+    position: relative;
+    left: 80%;
+    top: -70px;
+    font-size: x-large;
+    font-weight: 100;
+    opacity: 0.8;
+    color: $black_background;
 
-         &:hover {
-             opacity: 1;
-             fill: $primary_color;
-             color: $primary_color;
-             font-weight: 600;
-        }
+    &:hover {
+        opacity: 1;
+        fill: $primary_color;
+        color: $primary_color;
+        font-weight: 600;
     }
+}
