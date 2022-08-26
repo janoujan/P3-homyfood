@@ -18,6 +18,8 @@
 
 @import "./layouts/venue";
 
+@import "./layouts/starter";
+
 @import "./composants/input";
 
 @import "./composants/description";
@@ -30,8 +32,10 @@
 
 @import "./composants/footer-list";
 
-@import "./composants/starter";
+@import "./composants/starter-btn";
 
 @import "./composants/venue-photo.scss";
 
 @import "./pages/accueil.scss";
+
+@import "./pages/menu";
