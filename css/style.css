@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -367,18 +366,6 @@ footer h4 {
   font-size: medium;
   transition: 300ms;
   transition-delay: 450ms;
-}
-
-.starter__choice_name::before {
-  content: "Au piment d'Espelette";
-}
-
-.starter__choice_name::before {
-  content: "Et ses copeaux de truffe noire";
-}
-
-.starter__choice_name::before {
-  content: "Assaisonné à la truffe sur lit de caviar";
 }
 
 .header__arrow#accueil {
