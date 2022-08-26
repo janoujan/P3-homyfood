@@ -10,27 +10,32 @@
     }
 
     &__title {
+        display: flex;
+        flex-direction: row;
         height: 30%;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1.5rem;
         margin-top: -50px;
         background-color: $lightgrey_color;
         border-top-right-radius: 40px;
         border-top-left-radius: 40px;
 
         &_name {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-inline: 1.6rem;
+            margin-inline: 0;
         }
 
         &_name a {
             width: fit-content;
+            position: relative;
+            top: 70px;
+            left: -10rem;
+            
         }
 
         &_name i {
             color: $primary_color;
-            margin-right: 1.8rem;
+
         }
 
         &_name::before {

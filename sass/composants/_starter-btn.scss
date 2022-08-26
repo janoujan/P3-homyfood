@@ -1,33 +1,12 @@
-//  .starter {
-//      border: 2px solid red;
+.starter__choice_name::before {
 
-//      &__choice {
-//          border: 1px solid black;
+     @each $key, $name in $starter_name {
+         content: $name;
+     }
 
-//          //  &_name::before {
-
-//          //      @each $key,
-//          //      $title in $starter_name {
-//          //          content: $title;
-//          //      }
-
-//          &_quote::before {
-
-//              @each $key,
-//              $quote in $starter_quote {
-//                  .starter__choice_#{$quote}::before {
-//                      content: $quote;
-
-//                  }
-//              }
-//          }
-//      }
-//  }
-
-
-
- // @each $key, $quote in $starter_quote {
- //         .starter__choice_name::before {
- //          content: $quote;
- //      }
- //  }
+    
+    background-color: $tertary_color;
+    color: $black_background;
+    }
+   ;
+    

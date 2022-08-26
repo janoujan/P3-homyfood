@@ -146,25 +146,28 @@ footer h4 {
   height: 150%;
 }
 .venue__title {
+  display: flex;
+  flex-direction: row;
   height: 30%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5rem;
   margin-top: -50px;
   background-color: #f6f6f6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
 }
 .venue__title_name {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: 1.6rem;
+  margin-inline: 0;
 }
 .venue__title_name a {
   width: fit-content;
+  position: relative;
+  top: 70px;
+  left: -10rem;
 }
 .venue__title_name i {
   color: #9356DC;
-  margin-right: 1.8rem;
 }
 .venue__title_name::before {
   content: "La palette du goût";
@@ -232,7 +235,7 @@ footer h4 {
   font-size: larger;
 }
 
-#presentation__btn {
+.presentation__btn {
   padding: 15px;
   padding-inline: 23px;
   border-radius: 30px;
@@ -431,8 +434,16 @@ footer h4 {
   transition-delay: 450ms;
 }
 
+.starter__choice_name::before {
+  content: "Fricassée d'escargot";
+  content: "Foie gras de canard mi-cuit";
+  content: "Oeuf au plat";
+  background-color: #99E2D0;
+  color: #353535;
+}
+
 .venue__photo {
-  background: no-repeat center/115% url(/images/palette.jpg);
+  background: no-repeat center/115% url(/images/palette.png);
 }
 
 .header__arrow#accueil {
