@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -129,18 +130,20 @@ footer h4 {
 }
 .venue__photo {
   display: flex;
-  width: 100%;
-  height: 110%;
+  height: 150%;
 }
 .venue__title {
-  height: 25%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  height: 30%;
+  margin-top: -50px;
+  background-color: #f6f6f6;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
 }
 .venue__title_name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-inline: 1.6rem;
 }
 .venue__title_name a {
@@ -148,9 +151,13 @@ footer h4 {
 }
 .venue__title_name i {
   color: #9356DC;
+  margin-right: 1.8rem;
 }
 .venue__title_name::before {
-  content: "la palette..";
+  content: "La palette du goût";
+  font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: x-large;
+  font-weight: 100;
 }
 
 .presentation__position {
@@ -401,7 +408,7 @@ footer h4 {
 }
 
 .venue__photo {
-  background-image: url(/images/palette.jpg);
+  background: no-repeat center/115% url(/images/palette.jpg);
 }
 
 .header__arrow#accueil {
