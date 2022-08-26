@@ -26,7 +26,7 @@
         padding: 2%;
         padding-inline: 4%;
         color: $invert_secondary_color;
-        background-color: lighten($color: $invert_secondary_color, $amount: 55%);
+        background-color: $tertary_color;
         font-weight: 700;
         border-radius: 4%;
 
@@ -58,26 +58,25 @@
             font-weight: 100;
             font-size: large;
             opacity: 0.8;
-
         }
+    }
+}
 
-        & a {
-            display: flex;
-            align-self: flex-end;
-            margin-top: -35px;
-            margin-right: 5%;
-            width: min-content;
-            font-size: 150%;
-            font-weight: 100;
-            text-decoration: none;
-                        
-           
-                & i {
-                    border: 1px solid red;
+.fa-solid.fa-heart {
+        display: inline-flex;
+        align-self: flex-end;
+        position: relative;
+        left: 80%;
+        top: -70px;
+        font-size: x-large;
+        font-weight: 100;
+        opacity: 0.8;
+        color: $black_background;
 
-                }
-            }
-
+         &:hover {
+             opacity: 1;
+             fill: $primary_color;
+             color: $primary_color;
+             font-weight: 600;
         }
-
     }

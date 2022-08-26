@@ -1,26 +1,27 @@
 .presentation__position {
     display: flex;
+    justify-content: center;
     width: 100%;
     margin: auto;
     align-items: center;
-    height: 45px;
-    max-height: 45px;
+    height: 50px;
     background: linear-gradient(to bottom, #CFCFCF 0%, $darkgrey_color 15%, $darkgrey_color 100%);
 
     & i {
         position: relative;
-        margin-left: 25%;
+        margin-left: 2.1rem;
+        margin-right: 1rem;
         font-size: medium;
+        
     }
 
     &_input {
-        margin: auto;
-        margin-left: 20px;
+        width: min-content;
         background-color: $darkgrey_color;
         color: $black_color;
-        font-size: medium;
-        font-weight: 500;
+        font-size: 100%;
         border: none;
+        
 
         &::placeholder {
             opacity: 1;
