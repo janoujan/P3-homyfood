@@ -39,6 +39,10 @@
     top: -175px;
     padding: 2%;
     padding-inline: 4%;
+    color: $invert_secondary_color;
+    background-color: $tertary_color;
+    font-weight: 700;
+    border-radius: 4%;
     visibility: hidden;
 }
 
