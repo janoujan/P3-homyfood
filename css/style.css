@@ -121,6 +121,38 @@ footer h4 {
   font-size: x-large;
 }
 
+.venue {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 290px;
+}
+.venue__photo {
+  display: flex;
+  width: 100%;
+  height: 110%;
+}
+.venue__title {
+  height: 25%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.venue__title_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: 1.6rem;
+}
+.venue__title_name a {
+  width: fit-content;
+}
+.venue__title_name i {
+  color: #9356DC;
+}
+.venue__title_name::before {
+  content: "la palette..";
+}
+
 .presentation__position {
   display: flex;
   width: 100%;
