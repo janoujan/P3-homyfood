@@ -10,17 +10,24 @@
     &__arrow {
         width: fit-content;
         visibility: visible;
-        margin-left: 1.5em;    
+        margin-left: 1.5em;
+
         i {
             font-size: x-large;
             color: $black_color;
+        }
+
+        &:hover {
+            @include hover-style;
         }
     }
 
     &__title {
         display: flex;
-        justify-content: left;
+        justify-content: flex-start;
         align-self: center;
-        margin: auto;        
-        }
+        margin-right: 1.8rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.01rem;
+    }
 }

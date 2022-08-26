@@ -14,7 +14,8 @@ h4 {
 p,
 div,
 button,
-a {
+a,
+input {
     @include typo-roboto;
 }
 

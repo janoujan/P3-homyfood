@@ -25,7 +25,8 @@ h4 {
 p,
 div,
 button,
-a {
+a,
+input {
   font-family: "Roboto Condensed", sans-serif;
   color: #110000;
 }
@@ -71,11 +72,18 @@ button {
   font-size: x-large;
   color: #110000;
 }
+.header__arrow:hover {
+  transition: transform 400ms, color 500ms;
+  transform: scale(1.05);
+  color: #9356DC;
+}
 .header__title {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   align-self: center;
-  margin: auto;
+  margin-right: 1.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01rem;
 }
 
 #presentation {
@@ -172,25 +180,24 @@ footer h4 {
 
 .presentation__position {
   display: flex;
+  justify-content: center;
   width: 100%;
   margin: auto;
   align-items: center;
-  height: 45px;
-  max-height: 45px;
+  height: 50px;
   background: linear-gradient(to bottom, #CFCFCF 0%, #eaeaea 15%, #eaeaea 100%);
 }
 .presentation__position i {
   position: relative;
-  margin-left: 25%;
+  margin-left: 2.1rem;
+  margin-right: 1rem;
   font-size: medium;
 }
 .presentation__position_input {
-  margin: auto;
-  margin-left: 20px;
+  width: min-content;
   background-color: #eaeaea;
   color: #110000;
-  font-size: medium;
-  font-weight: 500;
+  font-size: 100%;
   border: none;
 }
 .presentation__position_input::placeholder {
@@ -308,7 +315,7 @@ footer h4 {
   padding: 2%;
   padding-inline: 4%;
   color: #008625;
-  background-color: #a0ffba;
+  background-color: #99E2D0;
   font-weight: 700;
   border-radius: 4%;
 }
@@ -389,6 +396,7 @@ footer h4 {
   transition: transform 400ms, color 500ms;
 }
 .footer__link a:hover {
+  transition: transform 400ms, color 500ms;
   transform: scale(1.05);
   color: #9356DC;
 }

@@ -31,9 +31,7 @@
             transition: transform 400ms, color 500ms;
 
             &:hover {
-                transform: scale(1.05);
-                color: $primary_color;
-
+                @include hover-style;
             }
         }
 
