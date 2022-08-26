@@ -16,6 +16,8 @@
 
 @import "./layouts/footer";
 
+@import "./layouts/venue";
+
 @import "./composants/input";
 
 @import "./composants/description";
@@ -29,5 +31,7 @@
 @import "./composants/footer-list";
 
 @import "./composants/starter";
+
+@import "./composants/venue-photo.scss";
 
 @import "./pages/accueil.scss";
