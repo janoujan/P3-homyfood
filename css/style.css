@@ -171,7 +171,6 @@ footer h4 {
   color: #9356DC;
 }
 .venue__title_name::before {
-  content: "La palette du goût";
   font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 100;
@@ -609,8 +608,6 @@ footer h4 {
 }
 .starter__choice_name::before {
   content: "Fricassée d'escargot";
-  content: "Foie gras de canard mi-cuit";
-  content: "Oeuf au plat";
 }
 .starter__choice_quote {
   height: 20px;
@@ -620,12 +617,13 @@ footer h4 {
   background-color: #fefeff;
   font-weight: 100;
   opacity: 0.8;
+  color: #110000;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 .starter__choice_quote::before {
-  content: "Au piment d'Espelette";
-  content: "Et ses copeaux de truffe noire";
+  content: "Assaisonné à la truffe sur lit de caviar";
+  content: "Assaisonné à la truffe sur lit de caviar";
   content: "Assaisonné à la truffe sur lit de caviar";
 }
 .starter__choice_price {

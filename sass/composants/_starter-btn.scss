@@ -1,6 +1,6 @@
 .starter__choice {
     background-color: $white_color;
-    
+
     &_name {
         color: $black_background;
         background-color: $white_color;
@@ -11,11 +11,7 @@
         @include menu-btn-content-position;
 
         &::before {
-
-            @each $key,
-            $value in $starter_name {
-                content: $value;
-            }
+            content: remplissage($starter_name, choice1);
         }
     }
 
@@ -25,16 +21,16 @@
         background-color: $white_color;
         font-weight: 100;
         opacity: 0.8;
+        color: $black_color;
         @include border-bottom-radius;
 
         &::before {
 
-            @each $key,
-            $value in $starter_quote {
-
-                content: $value;
+            @each $quote in $starter_quote {
+                content: map-get($map: $starter_quote, $key:choice3 );
             }
         }
+
     }
 
     &_price {
@@ -49,4 +45,3 @@
         }
     }
 }
-
