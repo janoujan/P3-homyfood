@@ -59,6 +59,8 @@
     background-position: 0 bottom;
 }
 
+
+
 @mixin menu-btn-content-position {
     margin-top: auto;
     margin-bottom: auto;
@@ -127,3 +129,4 @@
     background: linear-gradient(175deg, $secondary_color 0%, $primary_color 100%);
     @include btn-shadow;
 }
+
