@@ -1,12 +1,52 @@
-.starter__choice_name::before {
-
-     @each $key, $name in $starter_name {
-         content: $name;
-     }
-
+.starter__choice {
+    background-color: $white_color;
+    @include btn-shadow;
     
-    background-color: $tertary_color;
-    color: $black_background;
+    &_name {
+        color: $black_background;
+        background-color: $white_color;
+        font-size: 1.2rem;
+        font-weight: 600;
+        @include typo-roboto;
+        @include border-top-radius;
+        @include menu-btn-content-position;
+
+        &::before {
+
+            @each $key,
+            $value in $starter_name {
+                content: $value;
+            }
+        }
     }
-   ;
-    
+
+    &_quote {
+        height: 20px;
+        @include menu-btn-content-position;
+        background-color: $white_color;
+        font-weight: 100;
+        opacity: 0.8;
+        @include border-bottom-radius;
+
+        &::before {
+
+            @each $key,
+            $value in $starter_quote {
+
+                content: $value;
+            }
+        }
+    }
+
+    &_price {
+        height: 25px;
+        width: 45px;
+        font-size: 1rem;
+
+        &::before {
+            @each $price in $starter_prices {
+                content: $price;
+            }
+        }
+    }
+}

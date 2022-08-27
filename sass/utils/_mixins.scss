@@ -51,3 +51,16 @@
     transform: scale(1.05);
     color: $primary_color;
 }
+
+@mixin decoration-menu {
+    background-image: linear-gradient($tertary_color, $tertary_color);
+    background-repeat: no-repeat;
+    background-size: 2.4rem 4px;
+    background-position: 0 bottom;
+}
+
+@mixin menu-btn-content-position {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 0.5rem;
+}

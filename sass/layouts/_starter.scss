@@ -1,11 +1,49 @@
 .starter {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -10px;
+    padding-left: 1.3rem;
+    background-color: $lightgrey_color;
+
+    &__choice {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 93%;
+        height: 70px;
+        margin-bottom: 1.1rem;
+        background-color: $white_color;
+        @include border-bottom-radius;
+        @include border-top-radius;
+
+        &_left {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            margin-left: -0.8rem;
+            background-color: $white_color;
+            @include border-bottom-radius;
+            @include border-top-radius;
+        }
+
+        &_right {
+            display: flex;
+            justify-content: left;
+            height: 48px;
+            margin-bottom: 0;
+            background-color: $white_color;
+
+        }
+    }
 
     &__choice_title {
-        border: 2px solid $invert_secondary_color;
-        background-image: linear-gradient(pink, pink);
-        background-repeat: no-repeat;
-        background-size: 100% 1px;
-        background-position: 0 center;
+        padding-bottom: 7px;
+        background-color: $lightgrey_color;
+        font-weight: 100;
+        font-size: 1.05rem;
+        opacity: 0.7;
+        @include decoration-menu;
     }
 }
