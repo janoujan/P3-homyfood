@@ -116,3 +116,14 @@
         @include decoration-menu;
     }
 }
+
+@mixin button-action-violet {
+    padding: 15px;
+    padding-inline: 23px;
+    border-radius: 30px;
+    color: $white_color;
+    border: none;
+    background: $primary_color;
+    background: linear-gradient(175deg, $secondary_color 0%, $primary_color 100%);
+    @include btn-shadow;
+}

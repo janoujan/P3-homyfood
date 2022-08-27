@@ -643,6 +643,18 @@ footer h4 {
   background: no-repeat center/115% url(/images/palette.png);
 }
 
+.command__btn {
+  padding: 15px;
+  padding-inline: 23px;
+  border-radius: 30px;
+  color: #fefeff;
+  border: none;
+  background: #9356DC;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+  box-shadow: #acabab 0px 3px 6px;
+  padding-inline: 12%;
+}
+
 .header__arrow#accueil {
   visibility: hidden;
 }
