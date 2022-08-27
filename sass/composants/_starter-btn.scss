@@ -1,6 +1,5 @@
 .starter__choice {
     background-color: $white_color;
-    @include btn-shadow;
     
     &_name {
         color: $black_background;
