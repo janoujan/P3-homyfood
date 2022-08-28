@@ -171,6 +171,7 @@ footer h4 {
   color: #9356DC;
 }
 .venue__title_name::before {
+  content: "La palette du goût";
   font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 100;
@@ -592,9 +593,9 @@ footer h4 {
 
 .starter__choice {
   background-color: #fefeff;
+  color: #353535;
 }
 .starter__choice_name {
-  color: #353535;
   background-color: #fefeff;
   font-size: 1.2rem;
   font-weight: 600;

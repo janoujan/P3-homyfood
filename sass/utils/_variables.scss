@@ -11,9 +11,9 @@ $shadow_grey: #acabab;
 $shadow_size_btn: 0px 3px 6px;
 $black_background: #353535;
 $heart: linear-gradient(15°, #FF79DA 0%, #9356DC 100%);
-$starter_name: (choice1: "Fricassée d'escargot",
-    choice2: "Foie gras de canard mi-cuit",
-    choice3: "Oeuf au plat", );
+$starter_name: (1: "Fricassée d'escargot",
+    2: "Foie gras de canard mi-cuit",
+    3: "Oeuf au plat", );
 $starter_quote: (choice1: "Au piment d'Espelette",
     choice2:"Et ses copeaux de truffe noire",
     choice3: "Assaisonné à la truffe sur lit de caviar",

@@ -1,10 +1,11 @@
-@function remplissage($list-name,$key) {
+@function remplissage($list-name) {
 
     @each $key,
     $value in $list-name {
         $value: map-get($map: $list-name, $key:$key);
+        
         @return $value;
     }
 }
 
-
+@function test($list-name) {}

@@ -40,8 +40,8 @@
         }
 
         &_name::before {
-            content: map-get($map:$venue_name, $key:'1');
-            font-family: 'Shrikhand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            content: map-get($map:$venue_name, $key:'choice1');
+            @include typo-shrikhand;
             font-size: 1.6rem;
             font-weight: 100;
 
