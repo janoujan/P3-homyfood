@@ -442,7 +442,7 @@ footer h4 {
   box-shadow: #dfdede 0px 6px 12px 2px;
 }
 .instruction__btn_btn:hover {
-  background-color: #f2eafb;
+  background-color: #a16be0;
 }
 .instruction__btn_btn:hover i {
   color: #9356DC;
@@ -607,9 +607,6 @@ footer h4 {
   margin-bottom: auto;
   padding-left: 0.5rem;
 }
-.starter__choice_name::before {
-  content: "Fricassée d'escargot";
-}
 .starter__choice_quote {
   height: 20px;
   margin-top: auto;
@@ -622,20 +619,10 @@ footer h4 {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.starter__choice_quote::before {
-  content: "Assaisonné à la truffe sur lit de caviar";
-  content: "Assaisonné à la truffe sur lit de caviar";
-  content: "Assaisonné à la truffe sur lit de caviar";
-}
 .starter__choice_price {
   height: 25px;
   width: 45px;
   font-size: 1rem;
-}
-.starter__choice_price::before {
-  content: "25€";
-  content: "35€";
-  content: "20€";
 }
 
 .venue__photo {

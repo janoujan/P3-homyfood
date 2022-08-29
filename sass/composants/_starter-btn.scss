@@ -10,40 +10,24 @@
         @include border-top-radius;
         @include menu-btn-content-position;
 
-        &::before {
 
-             content: remplissage($starter_name);
-           }
-        }
-
-        &_quote {
-            height: 20px;
-            @include menu-btn-content-position;
-            background-color: $white_color;
-            font-weight: 100;
-            opacity: 0.8;
-            color: $black_color;
-            @include border-bottom-radius;
-
-            &::before {
-
-                 @each $quote in $starter_quote {
-                     content: map-get($map: $starter_quote, $key:choice3);
-                 }
-            }
-
-        }
-
-        &_price {
-            height: 25px;
-            width: 45px;
-            font-size: 1rem;
-
-            &::before {
-                @each $starter_price in $starter_prices {
-                    content: $starter_price;
-                }
-                
-            }
-        }
     }
+
+    &_quote {
+        height: 20px;
+        @include menu-btn-content-position;
+        background-color: $white_color;
+        font-weight: 100;
+        opacity: 0.8;
+        color: $black_color;
+        @include border-bottom-radius;
+
+    }
+
+    &_price {
+        height: 25px;
+        width: 45px;
+        font-size: 1rem;
+
+    }
+}
