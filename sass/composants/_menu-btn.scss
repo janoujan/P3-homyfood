@@ -1,0 +1,57 @@
+.starter__choice,
+.main__choice,
+.dessert__choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    height: 70px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    background-color: $white_color;
+    @include border-bottom-radius;
+    @include border-top-radius;
+    @include btn-shadow;
+
+    &_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        flex-wrap: nowrap;
+        width: 75%;
+    }
+
+    &_name {
+        margin-left: 0.5rem;
+        margin-bottom: 0;
+        color: $black_color;
+        background-color: $white_color;
+        @include typo-roboto;
+        font-weight: 600;
+    }
+
+    &_quote {
+        margin-top: 0;
+        margin-left: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        opacity: 0.6;
+    }
+    
+    &_right {
+        display: flex;
+        justify-content: flex-end;
+        width: 25%;
+    }
+    
+    &_price {
+        margin-bottom: 0;
+        margin-right: 1rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+}
+
+
+

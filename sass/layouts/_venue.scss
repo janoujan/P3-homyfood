@@ -36,15 +36,9 @@
 
         &_name i {
             color: $primary_color;
-
-        }
-
-        &_name::before {
-            content: map-get($map:$venue_name, $key:'choice1');
             @include typo-shrikhand;
-            font-size: 1.6rem;
             font-weight: 100;
-
+            font-size: 1.6rem;
         }
     }
 }

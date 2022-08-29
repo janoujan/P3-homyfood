@@ -128,3 +128,36 @@
     @include btn-shadow;
 }
 
+@mixin menu-btn {
+    background-color: $white_color;
+    color: $black_background;
+
+    &_name {
+        background-color: $white_color;
+        font-size: 1.2rem;
+        font-weight: 600;
+        @include typo-roboto;
+        @include border-top-radius;
+        @include menu-btn-content-position;
+    }
+
+    &_quote {
+        height: 20px;
+        @include menu-btn-content-position;
+        background-color: $white_color;
+        font-weight: 100;
+        opacity: 0.8;
+        color: $black_color;
+        @include border-bottom-radius;
+    }
+
+    &_price {
+        height: 25px;
+        width: 45px;
+        font-size: 1rem;
+    }
+}
+
+
+
+

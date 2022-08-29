@@ -2,8 +2,6 @@
 
 @import "./utils/mixins";
 
-@import "./utils/functions";
-
 @import "./base/base";
 
 @import "./base/typography";
@@ -20,11 +18,7 @@
 
 @import "./layouts/venue";
 
-@import "./layouts/starter";
-
-@import "./layouts/main";
-
-@import "./layouts/desserts";
+@import "./layouts/menu";
 
 @import "./layouts/command";
 
@@ -40,14 +34,16 @@
 
 @import "./composants/footer-list";
 
-@import "./composants/starter-btn";
-
 @import "./composants/venue-photo.scss";
+
+@import "./composants/menu-btn";
 
 @import "./composants/command-btn";
 
 @import "./pages/accueil.scss";
 
 @import "./pages/menu";
+
+
 
 
