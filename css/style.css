@@ -119,6 +119,10 @@ button {
   padding-left: 5%;
   padding-bottom: 8%;
 }
+#restaurants h2 {
+  font-weight: 900;
+  letter-spacing: -0.03rem;
+}
 
 footer {
   display: flex;
@@ -302,7 +306,7 @@ footer h4 {
   box-shadow: #dfdede 0px 6px 12px 2px;
 }
 .instruction__btn_btn:hover {
-  background-color: #a16be0;
+  background-color: #eeeeee;
 }
 .instruction__btn_btn:hover i {
   color: #9356DC;
