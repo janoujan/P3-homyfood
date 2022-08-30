@@ -199,8 +199,9 @@ footer h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-color: #f6f6f6;
 }
 
 .presentation__position {
@@ -359,11 +360,6 @@ footer h4 {
   margin-right: 3%;
   top: -175px;
   padding: 2%;
-  padding-inline: 4%;
-  color: #008625;
-  background-color: #99E2D0;
-  font-weight: 700;
-  border-radius: 4%;
   visibility: hidden;
 }
 .card__caption {

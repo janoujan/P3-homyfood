@@ -38,11 +38,6 @@
     margin-right: 3%;
     top: -175px;
     padding: 2%;
-    padding-inline: 4%;
-    color: $invert_secondary_color;
-    background-color: $tertary_color;
-    font-weight: 700;
-    border-radius: 4%;
     visibility: hidden;
 }
 
@@ -59,64 +54,6 @@
     background-position: 0 bottom;
 }
 
-@mixin menu-btn-content-position {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 0.5rem;
-}
-
-@mixin layout-menu-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: -10px;
-    padding-left: 1.3rem;
-    background-color: $lightgrey_color;
-
-    &__choice {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 93%;
-        height: 70px;
-        margin-bottom: 1.1rem;
-        background-color: $white_color;
-        @include border-bottom-radius;
-        @include border-top-radius;
-        @include btn-shadow;
-
-
-        &_left {
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            margin-left: -0.8rem;
-            background-color: $white_color;
-            @include border-bottom-radius;
-            @include border-top-radius;
-        }
-
-        &_right {
-            display: flex;
-            justify-content: left;
-            height: 48px;
-            margin-bottom: 0;
-            background-color: $white_color;
-
-        }
-    }
-
-    &__choice_title {
-        padding-bottom: 7px;
-        background-color: $lightgrey_color;
-        font-weight: 100;
-        font-size: 1.05rem;
-        opacity: 0.7;
-        @include decoration-menu;
-    }
-}
-
 @mixin button-action-violet {
     padding: 15px;
     padding-inline: 23px;
@@ -127,37 +64,3 @@
     background: linear-gradient(175deg, $secondary_color 0%, $primary_color 100%);
     @include btn-shadow;
 }
-
-@mixin menu-btn {
-    background-color: $white_color;
-    color: $black_background;
-
-    &_name {
-        background-color: $white_color;
-        font-size: 1.2rem;
-        font-weight: 600;
-        @include typo-roboto;
-        @include border-top-radius;
-        @include menu-btn-content-position;
-    }
-
-    &_quote {
-        height: 20px;
-        @include menu-btn-content-position;
-        background-color: $white_color;
-        font-weight: 100;
-        opacity: 0.8;
-        color: $black_color;
-        @include border-bottom-radius;
-    }
-
-    &_price {
-        height: 25px;
-        width: 45px;
-        font-size: 1rem;
-    }
-}
-
-
-
-
