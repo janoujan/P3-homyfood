@@ -159,18 +159,17 @@ footer h4 {
 }
 .venue__title_name {
   margin-inline: 0;
+  font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
-.venue__title_name a {
+.venue__title_name + a {
   width: fit-content;
   position: relative;
-  top: 70px;
-  left: -12rem;
-}
-.venue__title_name i {
+  left: 3rem;
   color: #9356DC;
-  font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-weight: 100;
   font-size: 1.6rem;
+  font-weight: 100;
 }
 
 .starter,
@@ -391,7 +390,7 @@ footer h4 {
   opacity: 0.8;
 }
 
-.fa-solid.fa-heart {
+.heart {
   display: inline-flex;
   align-self: flex-end;
   position: relative;
@@ -402,7 +401,7 @@ footer h4 {
   opacity: 0.8;
   color: #353535;
 }
-.fa-solid.fa-heart:hover {
+.heart:hover {
   opacity: 1;
   fill: #9356DC;
   color: #9356DC;
