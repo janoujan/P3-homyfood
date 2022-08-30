@@ -1,5 +1,5 @@
 @mixin btn-shadow ($color: $shadow_grey, $shadow-size: $shadow_size_btn) {
-        box-shadow: $color $shadow-size;
+    box-shadow: $color $shadow-size;
 }
 
 @mixin typo-roboto {
@@ -64,6 +64,5 @@
     background: linear-gradient(175deg, $secondary_color 0%, $primary_color 100%);
     @include btn-shadow;
 }
-
 
 
