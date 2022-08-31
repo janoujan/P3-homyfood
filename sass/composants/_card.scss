@@ -9,7 +9,7 @@
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 20px;
     @include btn-shadow($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
-
+    @include border-top-radius;
 
     &__photo {
         @include photo-card-size;
@@ -64,23 +64,24 @@
 }
 
 .heart {
-    display: inline-flex;
-    align-self: flex-end;
-    position: relative;
-    left: 80%;
-    top: -55px;
-    font-size: x-large;
-    font-weight: 100;
-    opacity: 0.6;
-    color: $black_color;
-       
+     display: inline-flex;
+     justify-content: left;
+     position: relative;
+     width: 100%;
+     height: 25px;
+     top: -50px;
+     left: 7.5rem;
+     fill-opacity: 1;
+     fill: $primary_color;
+     stroke: $black_color;
+     
+
+    // animation: fill 1s forwards;
+    border: 1px solid red;
 
     &:hover {
-        opacity: 1;
-        fill: $primary_color;
-        color: $primary_color;
-        font-weight: 600;
+
+        color: $heart;
+
     }
 }
-
-
