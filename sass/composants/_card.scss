@@ -68,11 +68,12 @@
     align-self: flex-end;
     position: relative;
     left: 80%;
-    top: -70px;
+    top: -55px;
     font-size: x-large;
     font-weight: 100;
-    opacity: 0.8;
-    color: $black_background;
+    opacity: 0.6;
+    color: $black_color;
+       
 
     &:hover {
         opacity: 1;
