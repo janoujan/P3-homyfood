@@ -13,9 +13,8 @@
         display: flex;
         flex-direction: row;
         height: 30%;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        padding-left: 1.5rem;
         padding-bottom: 5px;
         margin-top: -40px;
         background-color: $lightgrey_color;
@@ -24,24 +23,36 @@
 
         &_name {
             margin-inline: 0;
+            margin-left: -45px;
             @include typo-shrikhand;
             font-size: 1.7rem;
             font-weight: 400;
+        }
+        
+        &_button {
+            display: inline-flex;
+            position: relative;
+            left: 30px;
+            width: 32px;
+            background-color: $lightgrey_color;
+            border: none;
+            cursor: pointer;
+        }
 
-            &+a {
-                width: fit-content;
-                position: relative;
-                left: 3rem;
-                color: $primary_color;
-                font-size: 1.6rem;
-                font-weight: 100;
+        &_heart {
+            fill: url(#gradient_heart);
+            fill-opacity: 0;
+            stroke: $black_color;
+            transition: fill-opacity 400ms, stroke-opacity 250ms;
 
+            &:hover,
+            &:active {
+                fill-opacity: 1;
+                stroke-opacity: 0;
             }
         }
     }
 }
-
-
 
 
 

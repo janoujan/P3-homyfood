@@ -8,6 +8,7 @@
     margin: 0;
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 20px;
+    background-color: $white_color;
     @include btn-shadow($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
     @include border-top-radius;
 
@@ -60,28 +61,56 @@
             font-size: large;
             opacity: 0.8;
         }
+
+    }
+
+    &__btn {
+        display: inline-flex;
+        justify-content: right;
+        width: fit-content;
+        position: relative;
+        top: -60px;
+        left: 80%;
+        color: transparent;
+        background-color: $white_color;
+        border: none;
+        cursor: pointer;
+
+        &_heart {
+            display: flex;
+            height: 22px;
+            stroke: $black_color;
+            fill: url(#gradient_heart);
+            fill-opacity: 0;
+            transition: fill-opacity 500ms, stroke-opacity 250ms;
+
+            &:visited {
+                fill-opacity: 1;
+            }
+
+            &:hover {
+                fill-opacity: 1;
+                stroke-opacity: 0;
+            }
+
+            &:active {
+                fill-opacity: 1;
+                stroke-opacity: 0;
+            }
+        }
     }
 }
 
-.heart {
-     display: inline-flex;
-     justify-content: left;
-     position: relative;
-     width: 100%;
-     height: 25px;
-     top: -50px;
-     left: 7.5rem;
-     fill-opacity: 1;
-     fill: $primary_color;
-     stroke: $black_color;
-     
-
-    // animation: fill 1s forwards;
-    border: 1px solid red;
-
-    &:hover {
-
-        color: $heart;
-
-    }
+#path {
+    fill: url(#gradient_heart);
 }
+
+.stop1 {
+    stop-color: $primary_color;
+}
+
+.stop2 {
+    stop-color: $secondary_color;
+}
+
+
