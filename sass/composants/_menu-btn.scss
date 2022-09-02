@@ -12,6 +12,15 @@
     @include border-bottom-radius;
     @include border-top-radius;
     @include btn-shadow (lighten($color:$shadow_grey, $amount:25%), $shadow-size: $shadow-size_btn_greyBG);
+    animation-name: btn-apparition;
+    animation-fill-mode: both;
+    
+    @for $i from 1 to 4 {
+        &--#{$i} {
+            animation-delay: 200ms*$i;
+            animation-duration: 333ms;
+        }
+    }
 
     &_left {
         display: flex;
@@ -53,5 +62,12 @@
     }
 }
 
+@keyframes btn-apparition {
+    0% {
+        opacity: 0;
+    }
 
-
+    100% {
+        opacity: 1;
+    }
+}

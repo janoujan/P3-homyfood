@@ -510,6 +510,26 @@ footer h4 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: #ebeaea 0px 4px 8px 3px;
+  animation-name: btn-apparition;
+  animation-fill-mode: both;
+}
+.starter__choice--1,
+.main__choice--1,
+.dessert__choice--1 {
+  animation-delay: 200ms;
+  animation-duration: 333ms;
+}
+.starter__choice--2,
+.main__choice--2,
+.dessert__choice--2 {
+  animation-delay: 400ms;
+  animation-duration: 333ms;
+}
+.starter__choice--3,
+.main__choice--3,
+.dessert__choice--3 {
+  animation-delay: 600ms;
+  animation-duration: 333ms;
 }
 .starter__choice_left,
 .main__choice_left,
@@ -557,6 +577,14 @@ footer h4 {
   font-weight: 600;
 }
 
+@keyframes btn-apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .command__btn {
   padding: 15px;
   padding-inline: 23px;
