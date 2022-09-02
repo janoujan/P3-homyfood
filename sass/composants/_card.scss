@@ -82,24 +82,14 @@
             stroke: $black_color;
             fill: url(#gradient_heart);
             fill-opacity: 0;
-            transition: fill-opacity 500ms, stroke-opacity 250ms;
-
-            &:visited {
-                fill-opacity: 1;
-            }
 
             &:hover {
-                fill-opacity: 1;
-                stroke-opacity: 0;
-            }
-
-            &:active {
-                fill-opacity: 1;
-                stroke-opacity: 0;
+                animation: heart-filling forwards 1s;
             }
         }
     }
 }
+
 
 #path {
     fill: url(#gradient_heart);
@@ -112,5 +102,19 @@
 .stop2 {
     stop-color: $secondary_color;
 }
+
+@keyframes heart-filling {
+    0% {
+        fill-opacity: 0;
+        stroke-opacity: 1;
+    }
+
+    100% {
+        fill-opacity: 1;
+        stroke-opacity: 0;
+    }
+}
+
+
 
 
