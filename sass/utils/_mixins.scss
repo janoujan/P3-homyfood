@@ -62,7 +62,8 @@
     border: none;
     background: $primary_color;
     background: linear-gradient(175deg, $secondary_color 0%, $primary_color 100%);
-    @include btn-shadow;
 }
+
+
 
 

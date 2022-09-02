@@ -9,10 +9,13 @@
     background-color: $lightgrey_color;
 
     &__choice_title {
-            padding-bottom: 0.5rem;
-            font-weight: 100;
-            font-size: large;
-            opacity: 0.7;
-            @include decoration-menu;
-        }
+        padding-bottom: 0.5rem;
+        font-weight: 100;
+        font-size: large;
+        opacity: 0.7;
+        @include decoration-menu;
     }
+}
+
+
+

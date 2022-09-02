@@ -11,7 +11,7 @@
     background-color: $white_color;
     @include border-bottom-radius;
     @include border-top-radius;
-    @include btn-shadow (lighten($color:$shadow_grey, $amount:25%), $shadow-size: 0px 4px 8px 1px);
+    @include btn-shadow (lighten($color:$shadow_grey, $amount:25%), $shadow-size: $shadow-size_btn_greyBG);
 
     &_left {
         display: flex;
@@ -52,3 +52,6 @@
         font-weight: 600;
     }
 }
+
+
+

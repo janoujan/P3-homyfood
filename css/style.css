@@ -275,7 +275,7 @@ footer h4 {
   border: none;
   background: #9356DC;
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: #acabab 0px 3px 6px;
+  box-shadow: #aca9a9 0px 3px 6px;
 }
 
 .instruction__btn {
@@ -314,7 +314,7 @@ footer h4 {
   border-bottom-right-radius: 20px;
   background-color: #f6f6f6;
   border: none;
-  box-shadow: #ebebeb 0px 4px 8px 1px;
+  box-shadow: #ebeaea 0px 4px 8px 1px;
 }
 .instruction__btn_btn:hover {
   background-color: #eeeeee;
@@ -342,7 +342,7 @@ footer h4 {
   border-bottom-right-radius: 5%;
   border-bottom-left-radius: 20px;
   background-color: #fefeff;
-  box-shadow: #dfdede 0px 6px 12px 2px;
+  box-shadow: #dedddd 0px 6px 12px 2px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -509,7 +509,7 @@ footer h4 {
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  box-shadow: #ebebeb 0px 4px 8px 1px;
+  box-shadow: #ebeaea 0px 4px 8px 3px;
 }
 .starter__choice_left,
 .main__choice_left,
@@ -565,7 +565,7 @@ footer h4 {
   border: none;
   background: #9356DC;
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: #acabab 0px 3px 6px;
+  box-shadow: #aca9a9 0px 4px 8px 3px;
   padding-inline: 12%;
 }
 

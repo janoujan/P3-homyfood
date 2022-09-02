@@ -7,19 +7,11 @@ $black_color: #110000;
 $white_color: #fefeff;
 $darkgrey_color: #eaeaea;
 $lightgrey_color: #f6f6f6;
-$shadow_grey: #acabab;
+$shadow_grey: #aca9a9;
 $shadow_size_btn: 0px 3px 6px;
+$shadow-size_btn_greyBG: 0px 4px 8px 3px;
 $black_background: #353535;
-$heart: linear-gradient(15°, #FF79DA 0%, #9356DC 100%);
-$starter_name: (1: "Fricassée d'escargot",
-    2: "Foie gras de canard mi-cuit",
-    3: "Oeuf au plat", );
-$starter_quote: (choice1: "Au piment d'Espelette",
-    choice2:"Et ses copeaux de truffe noire",
-    choice3: "Assaisonné à la truffe sur lit de caviar",
-);
-$venue_name: ('choice1':"La palette du goût",
-    'choice2':"Le délice des sens",
-    'choice3':"La note enchantée",
-    'choice4':"À la française", );
-$starter_prices: "25€", "35€", "20€";
+
+
+
+
