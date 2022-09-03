@@ -499,12 +499,13 @@ footer h4 {
 .main__choice,
 .dessert__choice {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   width: 93%;
   height: 70px;
   padding-left: 0;
   margin-bottom: 20px;
+  flex-wrap: nowrap;
   background-color: #fefeff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -532,6 +533,34 @@ footer h4 {
   animation-delay: 600ms;
   animation-duration: 333ms;
 }
+.starter__choice:hover .starter__choice_animation, .starter__choice:hover .main__choice_animation, .starter__choice:hover .dessert__choice_animation,
+.main__choice:hover .starter__choice_animation,
+.main__choice:hover .main__choice_animation,
+.main__choice:hover .dessert__choice_animation,
+.dessert__choice:hover .starter__choice_animation,
+.dessert__choice:hover .main__choice_animation,
+.dessert__choice:hover .dessert__choice_animation {
+  transform: translateX(0);
+  opacity: 1;
+}
+.starter__choice:hover .starter__choice_price, .starter__choice:hover .main__choice_price, .starter__choice:hover .dessert__choice_price,
+.main__choice:hover .starter__choice_price,
+.main__choice:hover .main__choice_price,
+.main__choice:hover .dessert__choice_price,
+.dessert__choice:hover .starter__choice_price,
+.dessert__choice:hover .main__choice_price,
+.dessert__choice:hover .dessert__choice_price {
+  transform: translateX(0);
+}
+.starter__choice:hover .starter__choice_animation i, .starter__choice:hover .main__choice_animation i, .starter__choice:hover .dessert__choice_animation i,
+.main__choice:hover .starter__choice_animation i,
+.main__choice:hover .main__choice_animation i,
+.main__choice:hover .dessert__choice_animation i,
+.dessert__choice:hover .starter__choice_animation i,
+.dessert__choice:hover .main__choice_animation i,
+.dessert__choice:hover .dessert__choice_animation i {
+  transform: rotate(-360deg);
+}
 .starter__choice_left,
 .main__choice_left,
 .dessert__choice_left {
@@ -540,6 +569,8 @@ footer h4 {
   justify-content: left;
   flex-wrap: nowrap;
   width: 75%;
+  min-width: 75%;
+  border: 2px solid green;
 }
 .starter__choice_name,
 .main__choice_name,
@@ -555,27 +586,70 @@ footer h4 {
 .starter__choice_quote,
 .main__choice_quote,
 .dessert__choice_quote {
+  border: 1px solid red;
+  display: inline;
+  position: relative;
+  width: 100%;
   margin-top: 0;
   margin-left: 0.5rem;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: clip ellipsis;
   opacity: 0.6;
 }
 .starter__choice_right,
 .main__choice_right,
 .dessert__choice_right {
+  border: 2px solid blue;
   display: flex;
+  justify-content: right;
+  position: relative;
+  overflow: visible;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   width: 25%;
 }
 .starter__choice_price,
 .main__choice_price,
 .dessert__choice_price {
-  margin-bottom: 0;
-  margin-right: 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 60px;
+  min-width: 60px;
+  margin: 0;
   font-size: 0.95rem;
   font-weight: 600;
+  transform: translateX(100%);
+  transition: transform 500ms;
+  border: rebeccapurple 2px solid;
+}
+.starter__choice_animation,
+.main__choice_animation,
+.dessert__choice_animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 65px;
+  height: 70px;
+  max-height: 70px;
+  background-color: #99E2D0;
+  color: #fefeff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: translateX(100%);
+  transition: transform 500ms ease-out, opacity 100ms ease-out;
+  border: 2px solid violet;
+  opacity: 0;
+}
+.starter__choice_animation i,
+.main__choice_animation i,
+.dessert__choice_animation i {
+  font-size: x-large;
+  font-weight: 900;
+  transform: rotate(0deg);
+  transition: transform 500ms;
 }
 
 @keyframes btn-apparition {
