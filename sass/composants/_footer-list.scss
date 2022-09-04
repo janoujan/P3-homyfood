@@ -28,10 +28,23 @@
             font-size: large;
             font-weight: 500;
             margin-bottom: 0.2rem;
-            transition: transform 400ms, color 500ms;
+
+
+            &:visited {
+                color: $tertary_color;
+                font-style: italic;
+            }
 
             &:hover {
-                @include hover-style;
+                animation: hover_footer cubic-bezier(0.77, 0, 0.175, 1) 1000ms forwards;
+
+                & i {
+                    transform: rotate(1turn);
+                }
+            }
+
+            &:active {
+                color: $secondary_color;
             }
         }
 
@@ -39,8 +52,34 @@
             margin-right: 5%;
             margin-top: 1%;
             font-size: medium;
-            transition: 300ms;
-            transition-delay: 450ms;
+            transform: rotate(0turn);
+            transition: transform 400ms;
+            transition-delay: 600ms;
         }
     }
 }
+
+@keyframes hover_footer {
+    0% {
+        color: $secondary_color;
+        opacity: 0.5;
+    }
+
+    25% {
+        opacity: 0.8;
+    }
+
+    50% {
+        color: $primary_color;
+        opacity: 1;
+    }
+
+    100% {
+        color: $primary_color;
+        opacity: 1;
+    }
+}
+
+
+
+

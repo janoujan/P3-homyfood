@@ -83,8 +83,17 @@
             fill: url(#gradient_heart);
             fill-opacity: 0;
 
+            &:visited {
+                animation: heart-filling forwards 1s infinite;
+            }
+
             &:hover {
-                animation: heart-filling forwards 1s;
+                animation: heart-filling both 1s;
+            }
+
+            &:active {
+                animation: heart-filling forwards;
+                animation-play-state: paused;
             }
         }
     }

@@ -423,8 +423,15 @@ footer h4 {
   fill: url(#gradient_heart);
   fill-opacity: 0;
 }
+.card__btn_heart:visited {
+  animation: heart-filling forwards 1s infinite;
+}
 .card__btn_heart:hover {
-  animation: heart-filling forwards 1s;
+  animation: heart-filling both 1s;
+}
+.card__btn_heart:active {
+  animation: heart-filling forwards;
+  animation-play-state: paused;
 }
 
 #path {
@@ -476,21 +483,46 @@ footer h4 {
   font-size: large;
   font-weight: 500;
   margin-bottom: 0.2rem;
-  transition: transform 400ms, color 500ms;
+}
+.footer__link a:visited {
+  color: #99E2D0;
+  font-style: italic;
 }
 .footer__link a:hover {
-  transition: transform 400ms, color 500ms;
-  transform: scale(1.05);
-  color: #9356DC;
+  animation: hover_footer cubic-bezier(0.77, 0, 0.175, 1) 1000ms forwards;
+}
+.footer__link a:hover i {
+  transform: rotate(1turn);
+}
+.footer__link a:active {
+  color: #FF79DA;
 }
 .footer__link i {
   margin-right: 5%;
   margin-top: 1%;
   font-size: medium;
-  transition: 300ms;
-  transition-delay: 450ms;
+  transform: rotate(0turn);
+  transition: transform 400ms;
+  transition-delay: 600ms;
 }
 
+@keyframes hover_footer {
+  0% {
+    color: #FF79DA;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    color: #9356DC;
+    opacity: 1;
+  }
+  100% {
+    color: #9356DC;
+    opacity: 1;
+  }
+}
 .venue__photo {
   background: no-repeat center/115% url(/images/palette.png);
 }
@@ -561,20 +593,30 @@ footer h4 {
 .dessert__choice:hover .dessert__choice_animation i {
   transform: rotate(-360deg);
 }
+.starter__choice_btn,
+.main__choice_btn,
+.dessert__choice_btn {
+  display: flex;
+  width: 50vh;
+  border: 4px solid red;
+}
 .starter__choice_left,
 .main__choice_left,
 .dessert__choice_left {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: left;
   flex-wrap: nowrap;
-  width: 75%;
+  position: relative;
+  width: 33.3333333333vh;
   min-width: 75%;
   border: 2px solid green;
 }
 .starter__choice_name,
 .main__choice_name,
 .dessert__choice_name {
+  display: inline;
+  position: relative;
   margin-left: 0.5rem;
   margin-bottom: 0;
   color: #110000;
@@ -582,32 +624,36 @@ footer h4 {
   font-family: "Roboto Condensed", sans-serif;
   color: #110000;
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .starter__choice_quote,
 .main__choice_quote,
 .dessert__choice_quote {
   border: 1px solid red;
   display: inline;
-  position: relative;
-  width: 100%;
+  width: 99%;
   margin-top: 0;
   margin-left: 0.5rem;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: clip ellipsis;
+  text-overflow: ellipsis;
   opacity: 0.6;
 }
 .starter__choice_right,
 .main__choice_right,
 .dessert__choice_right {
   border: 2px solid blue;
-  display: flex;
+  display: flex inline;
   justify-content: right;
   position: relative;
   overflow: visible;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  width: 25%;
+  width: 16.6666666667vh;
+  transform: scaleX(1);
+  transition: transform 400ms;
 }
 .starter__choice_price,
 .main__choice_price,
@@ -616,11 +662,13 @@ footer h4 {
   justify-content: left;
   align-items: center;
   flex-wrap: nowrap;
-  width: 60px;
+  width: max-content;
   min-width: 60px;
   margin: 0;
+  padding-left: 10px;
   font-size: 0.95rem;
   font-weight: 600;
+  background-color: #fefeff;
   transform: translateX(100%);
   transition: transform 500ms;
   border: rebeccapurple 2px solid;
