@@ -446,6 +446,14 @@ footer h4 {
   stop-color: #FF79DA;
 }
 
+.heart {
+  fill-opacity: 1;
+  border: 1px solid red;
+  fill: #9356DC;
+  stroke-width: 10px;
+  stroke: #99E2D0;
+}
+
 @keyframes heart-filling {
   0% {
     fill-opacity: 0;
