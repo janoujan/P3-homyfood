@@ -24,7 +24,7 @@ $width_left: calc(2*$width_total/3);
 
     @for $i from 1 to 4 {
         &--#{$i} {
-            animation-delay: 200ms*$i;
+            animation-delay: 500ms*$i;
             animation-duration: 333ms;
         }
     }

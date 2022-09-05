@@ -550,19 +550,19 @@ footer h4 {
 .starter__choice--1,
 .main__choice--1,
 .dessert__choice--1 {
-  animation-delay: 200ms;
+  animation-delay: 500ms;
   animation-duration: 333ms;
 }
 .starter__choice--2,
 .main__choice--2,
 .dessert__choice--2 {
-  animation-delay: 400ms;
+  animation-delay: 1000ms;
   animation-duration: 333ms;
 }
 .starter__choice--3,
 .main__choice--3,
 .dessert__choice--3 {
-  animation-delay: 600ms;
+  animation-delay: 1500ms;
   animation-duration: 333ms;
 }
 .starter__choice:hover .starter__choice_animation, .starter__choice:hover .main__choice_animation, .starter__choice:hover .dessert__choice_animation,
