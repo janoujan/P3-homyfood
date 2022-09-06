@@ -80,48 +80,15 @@
             display: flex;
             height: 22px;
             stroke: $black_color;
-            fill: url(#gradient_heart);
+            fill: url(images/heart.svg#gradient_heart);
             fill-opacity: 0;
 
-            &:visited {
-                animation: heart-filling forwards 1s infinite;
-            }
-
-            &:hover {
-                animation: heart-filling both 1s;
-            }
-
+            &:hover,
             &:active {
-                animation: heart-filling forwards;
-                animation-play-state: paused;
+                animation: heart-filling both 1s;
             }
         }
     }
-}
-
-
-
-#path {
-     fill: url(#gradient_heart);
-    // fill: url("data:image/svg+xml,M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z");
-}
-.stop1 {
-    stop-color: $primary_color;
-
-}
-
-.stop2 {
-    stop-color: $secondary_color;
-}
-// here begin experiments
-
-.heart {
-    // fill: url(#gradient_heart);
-    fill-opacity: 1;
-    border: 1px solid red;
-    fill: $primary_color;
-    stroke-width: 10px;
-    stroke: $tertary_color;
 }
 
 @keyframes heart-filling {
@@ -135,3 +102,7 @@
         stroke-opacity: 0;
     }
 }
+
+
+
+

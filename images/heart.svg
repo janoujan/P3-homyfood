@@ -1,17 +1,14 @@
-<svg version="1.1"
-     baseProfile="full"
-     width="38" height="38"
-     xmlns="http://www.w3.org/2000/svg"
-     class="card__btn_heart" 
-     viewBox="-2 -2 36 36">
-         <path
-                d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"
-              />
-              <defs>
-                <linearGradient id="gradient_heart" x1="0" x2="0" y1="0" y2="1">
-                  <stop class="stop1" offset="0%" />
-                  <stop class="stop2" offset="100%" />
-                </linearGradient>
-              </defs>
-            </svg>
+<svg viewBox="-2 -2 36 36" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+  
+  <g viewBox="-2 -2 36 36" id="heart">
+    <path
+      fill="url(#gradient_heart)"
+      d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+    <defs>    
+      <linearGradient id="gradient_heart" x1="0" x2="0" y1="0" y2="1">
+        <stop class="stop1" offset="0%" stop-color="#9356DC" />
+        <stop class="stop2" offset="100%" stop-color="#FF79DA"/>
+      </linearGradient>
+    </defs>
+  </g>
+</svg>
