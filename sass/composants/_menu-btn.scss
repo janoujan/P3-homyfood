@@ -1,197 +1,161 @@
-   .starter__choice,
-   .main__choice,
-   .dessert__choice {
-       display: flex;
-       justify-content: left;
-       margin: 0;
-       flex-basis: 1 1 50px;
-       width: 93%;
-       height: 70px;
-       margin-bottom: 1vh;
-       background-color: $white_color;
-       @include border-bottom-radius;
-       @include border-top-radius;
-       @include btn-shadow (lighten($color:$shadow_grey, $amount:25%), $shadow-size: $shadow-size_btn_greyBG);
-       animation-name: btn-apparition;
-       animation-fill-mode: both;
+.starter__choice,
+.main__choice,
+.dessert__choice {
+    display: flex;
+    width: 93%;
+    height: 10vh;
+    margin-bottom: 2vh;
+    background-color: $white_color;
+    @include border-bottom-radius;
+    @include border-top-radius;
+    @include btn-shadow (lighten($color:$shadow_grey, $amount:20%), $shadow-size: $shadow-size_btn_greyBG);
+    animation-name: btn-apparition;
+    animation-fill-mode: both;
 
-       @for $i from 1 to 4 {
-           &--#{$i} {
-               animation-delay: 500ms*$i;
-               animation-duration: 333ms;
-           }
-       }
+    @for $i from 1 to 4 {
+        &--#{$i} {
+            animation-delay: 500ms*$i;
+            animation-duration: 333ms;
+        }
+    }
+    
+    &:hover,
+    &:active {
+        
+        & .starter__choice_check,
+        & .main__choice_check,
+        & .dessert__choice_check {
+            animation: check-animation 3s both;
+        }
 
-       &:hover {
+        & .starter__choice_left,
+        & .main__choice_left,
+        & .dessert__choice_left {
+            flex: 3
+        }
 
-           & .starter__choice_check,
-           & .main__choice_check,
-           & .dessert__choice_check {
-               transform: translateX(0);
-               opacity: 1;
-           }
+        & .starter__choice_price,
+        & .main__choice_price,
+        & .dessert__choice_price {
+            transform: translateX(0);
+        }
 
-           & .starter__choice_right,
-           & .main__choice_right,
-           & .dessert__choice_right {
-               transform: translateX(-10%);
-           }
 
-           & .starter__choice_left,
-           & .main__choice_left,
-           & .dessert__choice_left {
-               flex: 2;
-           }
+        & .starter__choice_check i,
+        & .main__choice_check i,
+        & .dessert__choice_check i {
+            transform: rotate(-360deg);
+        }
+    }
 
-           & .starter__choice_price,
-           & .main__choice_price,
-           & .dessert__choice_price {
-               transform: translateX(-10%);
-           }
-       }
+    &_left {
+        flex: 8;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: flex 4s;
+        border: 2px solid blue;
+    }
 
-       &_left {
-           //    display: inline;
-           flex: 4;
-           border: 2px solid orangered;
-           //    margin-right: 1%;
-           overflow: hidden;
-           white-space: nowrap;
-           text-overflow: ellipsis;
-           transition: flex 1s;
-       }
+    &_right {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        flex: 1;
+        padding-left: 5%;
+        transform: translateX(0);
+        transition: transform 1s;
+        border: 2px solid green;
+    }
 
-       &_right {
-           display: flex;
-           flex-direction: row;
-           align-items: flex-end;
-           flex: 1;
-           padding-left: 5%;
-           border: 2px solid green;
-           transform: translateX(0);
-           transition: transform 1s;
-       }
+    &_name {
+        margin: 2vh 0 0 4vw;
+        padding-left: 0;
+        min-height: 25px;
+        color: $black_color;
+        background-color: $white_color;
+        @include typo-roboto;
+        font-weight: 600;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 
-       &_name {
-           margin: 1vh 0 0 1vw;
-           padding-left: 0;
-           min-height: 25px;
-           color: $black_color;
-           background-color: $white_color;
-           @include typo-roboto;
-           font-weight: 600;
-           overflow: hidden;
-           white-space: nowrap;
-           text-overflow: ellipsis;
-           border: 2px solid blue;
-       }
+    &_quote {
+        display: inline;
+        min-height: 25px;
+        margin: 0;
+        margin-left: 4vw;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        opacity: 0.6;
+    }
 
-       &_quote {
-           border: 1px solid red;
-           display: inline;
-           min-height: 25px;
-           margin: 0;
-           margin-left: 1vw;
-           overflow: hidden;
-           white-space: nowrap;
-           text-overflow: ellipsis;
-           opacity: 0.6;
-       }
+    &_price {
+        margin-bottom: 1.4vh;
+        margin-right: 4vw;
+        font-size: 0.95rem;
+        font-weight: 600;
+        background-color: $white_color;
+        transform: translateX(0);
+        transition: transform 1s;
+        border: 1px solid red;
+    }
 
-       &_price {
-           margin-bottom: 1.4vh;
-           font-size: 0.95rem;
-           font-weight: 600;
-           background-color: $white_color;
+    &_check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        width: 50px;
+        padding-right: 0;
+        background-color: $tertary_color;
+        color: $white_color;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 18px;
+        // transform: translateX(10%);
+        opacity: 1;
+        
+       
 
-           border: rebeccapurple 2px solid;
-           transform: translateX(0);
-           transition: transform 1s;
-       }
+        & i {
+            font-size: x-large;
+            font-weight: 900;
+            transform: rotate(0deg);
+            transition: transform 300ms ease-in-out 500ms;
+        }
+    }
+}
 
-       &_check {
-           height: 70px;
-           min-height: 70px;
-           background-color: $tertary_color;
-           color: $white_color;
-           border-top-right-radius: 20px;
-           border-bottom-right-radius: 20px;
-           transform: translateX(0);
-           transition: transform 500ms ease-out, opacity 100ms ease-out;
-           border: 2px solid violet;
-           opacity: 1;
-           overflow: visible;
+@keyframes btn-apparition {
+    0% {
+        opacity: 0;
+    }
 
-           & i {
-               font-size: x-large;
-               font-weight: 900;
-               transform: rotate(0deg);
-               transition: transform 500ms;
-           }
-       }
+    100% {
+        opacity: 1;
+    }
+}
 
-       @keyframes btn-apparition {
-           0% {
-               opacity: 0;
-           }
+@keyframes check-animation {
+    0% {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    
+    10% {
+        opacity: 0.5;
+    }
 
-           100% {
-               opacity: 1;
-           }
-       }
+    25% {
+        opacity: 1;
+    }
 
-       // .starter__choice {
-       //     border: 2px solid red;
-       //     width: 93%;
-       //     display: flex;
-       //     flex-wrap: wrap;
-       //     flex: 1 1 150px;
-
-       //     &:hover {
-
-       //         & .starter__choice_price {
-       //             transform: translateX(-50%);
-       //         }
-
-       //         & .starter__choice_name {
-       //             flex: 1;
-       //         }
-
-       //         & .starter__choice_left {
-       //             flex-shrink: 5;
-       //         }
-       //     }
-
-       //     &_name {
-       //         border: 2px solid blue;
-       //         margin-top: 0;
-       //         display: inline;
-       //         color: $black_color;
-       //         overflow: hidden;
-       //         white-space: nowrap;
-       //         text-overflow: ellipsis;
-       //         transition: flex 1s;
-       //     }
-
-       //     &_quote {
-       //         margin-bottom: 0;
-       //         // margin-left: -200px;
-       //         border: 2px solid orange;
-       //         overflow: hidden;
-       //         white-space: nowrap;
-       //         text-overflow: ellipsis;
-       //         // transition: flex-shrink 1s;
-       //     }
-
-       //     &_price {
-       //         border: 2px solid green;
-       //         transform: translateX(0);
-       //         transition: transform 1s;
-       //         flex: 2;
-       //         justify-content: flex-end;
-       //     }
-
-       //     &_check {
-       //         border: 2px solid rebeccapurple;
-       //     }
-   }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        width: 100%;
+    }
+}
