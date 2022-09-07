@@ -513,12 +513,11 @@ footer h4 {
 .dessert__choice {
   display: flex;
   justify-content: left;
-  align-items: center;
+  margin: 0;
+  flex-basis: 1 1 50px;
   width: 93%;
   height: 70px;
-  padding-left: 0;
-  margin-bottom: 20px;
-  flex-wrap: nowrap;
+  margin-bottom: 1vh;
   background-color: #fefeff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -546,15 +545,33 @@ footer h4 {
   animation-delay: 1500ms;
   animation-duration: 333ms;
 }
-.starter__choice:hover .starter__choice_animation, .starter__choice:hover .main__choice_animation, .starter__choice:hover .dessert__choice_animation,
-.main__choice:hover .starter__choice_animation,
-.main__choice:hover .main__choice_animation,
-.main__choice:hover .dessert__choice_animation,
-.dessert__choice:hover .starter__choice_animation,
-.dessert__choice:hover .main__choice_animation,
-.dessert__choice:hover .dessert__choice_animation {
+.starter__choice:hover .starter__choice_check, .starter__choice:hover .main__choice_check, .starter__choice:hover .dessert__choice_check,
+.main__choice:hover .starter__choice_check,
+.main__choice:hover .main__choice_check,
+.main__choice:hover .dessert__choice_check,
+.dessert__choice:hover .starter__choice_check,
+.dessert__choice:hover .main__choice_check,
+.dessert__choice:hover .dessert__choice_check {
   transform: translateX(0);
   opacity: 1;
+}
+.starter__choice:hover .starter__choice_right, .starter__choice:hover .main__choice_right, .starter__choice:hover .dessert__choice_right,
+.main__choice:hover .starter__choice_right,
+.main__choice:hover .main__choice_right,
+.main__choice:hover .dessert__choice_right,
+.dessert__choice:hover .starter__choice_right,
+.dessert__choice:hover .main__choice_right,
+.dessert__choice:hover .dessert__choice_right {
+  transform: translateX(-10%);
+}
+.starter__choice:hover .starter__choice_left, .starter__choice:hover .main__choice_left, .starter__choice:hover .dessert__choice_left,
+.main__choice:hover .starter__choice_left,
+.main__choice:hover .main__choice_left,
+.main__choice:hover .dessert__choice_left,
+.dessert__choice:hover .starter__choice_left,
+.dessert__choice:hover .main__choice_left,
+.dessert__choice:hover .dessert__choice_left {
+  flex: 2;
 }
 .starter__choice:hover .starter__choice_price, .starter__choice:hover .main__choice_price, .starter__choice:hover .dessert__choice_price,
 .main__choice:hover .starter__choice_price,
@@ -563,43 +580,36 @@ footer h4 {
 .dessert__choice:hover .starter__choice_price,
 .dessert__choice:hover .main__choice_price,
 .dessert__choice:hover .dessert__choice_price {
-  transform: translateX(0);
-}
-.starter__choice:hover .starter__choice_animation i, .starter__choice:hover .main__choice_animation i, .starter__choice:hover .dessert__choice_animation i,
-.main__choice:hover .starter__choice_animation i,
-.main__choice:hover .main__choice_animation i,
-.main__choice:hover .dessert__choice_animation i,
-.dessert__choice:hover .starter__choice_animation i,
-.dessert__choice:hover .main__choice_animation i,
-.dessert__choice:hover .dessert__choice_animation i {
-  transform: rotate(-360deg);
-}
-.starter__choice_btn,
-.main__choice_btn,
-.dessert__choice_btn {
-  display: flex;
-  width: 50vh;
-  border: 4px solid red;
+  transform: translateX(-10%);
 }
 .starter__choice_left,
 .main__choice_left,
 .dessert__choice_left {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: left;
-  flex-wrap: nowrap;
-  position: relative;
-  width: 33.3333333333vh;
-  min-width: 75%;
+  flex: 4;
+  border: 2px solid orangered;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: flex 1s;
+}
+.starter__choice_right,
+.main__choice_right,
+.dessert__choice_right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex: 1;
+  padding-left: 5%;
   border: 2px solid green;
+  transform: translateX(0);
+  transition: transform 1s;
 }
 .starter__choice_name,
 .main__choice_name,
 .dessert__choice_name {
-  display: inline;
-  position: relative;
-  margin-left: 0.5rem;
-  margin-bottom: 0;
+  margin: 1vh 0 0 1vw;
+  padding-left: 0;
+  min-height: 25px;
   color: #110000;
   background-color: #fefeff;
   font-family: "Roboto Condensed", sans-serif;
@@ -608,79 +618,55 @@ footer h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  border: 2px solid blue;
 }
 .starter__choice_quote,
 .main__choice_quote,
 .dessert__choice_quote {
   border: 1px solid red;
   display: inline;
-  width: 99%;
-  margin-top: 0;
-  margin-left: 0.5rem;
+  min-height: 25px;
+  margin: 0;
+  margin-left: 1vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   opacity: 0.6;
 }
-.starter__choice_right,
-.main__choice_right,
-.dessert__choice_right {
-  border: 2px solid blue;
-  display: flex inline;
-  justify-content: right;
-  position: relative;
-  overflow: visible;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  width: 16.6666666667vh;
-  transform: scaleX(1);
-  transition: transform 400ms;
-}
 .starter__choice_price,
 .main__choice_price,
 .dessert__choice_price {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: max-content;
-  min-width: 60px;
-  margin: 0;
-  padding-left: 10px;
+  margin-bottom: 1.4vh;
   font-size: 0.95rem;
   font-weight: 600;
   background-color: #fefeff;
-  transform: translateX(100%);
-  transition: transform 500ms;
   border: rebeccapurple 2px solid;
+  transform: translateX(0);
+  transition: transform 1s;
 }
-.starter__choice_animation,
-.main__choice_animation,
-.dessert__choice_animation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 65px;
+.starter__choice_check,
+.main__choice_check,
+.dessert__choice_check {
   height: 70px;
-  max-height: 70px;
+  min-height: 70px;
   background-color: #99E2D0;
   color: #fefeff;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  transform: translateX(100%);
+  transform: translateX(0);
   transition: transform 500ms ease-out, opacity 100ms ease-out;
   border: 2px solid violet;
-  opacity: 0;
+  opacity: 1;
+  overflow: visible;
 }
-.starter__choice_animation i,
-.main__choice_animation i,
-.dessert__choice_animation i {
+.starter__choice_check i,
+.main__choice_check i,
+.dessert__choice_check i {
   font-size: x-large;
   font-weight: 900;
   transform: rotate(0deg);
   transition: transform 500ms;
 }
-
 @keyframes btn-apparition {
   0% {
     opacity: 0;
@@ -689,6 +675,7 @@ footer h4 {
     opacity: 1;
   }
 }
+
 .command__btn {
   padding: 15px;
   padding-inline: 23px;
