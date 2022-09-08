@@ -513,9 +513,10 @@ footer h4 {
 .dessert__choice {
   display: flex;
   width: 93%;
-  height: 10vh;
-  margin-bottom: 2vh;
+  height: 70px;
+  margin-bottom: 4%;
   background-color: #fefeff;
+  overflow: hidden;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -527,20 +528,50 @@ footer h4 {
 .starter__choice--1,
 .main__choice--1,
 .dessert__choice--1 {
-  animation-delay: 500ms;
-  animation-duration: 333ms;
+  animation-delay: 1s;
+  animation-duration: 800ms;
 }
 .starter__choice--2,
 .main__choice--2,
 .dessert__choice--2 {
-  animation-delay: 1000ms;
-  animation-duration: 333ms;
+  animation-delay: 2s;
+  animation-duration: 800ms;
 }
 .starter__choice--3,
 .main__choice--3,
 .dessert__choice--3 {
-  animation-delay: 1500ms;
-  animation-duration: 333ms;
+  animation-delay: 3s;
+  animation-duration: 800ms;
+}
+.starter__choice--4,
+.main__choice--4,
+.dessert__choice--4 {
+  animation-delay: 4s;
+  animation-duration: 800ms;
+}
+.starter__choice--5,
+.main__choice--5,
+.dessert__choice--5 {
+  animation-delay: 5s;
+  animation-duration: 800ms;
+}
+.starter__choice--6,
+.main__choice--6,
+.dessert__choice--6 {
+  animation-delay: 6s;
+  animation-duration: 800ms;
+}
+.starter__choice--7,
+.main__choice--7,
+.dessert__choice--7 {
+  animation-delay: 7s;
+  animation-duration: 800ms;
+}
+.starter__choice--8,
+.main__choice--8,
+.dessert__choice--8 {
+  animation-delay: 8s;
+  animation-duration: 800ms;
 }
 .starter__choice:hover .starter__choice_check, .starter__choice:hover .main__choice_check, .starter__choice:hover .dessert__choice_check, .starter__choice:active .starter__choice_check, .starter__choice:active .main__choice_check, .starter__choice:active .dessert__choice_check,
 .main__choice:hover .starter__choice_check,
@@ -555,7 +586,8 @@ footer h4 {
 .dessert__choice:active .starter__choice_check,
 .dessert__choice:active .main__choice_check,
 .dessert__choice:active .dessert__choice_check {
-  animation: check-animation 3s both;
+  transform: translateX(0);
+  opacity: 1;
 }
 .starter__choice:hover .starter__choice_left, .starter__choice:hover .main__choice_left, .starter__choice:hover .dessert__choice_left, .starter__choice:active .starter__choice_left, .starter__choice:active .main__choice_left, .starter__choice:active .dessert__choice_left,
 .main__choice:hover .starter__choice_left,
@@ -585,7 +617,7 @@ footer h4 {
 .dessert__choice:active .starter__choice_price,
 .dessert__choice:active .main__choice_price,
 .dessert__choice:active .dessert__choice_price {
-  transform: translateX(0);
+  transform: translateX(-45%);
 }
 .starter__choice:hover .starter__choice_check i, .starter__choice:hover .main__choice_check i, .starter__choice:hover .dessert__choice_check i, .starter__choice:active .starter__choice_check i, .starter__choice:active .main__choice_check i, .starter__choice:active .dessert__choice_check i,
 .main__choice:hover .starter__choice_check i,
@@ -600,7 +632,7 @@ footer h4 {
 .dessert__choice:active .starter__choice_check i,
 .dessert__choice:active .main__choice_check i,
 .dessert__choice:active .dessert__choice_check i {
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
 }
 .starter__choice_left,
 .main__choice_left,
@@ -609,8 +641,7 @@ footer h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  transition: flex 4s;
-  border: 2px solid blue;
+  transition: flex 1s;
 }
 .starter__choice_right,
 .main__choice_right,
@@ -621,14 +652,14 @@ footer h4 {
   align-items: flex-end;
   flex: 1;
   padding-left: 5%;
+  margin-left: 2%;
   transform: translateX(0);
-  transition: transform 1s;
-  border: 2px solid green;
+  transition: transform 800ms 100ms ease-in-out;
 }
 .starter__choice_name,
 .main__choice_name,
 .dessert__choice_name {
-  margin: 2vh 0 0 4vw;
+  margin: 15px 0 0 4%;
   padding-left: 0;
   min-height: 25px;
   color: #110000;
@@ -645,8 +676,7 @@ footer h4 {
 .dessert__choice_quote {
   display: inline;
   min-height: 25px;
-  margin: 0;
-  margin-left: 4vw;
+  margin: 0 0 15px 4%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -655,14 +685,12 @@ footer h4 {
 .starter__choice_price,
 .main__choice_price,
 .dessert__choice_price {
-  margin-bottom: 1.4vh;
-  margin-right: 4vw;
+  margin-bottom: 15px;
   font-size: 0.95rem;
   font-weight: 600;
   background-color: #fefeff;
-  transform: translateX(0);
-  transition: transform 1s;
-  border: 1px solid red;
+  transform: translateX(-30%);
+  transition: transform 600ms;
 }
 .starter__choice_check,
 .main__choice_check,
@@ -670,14 +698,16 @@ footer h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
-  width: 50px;
+  height: 70px;
+  width: 100%;
   padding-right: 0;
   background-color: #99E2D0;
   color: #fefeff;
   border-top-right-radius: 20px;
-  border-bottom-right-radius: 18px;
-  opacity: 1;
+  border-bottom-right-radius: 20px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 2s, opacity 1s;
 }
 .starter__choice_check i,
 .main__choice_check i,
@@ -685,32 +715,21 @@ footer h4 {
   font-size: x-large;
   font-weight: 900;
   transform: rotate(0deg);
-  transition: transform 300ms ease-in-out 500ms;
+  transition: transform 500ms ease-in-out 400ms;
 }
 
 @keyframes btn-apparition {
   0% {
     opacity: 0;
   }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes check-animation {
-  0% {
-    transform: translateX(10%);
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.5;
-  }
   25% {
-    opacity: 1;
+    opacity: 0.3;
+  }
+  50% {
+    overflow-anchor: 0.8;
   }
   100% {
-    transform: translateX(0);
     opacity: 1;
-    width: 100%;
   }
 }
 .command__btn {
