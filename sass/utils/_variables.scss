@@ -19,8 +19,10 @@ $darkgrey_color: #eaeaea;
 $lightgrey_color: #f6f6f6;
 
 // vars used for shadows ($shadow_grey & $shadow_size_btn are default for @mixin btn-shadow)
+// find shadows fo violet buttons in @mixin violet-button-shadow
 $shadow_grey: #aca9a9;
-$shadow_size_btn: 0px 3px 6px;
+$dark_shadow_grey: #9b9999;
+ $shadow_size_btn: 0px 3px 6px;
 $shadow-size_btn_greyBG: 0px 4px 8px 3px;
 
 // $var used to increment condition for menu apparition's animation
@@ -37,7 +39,6 @@ $num_choices:1,
 11,
 12,
 13;
-
 
 
 

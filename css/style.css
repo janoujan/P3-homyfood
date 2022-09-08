@@ -272,9 +272,12 @@ footer h4 {
   border-radius: 30px;
   color: #fefeff;
   border: none;
-  background: #9356DC;
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: #aca9a9 0px 3px 6px;
+}
+.presentation__btn:hover, .presentation__btn:active {
+  box-shadow: inset 400px 0 0 0 rgba(255, 255, 255, 0.1);
+  filter: drop-shadow(0px 3px 4px rgb(83, 65, 83));
 }
 
 .instruction__btn {
@@ -572,6 +575,12 @@ footer h4 {
   animation-delay: 8s;
   animation-duration: 800ms;
 }
+.starter__choice--9,
+.main__choice--9,
+.dessert__choice--9 {
+  animation-delay: 9s;
+  animation-duration: 800ms;
+}
 .starter__choice:hover .starter__choice_check, .starter__choice:hover .main__choice_check, .starter__choice:hover .dessert__choice_check, .starter__choice:active .starter__choice_check, .starter__choice:active .main__choice_check, .starter__choice:active .dessert__choice_check,
 .main__choice:hover .starter__choice_check,
 .main__choice:hover .main__choice_check,
@@ -737,10 +746,13 @@ footer h4 {
   border-radius: 30px;
   color: #fefeff;
   border: none;
-  background: #9356DC;
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: #aca9a9 0px 4px 8px 3px;
   padding-inline: 12%;
+}
+.command__btn:hover {
+  box-shadow: inset 400px 0 0 0 rgba(255, 255, 255, 0.1);
+  filter: drop-shadow(0px 3px 4px rgb(83, 65, 83));
 }
 
 .header__arrow#accueil {

@@ -1,6 +1,11 @@
 .presentation__btn {
-   @include button-action-violet;
+   @include button-violet;
    @include shadows;
+
+   &:hover,
+   &:active {
+      @include button-violet-hover;
+   }
 }
 
 

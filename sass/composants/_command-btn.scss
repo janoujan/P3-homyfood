@@ -1,9 +1,12 @@
 .command__btn {
-    @include button-action-violet;
+    @include button-violet;
     @include shadows($shadow-size: 0px 4px 8px 3px);
     padding-inline: 12%;
-}
 
+    &:hover {
+        @include button-violet-hover;
+    }
+}
 
 
 

@@ -13,7 +13,8 @@
     animation-name: btn-apparition;
     animation-fill-mode: both;
 
-    @for $i from 1 to 9 {
+    // this condition applies iteration with delay and duration to animation-name: btn-apparition 
+    @for $i from 1 to 10 {
         &--#{$i} {
             animation-delay: 1s*$i;
             animation-duration: 800ms;
@@ -143,7 +144,6 @@
         opacity: 1;
     }
 }
-
 
 
 
