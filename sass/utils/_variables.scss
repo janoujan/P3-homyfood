@@ -1,39 +1,42 @@
 $primary_color: #9356DC;
-$invert_primary_color: invert($primary_color);
 $secondary_color: #FF79DA;
-$invert_secondary_color: invert($secondary_color);
 $tertary_color: #99E2D0;
+
+// a dark green used to fill insert color in cards
+$invert_primary_color: invert($primary_color);
+
+$invert_secondary_color: invert($secondary_color);
+
+// a black color with a hint of red to warm-up and fit with primary color
 $black_color: #110000;
+
+// vars used for BG 
+// not too white for screen consumption & my poor eyes
 $white_color: #fefeff;
+
+$black_background: #353535;
 $darkgrey_color: #eaeaea;
 $lightgrey_color: #f6f6f6;
+
+// vars used for shadows ($shadow_grey & $shadow_size_btn are default for @mixin btn-shadow)
 $shadow_grey: #aca9a9;
 $shadow_size_btn: 0px 3px 6px;
 $shadow-size_btn_greyBG: 0px 4px 8px 3px;
-$black_background: #353535;
 
 // $var used to increment condition for menu apparition's animation
-$num_choices:1,2,3,4,5,6,7,8,9;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$num_choices:1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13;
 
 
 

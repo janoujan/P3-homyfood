@@ -9,7 +9,7 @@
     overflow: hidden;
     @include border-bottom-radius;
     @include border-top-radius;
-    @include btn-shadow (lighten($color:$shadow_grey, $amount:20%), $shadow-size: $shadow-size_btn_greyBG);
+    @include shadows (lighten($color:$shadow_grey, $amount:20%), $shadow-size: $shadow-size_btn_greyBG);
     animation-name: btn-apparition;
     animation-fill-mode: both;
 
@@ -26,7 +26,7 @@
         & .starter__choice_check,
         & .main__choice_check,
         & .dessert__choice_check {
-            transform: translateX(0);
+            transform: translateX(1%);
             opacity: 1;
         }
 
@@ -136,14 +136,13 @@
     }
 
     50% {
-        overflow-anchor: 0.8;
+        opacity: 0.8;
     }
 
     100% {
         opacity: 1;
     }
 }
-
 
 
 

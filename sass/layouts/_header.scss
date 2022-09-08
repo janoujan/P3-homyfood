@@ -17,14 +17,18 @@
         padding-bottom: 25px;
         margin-right: 3rem;
 
+
         i {
             font-size: x-large;
             color: $black_color;
+            
+            &:hover,
+            &:active {
+                color: $primary_color;
+                font-size: xx-large;
+            }
         }
 
-        &:hover {
-            @include hover-style;
-        }
     }
 
     &__title {

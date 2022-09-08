@@ -1,4 +1,5 @@
-@mixin btn-shadow ($color: $shadow_grey, $shadow-size: $shadow_size_btn) {
+
+@mixin shadows ($color: $shadow_grey, $shadow-size: $shadow_size_btn) {
     box-shadow: $color $shadow-size;
 }
 
@@ -39,12 +40,6 @@
     top: -175px;
     padding: 2%;
     visibility: hidden;
-}
-
-@mixin hover-style {
-    transition: transform 400ms, color 500ms;
-    transform: scale(1.05);
-    color: $primary_color;
 }
 
 @mixin decoration-menu {

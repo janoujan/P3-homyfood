@@ -33,7 +33,7 @@
         @include border-bottom-radius;
         background-color: $lightgrey_color;
         border: none;
-        @include btn-shadow($color: lighten($color:$shadow_grey, $amount:25%), $shadow-size: 0px 4px 8px 1px);
+        @include shadows($color: lighten($color:$shadow_grey, $amount:25%), $shadow-size: 0px 4px 8px 1px);
         
         &:hover {
             background-color: darken($color: $lightgrey_color, $amount: 3%);

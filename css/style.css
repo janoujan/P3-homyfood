@@ -77,10 +77,9 @@ button {
   font-size: x-large;
   color: #110000;
 }
-.header__arrow:hover {
-  transition: transform 400ms, color 500ms;
-  transform: scale(1.05);
+.header__arrow i:hover, .header__arrow i:active {
   color: #9356DC;
+  font-size: xx-large;
 }
 .header__title {
   display: flex;
@@ -586,7 +585,7 @@ footer h4 {
 .dessert__choice:active .starter__choice_check,
 .dessert__choice:active .main__choice_check,
 .dessert__choice:active .dessert__choice_check {
-  transform: translateX(0);
+  transform: translateX(1%);
   opacity: 1;
 }
 .starter__choice:hover .starter__choice_left, .starter__choice:hover .main__choice_left, .starter__choice:hover .dessert__choice_left, .starter__choice:active .starter__choice_left, .starter__choice:active .main__choice_left, .starter__choice:active .dessert__choice_left,
@@ -726,7 +725,7 @@ footer h4 {
     opacity: 0.3;
   }
   50% {
-    overflow-anchor: 0.8;
+    opacity: 0.8;
   }
   100% {
     opacity: 1;

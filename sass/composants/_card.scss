@@ -9,7 +9,7 @@
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 20px;
     background-color: $white_color;
-    @include btn-shadow($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
+    @include shadows($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
     @include border-top-radius;
 
     &__photo {
