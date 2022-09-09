@@ -4,7 +4,6 @@
   width: 100%;
   height: 100%;
   z-index: 102;
-  animation: 2500ms ease-out 0ms 1 normal none running appear, 4s ease-in 1 normal forwards running disappear;
 }
 .loader__logo {
   display: flex;
@@ -17,17 +16,16 @@
   z-index: 101;
   border: 10px solid hsl(317deg, 100%, 74%);
   box-shadow: 0 0 0 10px hsl(317deg, 100%, 80%) inset, 0 0 0 15px hsl(317deg, 100%, 85%) inset, 0 0 0 20px hsl(317deg, 100%, 90%) inset, 0 0 0 25px hsl(317deg, 100%, 95%) inset;
+  animation: 2s ease-out forwards running appear, disappear 2s 2s ease-in forwards;
 }
 .loader__logo_o {
   transform: translateY(400%);
   animation: rebound 2500ms forwards;
-  fill: red;
 }
 .loader__logo_my {
   transform-origin: center;
   transform: rotate(2turn);
   transition: transform 2s;
-  fill: green;
 }
 
 .loader__logo_o {
@@ -36,12 +34,13 @@
 
 @keyframes appear {
   0% {
-    backdrop-filter: blur(18px);
-    transform: rotate3d(1, 1, 1, 0turn);
+    backdrop-filter: blur(0px);
+    transform: rotate3d(1, 1, 1, 0);
     opacity: 0;
   }
   10% {
     opacity: 1;
+    backdrop-filter: blur(2px);
   }
   100% {
     transform: rotate3d(1, 1, 1, 1turn);
@@ -52,25 +51,29 @@
 @keyframes disappear {
   0% {
     opacity: 1;
-    backdrop-filter: blur(18px);
-    transform: scale(1);
+    transform: scale(100%);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.42, 0, 1, 0);
   }
   75% {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(10%);
+    transform: scale(75%);
   }
   100% {
     opacity: 0;
-    transform: scale(0);
-    transform: translateY(-80%);
     backdrop-filter: blur(0);
+    transform: scale(0%);
+    transform: translateY(-100%);
   }
 }
 @keyframes rebound {
   0% {
     transform: translateY(-200%);
     animation-timing-function: cubic-bezier(0.42, 0, 1, 0);
-    backdrop-filter: blur(18px);
   }
   25% {
     transform: translateY(10%);
@@ -91,7 +94,6 @@
   }
   100% {
     transform: translateY(0);
-    backdrop-filter: blur(18px);
   }
 }
 html {
