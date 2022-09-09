@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   z-index: 102;
+  animation: 2s ease-out forwards running appear, disappear 2s 2s ease-in forwards running;
 }
 .loader__logo {
   display: flex;
@@ -17,7 +18,6 @@
   z-index: 101;
   border: 10px solid hsl(317deg, 100%, 74%);
   box-shadow: 0 0 0 10px hsl(317deg, 100%, 80%) inset, 0 0 0 15px hsl(317deg, 100%, 85%) inset, 0 0 0 20px hsl(317deg, 100%, 90%) inset, 0 0 0 25px hsl(317deg, 100%, 95%) inset;
-  animation: 2s ease-out forwards running appear, disappear 2s 2s ease-in forwards;
 }
 .loader__logo_o {
   transform: translateY(400%);
@@ -64,10 +64,12 @@
     transform: translateY(10%);
     transform: scale(75%);
   }
-  100% {
+  99% {
     opacity: 0;
     backdrop-filter: blur(0);
     transform: scale(0%);
+  }
+  100% {
     transform: translateY(-100%);
   }
 }
@@ -172,6 +174,11 @@ button {
   padding-bottom: 25px;
   margin-right: 3rem;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .header__arrow {
+    margin-right: 0;
+  }
+}
 .header__arrow i {
   font-size: x-large;
   color: #110000;
@@ -252,14 +259,11 @@ button {
 
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   .card__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     align-items: center;
-    flex-wrap: wrap;
-    row-gap: 3%;
-    column-gap: 3%;
-    flex-basis: 250px;
+    justify-content: center;
+    justify-items: center;
   }
 }
 
@@ -348,6 +352,15 @@ footer h4 {
   padding-left: 1.3rem;
   background-color: #f6f6f6;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter,
+.main,
+.dessert {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .starter__choice_title,
 .main__choice_title,
 .dessert__choice_title {
@@ -359,6 +372,13 @@ footer h4 {
   background-repeat: no-repeat;
   background-size: 2.4rem 4px;
   background-position: 0 bottom;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter__choice_title,
+.main__choice_title,
+.dessert__choice_title {
+    font-size: xx-large;
+  }
 }
 
 .command {
@@ -528,6 +548,7 @@ footer h4 {
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   .card {
     width: 380px;
+    flex: 0 1 450px;
   }
 }
 .card__photo {
@@ -598,7 +619,6 @@ footer h4 {
   color: transparent;
   background-color: #fefeff;
   border: none;
-  cursor: pointer;
 }
 .card__btn_heart {
   display: flex;
@@ -609,6 +629,7 @@ footer h4 {
 }
 .card__btn_heart:hover, .card__btn_heart:active {
   animation: heart-filling both 1s;
+  cursor: pointer;
 }
 
 @keyframes heart-filling {
@@ -647,8 +668,9 @@ footer h4 {
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   .footer__link {
-    margin-left: 0%;
+    margin-left: 25%;
     justify-content: center;
+    margin-bottom: 4%;
   }
 }
 .footer__link a {
@@ -781,6 +803,14 @@ footer h4 {
   animation-delay: 9s;
   animation-duration: 800ms;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter__choice,
+.main__choice,
+.dessert__choice {
+    width: 70%;
+    height: 100px;
+  }
+}
 .starter__choice:hover .starter__choice_check, .starter__choice:hover .main__choice_check, .starter__choice:hover .dessert__choice_check, .starter__choice:active .starter__choice_check, .starter__choice:active .main__choice_check, .starter__choice:active .dessert__choice_check,
 .main__choice:hover .starter__choice_check,
 .main__choice:hover .main__choice_check,
@@ -879,6 +909,15 @@ footer h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter__choice_name,
+.main__choice_name,
+.dessert__choice_name {
+    font-size: x-large;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+  }
+}
 .starter__choice_quote,
 .main__choice_quote,
 .dessert__choice_quote {
@@ -890,6 +929,14 @@ footer h4 {
   text-overflow: ellipsis;
   opacity: 0.6;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter__choice_quote,
+.main__choice_quote,
+.dessert__choice_quote {
+    font-size: larger;
+    padding-top: 15%;
+  }
+}
 .starter__choice_price,
 .main__choice_price,
 .dessert__choice_price {
@@ -899,6 +946,13 @@ footer h4 {
   background-color: #fefeff;
   transform: translateX(-30%);
   transition: transform 600ms;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter__choice_price,
+.main__choice_price,
+.dessert__choice_price {
+    font-size: large;
+  }
 }
 .starter__choice_check,
 .main__choice_check,
@@ -916,6 +970,13 @@ footer h4 {
   opacity: 0;
   transform: translateX(100%);
   transition: transform 2s, opacity 1s;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter__choice_check,
+.main__choice_check,
+.dessert__choice_check {
+    height: 100px;
+  }
 }
 .starter__choice_check i,
 .main__choice_check i,

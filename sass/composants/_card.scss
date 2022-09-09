@@ -11,8 +11,10 @@
     background-color: $white_color;
     @include shadows($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
     @include border-top-radius;
+
     @include tablet {
         width: 380px;
+        flex: 0 1 450px
     }
 
     &__photo {
@@ -64,7 +66,6 @@
             font-size: large;
             opacity: 0.8;
         }
-
     }
 
     &__btn {
@@ -77,7 +78,6 @@
         color: transparent;
         background-color: $white_color;
         border: none;
-        cursor: pointer;
 
         &_heart {
             display: flex;
@@ -89,6 +89,7 @@
             &:hover,
             &:active {
                 animation: heart-filling both 1s;
+                cursor: pointer;
             }
         }
     }
@@ -105,7 +106,3 @@
         stroke-opacity: 0;
     }
 }
-
-
-
-

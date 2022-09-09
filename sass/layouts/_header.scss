@@ -17,6 +17,10 @@
         padding-bottom: 25px;
         margin-right: 3rem;
 
+        @include tablet {
+            margin-right: 0;
+        }
+
         i {
             font-size: x-large;
             color: $black_color;
@@ -37,9 +41,8 @@
         margin-right: 3.2rem;
         margin-bottom: 5px;
         letter-spacing: 0.01rem;
-     }
+    }
 }
-
 
 
 

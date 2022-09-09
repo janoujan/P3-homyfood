@@ -24,8 +24,9 @@
         margin-left: -2.4rem;
 
         @include tablet {
-            margin-left: 0%;
+            margin-left: 25%;
             justify-content: center;
+            margin-bottom: 4%;
         }
 
         & a {

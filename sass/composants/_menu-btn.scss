@@ -21,6 +21,12 @@
         }
     }
 
+    @include tablet {
+        width: 70%;
+        height: 100px;
+
+    }
+
     &:hover,
     &:active {
 
@@ -82,6 +88,12 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+
+        @include tablet {
+            font-size: x-large;
+            margin-top: 5%;
+            margin-bottom: 2.5%;
+        }
     }
 
     &_quote {
@@ -92,8 +104,13 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         opacity: 0.6;
-    }
 
+        @include tablet {
+            font-size: larger;
+            padding-top: 15%;
+        }
+    }
+    
     &_price {
         margin-bottom: 15px;
         font-size: 0.95rem;
@@ -101,8 +118,12 @@
         background-color: $white_color;
         transform: translateX(-30%);
         transition: transform 600ms;
+        
+        @include tablet {
+            font-size: large;
+        }
     }
-
+    
     &_check {
         display: flex;
         justify-content: center;
@@ -117,6 +138,11 @@
         opacity: 0;
         transform: translateX(100%);
         transition: transform 2s, opacity 1s;
+
+        @include tablet {
+            height: 100px;
+
+        }
 
         & i {
             font-size: x-large;
@@ -144,6 +170,7 @@
         opacity: 1;
     }
 }
+
 
 
 

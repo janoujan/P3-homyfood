@@ -24,14 +24,17 @@
 
 .card__container {
     @include tablet {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // row-gap: 3%;
+        // column-gap: 3%;
+        // flex-basis: 700px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
         align-items: center;
-        flex-wrap: wrap;
-        row-gap: 3%;
-        column-gap: 3%;
-        flex-basis: 250px;
+        justify-content: center;
+        justify-items: center;
     }
 }
 
