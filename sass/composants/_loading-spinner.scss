@@ -6,25 +6,26 @@
         height: 100%;
         z-index: 102;
     }
-
+    
     &__logo {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-content: center;
+        top: 100%;
         opacity: 1;
         fill-opacity: 1;
         stroke-width: 1px;
         stroke: $tertary_color;
         z-index: 101;
-
+        
         // boxing effect
         border: 10px solid hsl(317, 100%, 74%);
         box-shadow:
-            0 0 0 10px hsl(317, 100%, 80%) inset,
-            0 0 0 15px hsl(317, 100%, 85%) inset,
-            0 0 0 20px hsl(317, 100%, 90%) inset,
-            0 0 0 25px hsl(317, 100%, 95%) inset;
-
+        0 0 0 10px hsl(317, 100%, 80%) inset,
+        0 0 0 15px hsl(317, 100%, 85%) inset,
+        0 0 0 20px hsl(317, 100%, 90%) inset,
+        0 0 0 25px hsl(317, 100%, 95%) inset;
+        
         animation: 2s ease-out forwards running appear, disappear 2s 2s ease-in forwards;
 
         &_o {
@@ -35,7 +36,7 @@
         &_my {
             transform-origin: center;
             transform: rotate(2turn);
-            transition: transform 2s;
+            transition: transform 2500ms;
         }
     }
 }
@@ -121,7 +122,3 @@
         transform: translateY(0);
     }
 }
-
-
-
-

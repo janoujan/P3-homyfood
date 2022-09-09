@@ -8,7 +8,8 @@
 .loader__logo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  top: 100%;
   opacity: 1;
   fill-opacity: 1;
   stroke-width: 1px;
@@ -25,7 +26,7 @@
 .loader__logo_my {
   transform-origin: center;
   transform: rotate(2turn);
-  transition: transform 2s;
+  transition: transform 2500ms;
 }
 
 .loader__logo_o {
@@ -858,7 +859,7 @@ footer h4 {
 }
 
 .header__arrow#accueil {
-  visibility: hidden;
+  display: none;
 }
 
 h3.starter__choice_title {
