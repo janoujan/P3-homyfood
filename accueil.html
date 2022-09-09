@@ -48,11 +48,14 @@
     ></script>
   </head>
   <body>
-    <div class="loader__container">
-      <svg class="loader__logo" viewBox="0 0 200 40" >
-        <use xlink:href="images\ohmyfood@2x.svg#logo" viewbox="0 0 400 400" ></use>
+    <!-- <div class="loader__container">
+      <svg class="loader__logo" viewBox="0 0 200 40">
+        <use
+          xlink:href="images\ohmyfood@2x.svg#logo"
+          viewbox="0 0 400 400"
+        ></use>
       </svg>
-    </div>
+    </div> -->
     <header>
       <div class="header">
         <a class="header__arrow" href="./accueil.html" id="accueil"
@@ -86,30 +89,33 @@
       </section>
       <section id="instructions">
         <h2>Fonctionnement</h2>
-        <div class="instruction__btn">
-          <p class="instruction__btn_number">1</p>
-          <button class="instruction__btn_btn" type="button" disabled>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            Choisissez un restaurant
-          </button>
-        </div>
-        <div class="instruction__btn">
-          <p class="instruction__btn_number">2</p>
-          <button class="instruction__btn_btn" type="button" disabled>
-            <i class="fa-solid fa-list"></i>
-            Composez votre menu
-          </button>
-        </div>
-        <div class="instruction__btn">
-          <p class="instruction__btn_number">3</p>
-          <button class="instruction__btn_btn" type="button" disabled>
-            <i class="fa-solid fa-store"></i>
-            Dégustez au restaurant
-          </button>
+        <div class="instruction">
+          <div class="instruction__btn">
+            <p class="instruction__btn_number">1</p>
+            <button class="instruction__btn_btn" type="button" disabled>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              Choisissez un restaurant
+            </button>
+          </div>
+          <div class="instruction__btn">
+            <p class="instruction__btn_number">2</p>
+            <button class="instruction__btn_btn" type="button" disabled>
+              <i class="fa-solid fa-list"></i>
+              Composez votre menu
+            </button>
+          </div>
+          <div class="instruction__btn">
+            <p class="instruction__btn_number">3</p>
+            <button class="instruction__btn_btn" type="button" disabled>
+              <i class="fa-solid fa-store"></i>
+              Dégustez au restaurant
+            </button>
+          </div>
         </div>
       </section>
       <section id="restaurants">
         <h2>Restaurants</h2>
+        <div class="card__container">
         <div class="carte">
           <a href="./palette_du_gout.html">
             <figure class="card">
@@ -193,6 +199,7 @@
               <use xlink:href="images\heart.svg#heart"></use>
             </svg>
           </button>
+        </div>
         </div>
       </section>
     </main>

@@ -6,13 +6,13 @@
     align-items: center;
     height: 50px;
     background: linear-gradient(to bottom, #CFCFCF 0%, $darkgrey_color 15%, $darkgrey_color 100%);
-
+   
     & i {
         position: relative;
-        margin-left: 3rem;
-        margin-right: 1rem;
+        margin-left: 0;
+        padding-right: 28px;
         font-size: medium;
-        
+   
     }
 
     &_input {
@@ -21,10 +21,12 @@
         color: $black_color;
         font-size: 100%;
         border: none;
-        
-
+       
         &::placeholder {
             opacity: 1;
         }
     }
 }
+
+
+

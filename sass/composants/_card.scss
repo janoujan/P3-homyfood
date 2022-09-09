@@ -11,6 +11,9 @@
     background-color: $white_color;
     @include shadows($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
     @include border-top-radius;
+    @include tablet {
+        width: 380px;
+    }
 
     &__photo {
         @include photo-card-size;

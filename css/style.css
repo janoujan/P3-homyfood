@@ -199,6 +199,11 @@ button {
   padding-bottom: 60px;
   background-color: #f6f6f6;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  #presentation {
+    padding-bottom: 5%;
+  }
+}
 
 #instructions {
   display: flex;
@@ -206,6 +211,20 @@ button {
   margin-left: 5%;
   padding-top: 20px;
   padding-bottom: 50px;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  #instructions {
+    padding-top: 1%;
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  #instructions h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 #restaurants {
@@ -217,9 +236,31 @@ button {
   padding-left: 5%;
   padding-bottom: 8%;
 }
-#restaurants h2 {
-  font-weight: 900;
-  letter-spacing: -0.03rem;
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  #restaurants {
+    padding-top: 1%;
+    padding-left: 0;
+  }
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  #restaurants h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+  }
+}
+
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 3%;
+    column-gap: 3%;
+    flex-basis: 250px;
+  }
 }
 
 footer {
@@ -231,9 +272,21 @@ footer {
   padding-bottom: 10%;
   background-color: #353535;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  footer {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
 footer h4 {
   margin-bottom: 4%;
   font-size: 1.1rem;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  footer h4 {
+    font-size: x-large;
+  }
 }
 
 .venue {
@@ -328,8 +381,8 @@ footer h4 {
 }
 .presentation__position i {
   position: relative;
-  margin-left: 3rem;
-  margin-right: 1rem;
+  margin-left: 0;
+  padding-right: 28px;
   font-size: medium;
 }
 .presentation__position_input {
@@ -357,6 +410,12 @@ footer h4 {
   margin-top: 10%;
   margin-bottom: 5%;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  #presentation__description h2 {
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+}
 #presentation__description p {
   width: 100%;
   margin: auto;
@@ -380,12 +439,30 @@ footer h4 {
   cursor: pointer;
 }
 
-.instruction__btn {
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .instruction {
+    flex-direction: row;
+  }
+}
+.instruction__btn {
+  width: 95%;
   display: flex;
   justify-content: left;
   margin-bottom: 8%;
   margin-left: -1.4rem;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .instruction__btn {
+    max-width: 32%;
+    display: flex;
+    margin-bottom: 5%;
+  }
 }
 .instruction__btn_number {
   display: flex;
@@ -410,16 +487,16 @@ footer h4 {
   align-items: center;
   width: 92%;
   height: 70px;
+  background-color: #f6f6f6;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #f6f6f6;
   border: none;
   box-shadow: #ebeaea 0px 4px 8px 1px;
 }
 .instruction__btn_btn:hover {
-  background-color: #eeeeee;
+  background-color: #f2eafb;
 }
 .instruction__btn_btn:hover i {
   color: #9356DC;
@@ -447,6 +524,11 @@ footer h4 {
   box-shadow: #dedddd 0px 6px 12px 2px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .card {
+    width: 380px;
+  }
 }
 .card__photo {
   width: 100%;
@@ -545,9 +627,15 @@ footer h4 {
   justify-content: left;
   align-items: flex-start;
   width: 80%;
-  margin: 0%;
+  margin: 0;
   list-style-type: none;
   list-style-position: outside;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .footer__list {
+    justify-content: center;
+    width: 30%;
+  }
 }
 .footer__link {
   display: flex;
@@ -556,6 +644,12 @@ footer h4 {
   align-self: flex-start;
   width: 100%;
   margin-left: -2.4rem;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .footer__link {
+    margin-left: 0%;
+    justify-content: center;
+  }
 }
 .footer__link a {
   display: flex;
@@ -566,6 +660,12 @@ footer h4 {
   font-size: large;
   font-weight: 500;
   margin-bottom: 0.2rem;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .footer__link a {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 }
 .footer__link a:visited {
   color: #99E2D0;

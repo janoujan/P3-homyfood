@@ -7,11 +7,22 @@ footer {
     padding-bottom: 10%;
     background-color: $black_background;
 
+    @include tablet {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
     & h4 {
         margin-bottom: 4%;
         font-size: 1.1rem;
+
+        @include tablet {
+            font-size: x-large;
+        }
     }
 }
+
 
 
 

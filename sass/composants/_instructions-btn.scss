@@ -1,57 +1,77 @@
-.instruction__btn {
-    width: 100%;
+.instruction {
     display: flex;
-    justify-content: left;
-    margin-bottom: 8%;
-    margin-left: -1.4rem;
-    
-    &_number {
-        display: flex;
-        justify-content: center;
-        max-height: fit-content;
-        width: 23px;
-        margin: auto;
-        margin-right: -0.7rem;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        background-color: $primary_color;
-        border-radius: 100%;
-        color: $white_color;
-        font-weight: 600;
-        font-size: 0.9rem;
-        opacity: 1;
-        z-index: 100;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+
+    @include tablet {
+        flex-direction: row;
     }
 
-    &_btn {
+    &__btn {
+        width: 95%;
         display: flex;
         justify-content: left;
-        align-items: center;
-        width: 92%;
-        height: 70px;
-        @include border-top-radius;
-        @include border-bottom-radius;
-        background-color: $lightgrey_color;
-        border: none;
-        @include shadows($color: lighten($color:$shadow_grey, $amount:25%), $shadow-size: 0px 4px 8px 1px);
-        
-        &:hover {
-            background-color: darken($color: $lightgrey_color, $amount: 3%);
+        margin-bottom: 8%;
+        margin-left: -1.4rem;
 
-            & i {
-                color: $primary_color;
-                opacity: 1;
+        @include tablet {
+            max-width: 32%;
+            display: flex;
+            margin-bottom: 5%;
+        }
+
+        &_number {
+            display: flex;
+            justify-content: center;
+            max-height: fit-content;
+            width: 23px;
+            margin: auto;
+            margin-right: -0.7rem;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: $primary_color;
+            border-radius: 100%;
+            color: $white_color;
+            font-weight: 600;
+            font-size: 0.9rem;
+            opacity: 1;
+            z-index: 100;
+        }
+
+        &_btn {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 92%;
+            height: 70px;
+            background-color: $lightgrey_color;
+            @include border-top-radius;
+            @include border-bottom-radius;
+            border: none;
+            @include shadows($color: lighten($color:$shadow_grey, $amount:25%), $shadow-size: 0px 4px 8px 1px);
+
+            &:hover {
+                background-color: lighten($color: $primary_color, $amount: 35%);
+
+                & i {
+                    color: $primary_color;
+                    opacity: 1;
+                }
             }
         }
-    }
 
-    & i {
-        color: $black_color;
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: larger;
-        opacity: 0.4;
+        & i {
+            color: $black_color;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: larger;
+            opacity: 0.4;
+        }
     }
 }
+
+
+
 
 

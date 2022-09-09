@@ -1,5 +1,4 @@
 #presentation {
-    
     width: 100%;
     height: fit-content;
     display: flex;
@@ -8,7 +7,16 @@
     align-items: center;
     padding-bottom: 60px;
     background-color: $lightgrey_color;
+
+    @include tablet {
+        padding-bottom: 5%;
+    }
 }
+
+
+
+
+
 
 
 
