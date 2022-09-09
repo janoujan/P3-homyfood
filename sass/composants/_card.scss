@@ -86,6 +86,11 @@
             fill: url(images/heart.svg#gradient_heart);
             fill-opacity: 0;
 
+            @include tablet {
+                height: 28px;
+                width: 28px;
+            }
+
             &:hover,
             &:active {
                 animation: heart-filling both 1s;
@@ -106,3 +111,7 @@
         stroke-opacity: 0;
     }
 }
+
+
+
+

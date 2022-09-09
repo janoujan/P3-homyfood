@@ -91,8 +91,8 @@
 
         @include tablet {
             font-size: x-large;
-            margin-top: 5%;
-            margin-bottom: 2.5%;
+            margin-top: 25px;
+            margin-bottom: 5px;
         }
     }
 
@@ -107,10 +107,10 @@
 
         @include tablet {
             font-size: larger;
-            padding-top: 15%;
+            margin-bottom: 0px;
         }
     }
-    
+
     &_price {
         margin-bottom: 15px;
         font-size: 0.95rem;
@@ -118,12 +118,13 @@
         background-color: $white_color;
         transform: translateX(-30%);
         transition: transform 600ms;
-        
+
         @include tablet {
             font-size: large;
+            margin-bottom: 15px;
         }
     }
-    
+
     &_check {
         display: flex;
         justify-content: center;
@@ -170,6 +171,7 @@
         opacity: 1;
     }
 }
+
 
 
 

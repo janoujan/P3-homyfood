@@ -4,6 +4,11 @@
     width: 100%;
     height: 310px;
 
+    @include tablet {
+        margin-top: 30px;
+        height: 380px;
+    }
+
     &__photo {
         display: flex;
         height: 150%;
@@ -27,32 +32,44 @@
             @include typo-shrikhand;
             font-size: 1.7rem;
             font-weight: 400;
+
+            @include tablet {
+                font-size: 2.5rem;
+            }
         }
-        
+
         &_button {
             display: inline-flex;
             position: relative;
             left: 30px;
-            width: 32px;
+            width: fit-content;
             background-color: $lightgrey_color;
             border: none;
             cursor: pointer;
-        }
 
-        &_heart {
-            fill: url(#gradient_heart);
-            fill-opacity: 0;
-            stroke: $black_color;
-            transition: fill-opacity 400ms, stroke-opacity 250ms;
-
-            &:hover,
-            &:active {
-                fill-opacity: 1;
-                stroke-opacity: 0;
+            @include tablet {
+                left: 7%;
             }
         }
     }
 }
+
+.heart {
+    display: flex;
+    fill: url(#gradient_heart);
+    fill-opacity: 0;
+    stroke: $black_color;
+    transition: fill-opacity 400ms, stroke-opacity 250ms;
+    height: 32px;
+
+    &:hover,
+    &:active {
+        fill-opacity: 1;
+        stroke-opacity: 0;
+    }
+}
+
+
 
 
 

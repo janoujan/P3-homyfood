@@ -11,7 +11,7 @@
 
         @include tablet {
             justify-content: center;
-            width: 30%;
+            width: 40%;
         }
     }
 
@@ -42,6 +42,7 @@
             @include tablet {
                 flex-wrap: nowrap;
                 width: 100%;
+                font-size: x-large;
             }
 
             &:visited {
@@ -93,3 +94,7 @@
         opacity: 1;
     }
 }
+
+
+
+
