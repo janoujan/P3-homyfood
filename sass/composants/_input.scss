@@ -6,27 +6,39 @@
     align-items: center;
     height: 50px;
     background: linear-gradient(to bottom, #CFCFCF 0%, $darkgrey_color 15%, $darkgrey_color 100%);
-   
+
     & i {
         position: relative;
         margin-left: 0;
         padding-right: 28px;
         font-size: medium;
-   
+
+        @include tablet {
+            font-size: large;
+        }
+
+        @include desktop {
+            font-size: larger;
+        }
     }
 
     &_input {
         width: min-content;
         background-color: $darkgrey_color;
         color: $black_color;
-        font-size: 100%;
+        font-size: 1rem;
         border: none;
-       
+
+        @include tablet {
+            font-size: large;
+        }
+
+        @include desktop {
+            font-size: larger;
+        }
+
         &::placeholder {
             opacity: 1;
         }
     }
 }
-
-
-

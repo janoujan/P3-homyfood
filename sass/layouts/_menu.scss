@@ -14,6 +14,12 @@
         align-items: center;
     }
 
+    @include desktop {
+        width: 100%;
+        justify-content: first baseline;
+        align-items: center;
+    }
+
     &__choice_title {
         padding-bottom: 0.5rem;
         font-weight: 100;
@@ -23,6 +29,38 @@
 
         @include tablet {
             font-size: x-large;
+        }
+
+        @include desktop {
+            font-size: xx-large;
+        }
+    }
+}
+
+@include desktop {
+    #courses {
+        display: flex;
+        justify-content: space-around;
+        // height: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: $tertary_color;
+        
+        & .starter {
+            width: 31.6%;
+            padding-top: 0;
+            padding-bottom: 80px;
+        }
+
+        & .main {
+            width: 31.6%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        & .dessert {
+            width: 31.6%;
+            padding-top: 80px;
         }
     }
 }

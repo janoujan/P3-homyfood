@@ -17,6 +17,16 @@
         flex: 0 1 450px
     }
 
+    @include desktop {
+        min-width: 300px;
+        transform: scale(100%);
+        transition: transform 400ms;
+
+        &:hover {
+            transform: scale(110%);
+        }
+    }
+
     &__photo {
         @include photo-card-size;
         @include border-top-radius;
@@ -111,6 +121,15 @@
         stroke-opacity: 0;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 

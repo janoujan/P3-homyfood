@@ -150,11 +150,6 @@ button {
   font-size: large;
 }
 
-#handshake {
-  font-size: x-small;
-  align-self: center;
-}
-
 .header {
   display: flex;
   justify-content: center;
@@ -163,6 +158,18 @@ button {
   height: 70px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .header {
+    height: 120px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .header {
+    height: 120px;
+    padding-bottom: 20px;
+  }
 }
 .header__arrow {
   visibility: visible;
@@ -181,6 +188,11 @@ button {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .header__arrow {
+    width: fit-content;
+  }
+}
 .header__arrow i {
   font-size: x-large;
   color: #110000;
@@ -191,9 +203,24 @@ button {
     font-weight: 800;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .header__arrow i {
+    font-size: 2.8rem;
+  }
+}
 .header__arrow i:hover, .header__arrow i:active {
   color: #9356DC;
   font-size: xx-large;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .header__arrow i:hover, .header__arrow i:active {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .header__arrow i:hover, .header__arrow i:active {
+    font-size: 3rem;
+  }
 }
 .header__title {
   display: flex;
@@ -207,6 +234,12 @@ button {
   .header__title {
     font-size: 3.5rem;
     height: 50px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .header__title {
+    font-size: 4.5rem;
+    height: 90px;
   }
 }
 
@@ -240,11 +273,26 @@ button {
     margin: 0;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  #instructions {
+    padding-top: 1%;
+    margin: 0;
+  }
+}
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   #instructions h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  #instructions h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
   }
 }
 
@@ -263,11 +311,27 @@ button {
     padding-left: 0;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  #restaurants {
+    padding-top: 1%;
+    padding-left: 0;
+    padding-bottom: 2%;
+  }
+}
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   #restaurants h2 {
     display: flex;
     justify-content: center;
     padding-bottom: 2%;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  #restaurants h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    font-size: 2rem;
   }
 }
 
@@ -278,6 +342,12 @@ button {
     align-items: center;
     justify-content: center;
     justify-items: center;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .card__container {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -297,6 +367,13 @@ footer {
     padding-left: 0;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  footer {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
 footer h4 {
   margin-bottom: 4%;
   font-size: 1.1rem;
@@ -305,6 +382,12 @@ footer h4 {
   footer h4 {
     justify-content: center;
     font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  footer h4 {
+    justify-content: center;
+    font-size: 3.1rem;
   }
 }
 
@@ -318,6 +401,11 @@ footer h4 {
   .venue {
     margin-top: 30px;
     height: 380px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .venue {
+    height: 460px;
   }
 }
 .venue__photo {
@@ -348,19 +436,19 @@ footer h4 {
     font-size: 2.5rem;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .venue__title_name {
+    font-size: 3.1rem;
+  }
+}
 .venue__title_button {
   display: inline-flex;
   position: relative;
-  left: 30px;
+  left: 7%;
   width: fit-content;
   background-color: #f6f6f6;
   border: none;
   cursor: pointer;
-}
-@media (min-width: 768.6px) and (max-width: 1279.5px) {
-  .venue__title_button {
-    left: 7%;
-  }
 }
 
 .heart {
@@ -369,7 +457,17 @@ footer h4 {
   fill-opacity: 0;
   stroke: #110000;
   transition: fill-opacity 400ms, stroke-opacity 250ms;
-  height: 32px;
+  height: 28px;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .heart {
+    height: 32px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .heart {
+    height: 34px;
+  }
 }
 .heart:hover, .heart:active {
   fill-opacity: 1;
@@ -395,6 +493,15 @@ footer h4 {
     align-items: center;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .starter,
+.main,
+.dessert {
+    width: 100%;
+    justify-content: first baseline;
+    align-items: center;
+  }
+}
 .starter__choice_title,
 .main__choice_title,
 .dessert__choice_title {
@@ -414,7 +521,37 @@ footer h4 {
     font-size: x-large;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .starter__choice_title,
+.main__choice_title,
+.dessert__choice_title {
+    font-size: xx-large;
+  }
+}
 
+@media screen and (min-width: 1279.6px) {
+  #courses {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    background-color: #99E2D0;
+  }
+  #courses .starter {
+    width: 31.6%;
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+  #courses .main {
+    width: 31.6%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #courses .dessert {
+    width: 31.6%;
+    padding-top: 80px;
+  }
+}
 .command {
   display: flex;
   justify-content: center;
@@ -439,12 +576,32 @@ footer h4 {
   padding-right: 28px;
   font-size: medium;
 }
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .presentation__position i {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .presentation__position i {
+    font-size: larger;
+  }
+}
 .presentation__position_input {
   width: min-content;
   background-color: #eaeaea;
   color: #110000;
-  font-size: 100%;
+  font-size: 1rem;
   border: none;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .presentation__position_input {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .presentation__position_input {
+    font-size: larger;
+  }
 }
 .presentation__position_input::placeholder {
   opacity: 1;
@@ -470,12 +627,24 @@ footer h4 {
     margin-bottom: 1%;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  #presentation__description h2 {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: xx-large;
+  }
+}
 #presentation__description p {
   width: 100%;
   margin: auto;
   text-justify: distribute;
   opacity: 0.5;
   font-size: larger;
+}
+@media screen and (min-width: 1279.6px) {
+  #presentation__description p {
+    font-size: x-large;
+  }
 }
 
 .presentation__btn {
@@ -486,6 +655,18 @@ footer h4 {
   border: none;
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: #aca9a9 0px 3px 6px;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .presentation__btn {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .presentation__btn {
+    height: 70px;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
 }
 .presentation__btn:hover, .presentation__btn:active {
   box-shadow: inset 400px 0 0 0 rgba(255, 255, 255, 0.1);
@@ -504,6 +685,11 @@ footer h4 {
     flex-direction: row;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .instruction {
+    flex-direction: row;
+  }
+}
 .instruction__btn {
   width: 95%;
   display: flex;
@@ -514,8 +700,13 @@ footer h4 {
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   .instruction__btn {
     max-width: 32%;
-    display: flex;
     margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .instruction__btn {
+    max-width: 32%;
+    margin-bottom: 0;
   }
 }
 .instruction__btn_number {
@@ -535,6 +726,14 @@ footer h4 {
   opacity: 1;
   z-index: 100;
 }
+@media screen and (min-width: 1279.6px) {
+  .instruction__btn_number {
+    font-size: 1.1rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-inline: 5px;
+  }
+}
 .instruction__btn_btn {
   display: flex;
   justify-content: left;
@@ -549,6 +748,12 @@ footer h4 {
   border: none;
   box-shadow: #ebeaea 0px 4px 8px 1px;
 }
+@media screen and (min-width: 1279.6px) {
+  .instruction__btn_btn {
+    height: 90px;
+    font-size: 1.4rem;
+  }
+}
 .instruction__btn_btn:hover {
   background-color: #f2eafb;
 }
@@ -562,6 +767,11 @@ footer h4 {
   margin-right: 10%;
   font-size: larger;
   opacity: 0.4;
+}
+@media screen and (min-width: 1279.6px) {
+  .instruction__btn i {
+    font-size: x-large;
+  }
 }
 
 .card {
@@ -583,6 +793,16 @@ footer h4 {
   .card {
     width: 380px;
     flex: 0 1 450px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .card {
+    min-width: 300px;
+    transform: scale(100%);
+    transition: transform 400ms;
+  }
+  .card:hover {
+    transform: scale(110%);
   }
 }
 .card__photo {
@@ -698,6 +918,12 @@ footer h4 {
     width: 40%;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .footer__list {
+    justify-content: center;
+    width: 40%;
+  }
+}
 .footer__link {
   display: flex;
   flex-direction: row;
@@ -707,6 +933,13 @@ footer h4 {
   margin-left: -2.4rem;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .footer__link {
+    margin-left: 25%;
+    justify-content: center;
+    margin-bottom: 4%;
+  }
+}
+@media screen and (min-width: 1279.6px) {
   .footer__link {
     margin-left: 25%;
     justify-content: center;
@@ -726,7 +959,11 @@ footer h4 {
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   .footer__link a {
     flex-wrap: nowrap;
-    width: 100%;
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .footer__link a {
     font-size: x-large;
   }
 }
@@ -750,6 +987,31 @@ footer h4 {
   transform: rotate(0turn);
   transition: transform 400ms;
   transition-delay: 600ms;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .footer__link i {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .footer__link i {
+    font-size: 2rem;
+  }
+}
+
+#handshake {
+  font-size: x-small;
+  align-self: center;
+}
+@media (min-width: 768.6px) and (max-width: 1279.5px) {
+  #handshake {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  #handshake {
+    font-size: large;
+  }
 }
 
 @keyframes hover_footer {
@@ -849,6 +1111,13 @@ footer h4 {
 .main__choice,
 .dessert__choice {
     width: 70%;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .starter__choice,
+.main__choice,
+.dessert__choice {
     height: 100px;
   }
 }
@@ -959,6 +1228,15 @@ footer h4 {
     margin-bottom: 5px;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .starter__choice_name,
+.main__choice_name,
+.dessert__choice_name {
+    font-size: x-large;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+}
 .starter__choice_quote,
 .main__choice_quote,
 .dessert__choice_quote {
@@ -971,6 +1249,14 @@ footer h4 {
   opacity: 0.6;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter__choice_quote,
+.main__choice_quote,
+.dessert__choice_quote {
+    font-size: larger;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
   .starter__choice_quote,
 .main__choice_quote,
 .dessert__choice_quote {
@@ -996,6 +1282,14 @@ footer h4 {
     margin-bottom: 15px;
   }
 }
+@media screen and (min-width: 1279.6px) {
+  .starter__choice_price,
+.main__choice_price,
+.dessert__choice_price {
+    font-size: large;
+    margin-bottom: 20px;
+  }
+}
 .starter__choice_check,
 .main__choice_check,
 .dessert__choice_check {
@@ -1014,6 +1308,13 @@ footer h4 {
   transition: transform 2s, opacity 1s;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
+  .starter__choice_check,
+.main__choice_check,
+.dessert__choice_check {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1279.6px) {
   .starter__choice_check,
 .main__choice_check,
 .dessert__choice_check {
@@ -1060,6 +1361,13 @@ footer h4 {
     height: 80px;
     font-size: x-large;
     font-weight: 700;
+  }
+}
+@media screen and (min-width: 1279.6px) {
+  .command__btn {
+    height: 90px;
+    font-size: xx-large;
+    font-weight: 800;
   }
 }
 .command__btn:hover {

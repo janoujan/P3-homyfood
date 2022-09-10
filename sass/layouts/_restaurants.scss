@@ -12,12 +12,26 @@
         padding-left: 0;
     }
 
+    @include desktop {
+        padding-top: 1%;
+        padding-left: 0;
+        padding-bottom: 2%;
+    }
+
     & h2 {
 
         @include tablet {
             display: flex;
             justify-content: center;
             padding-bottom: 2%;
+            font-size: 1.8rem;
+        }
+
+        @include desktop {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2%;
+            font-size: 2rem;
         }
     }
 }
@@ -30,10 +44,15 @@
         justify-content: center;
         justify-items: center;
     }
+
+    @include desktop {
+        // display: grid;
+        // grid-template-columns: repeat(2, 50%);
+        // align-items: center;
+        // justify-content: center;
+    display: flex;
+    justify-content: space-around;   
+    }
 }
-
-
-
-
 
 

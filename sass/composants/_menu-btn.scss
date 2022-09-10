@@ -24,7 +24,10 @@
     @include tablet {
         width: 70%;
         height: 100px;
+    }
 
+    @include desktop {
+        height: 100px;
     }
 
     &:hover,
@@ -94,6 +97,12 @@
             margin-top: 25px;
             margin-bottom: 5px;
         }
+
+        @include desktop {
+            font-size: x-large;
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
     }
 
     &_quote {
@@ -106,6 +115,11 @@
         opacity: 0.6;
 
         @include tablet {
+            font-size: larger;
+            margin-bottom: 0px;
+        }
+
+        @include desktop {
             font-size: larger;
             margin-bottom: 0px;
         }
@@ -122,6 +136,12 @@
         @include tablet {
             font-size: large;
             margin-bottom: 15px;
+        }
+
+
+        @include desktop {
+            font-size: large;
+            margin-bottom: 20px;
         }
     }
 
@@ -142,7 +162,10 @@
 
         @include tablet {
             height: 100px;
+        }
 
+        @include desktop {
+            height: 100px;
         }
 
         & i {
@@ -171,8 +194,6 @@
         opacity: 1;
     }
 }
-
-
 
 
 

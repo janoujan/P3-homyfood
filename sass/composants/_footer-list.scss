@@ -13,6 +13,11 @@
             justify-content: center;
             width: 40%;
         }
+
+        @include desktop {
+            justify-content: center;
+            width: 40%;
+        }
     }
 
     &__link {
@@ -24,6 +29,12 @@
         margin-left: -2.4rem;
 
         @include tablet {
+            margin-left: 25%;
+            justify-content: center;
+            margin-bottom: 4%;
+        }
+
+        @include desktop {
             margin-left: 25%;
             justify-content: center;
             margin-bottom: 4%;
@@ -41,7 +52,10 @@
 
             @include tablet {
                 flex-wrap: nowrap;
-                width: 100%;
+                font-size: x-large;
+            }
+
+            @include desktop {
                 font-size: x-large;
             }
 
@@ -70,7 +84,28 @@
             transform: rotate(0turn);
             transition: transform 400ms;
             transition-delay: 600ms;
+
+            @include tablet {
+                font-size: larger;
+            }
+
+            @include desktop {
+                font-size: 2rem;
+            }
         }
+    }
+}
+
+#handshake {
+    font-size: x-small;
+    align-self: center;
+
+    @include tablet {
+        font-size: large;
+    }
+
+    @include desktop {
+        font-size: large;
     }
 }
 
@@ -94,6 +129,8 @@
         opacity: 1;
     }
 }
+
+
 
 
 

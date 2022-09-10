@@ -76,10 +76,13 @@
 }
 
 @mixin desktop {
-    @media (min-width: map-get($breakpoints, tablet_min)) and (max-width: map-get($breakpoints, tablet_max)) {
-        @content;
-    }
+   @media screen and (min-width: map-get($breakpoints, desktop)) {
+       @content;
+   }    
 }
+
+
+
 
 
 

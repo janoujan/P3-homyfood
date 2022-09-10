@@ -9,6 +9,10 @@
         height: 380px;
     }
 
+    @include desktop {
+        height: 460px;
+    }
+
     &__photo {
         display: flex;
         height: 150%;
@@ -36,20 +40,20 @@
             @include tablet {
                 font-size: 2.5rem;
             }
+
+            @include desktop {
+                font-size: 3.1rem;
+            }
         }
 
         &_button {
             display: inline-flex;
             position: relative;
-            left: 30px;
+            left: 7%;
             width: fit-content;
             background-color: $lightgrey_color;
             border: none;
             cursor: pointer;
-
-            @include tablet {
-                left: 7%;
-            }
         }
     }
 }
@@ -60,7 +64,15 @@
     fill-opacity: 0;
     stroke: $black_color;
     transition: fill-opacity 400ms, stroke-opacity 250ms;
-    height: 32px;
+    height: 28px;
+
+    @include tablet {
+        height: 32px;
+    }
+
+    @include desktop {
+        height: 34px;
+    }
 
     &:hover,
     &:active {
@@ -68,8 +80,5 @@
         stroke-opacity: 0;
     }
 }
-
-
-
 
 

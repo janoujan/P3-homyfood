@@ -7,6 +7,16 @@
     margin-bottom: 0px;
     padding-bottom: 0px;
 
+    @include tablet {
+        height: 120px;
+        padding-bottom: 10px;
+    }
+
+    @include desktop {
+        height: 120px;
+        padding-bottom: 20px;
+    }
+
     &__arrow {
         visibility: visible;
         display: flex;
@@ -23,6 +33,10 @@
             padding-bottom: 0;
         }
 
+        @include desktop {
+            width: fit-content;
+        }
+
         i {
             font-size: x-large;
             color: $black_color;
@@ -32,13 +46,25 @@
                 font-weight: 800;
             }
 
+            @include desktop {
+                font-size: 2.8rem;
+
+            }
+
             &:hover,
             &:active {
                 color: $primary_color;
                 font-size: xx-large;
+
+                @include tablet {
+                    font-size: 2.3rem;
+                }
+
+                @include desktop {
+                    font-size: 3rem;
+                }
             }
         }
-
     }
 
     &__title {
@@ -52,6 +78,11 @@
         @include tablet {
             font-size: 3.5rem;
             height: 50px;
+        }
+
+        @include desktop {
+            font-size: 4.5rem;
+            height: 90px;
         }
     }
 }

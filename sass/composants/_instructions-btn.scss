@@ -8,6 +8,10 @@
         flex-direction: row;
     }
 
+    @include desktop {
+        flex-direction: row;
+    }
+
     &__btn {
         width: 95%;
         display: flex;
@@ -17,8 +21,12 @@
 
         @include tablet {
             max-width: 32%;
-            display: flex;
             margin-bottom: 5%;
+        }
+
+        @include desktop {
+            max-width: 32%;
+            margin-bottom: 0;
         }
 
         &_number {
@@ -37,6 +45,13 @@
             font-size: 0.9rem;
             opacity: 1;
             z-index: 100;
+
+            @include desktop {
+                font-size: 1.1rem;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-inline: 5px;
+            }
         }
 
         &_btn {
@@ -50,6 +65,11 @@
             @include border-bottom-radius;
             border: none;
             @include shadows($color: lighten($color:$shadow_grey, $amount:25%), $shadow-size: 0px 4px 8px 1px);
+
+            @include desktop {
+                height: 90px;
+                font-size: 1.4rem;
+            }
 
             &:hover {
                 background-color: lighten($color: $primary_color, $amount: 35%);
@@ -67,9 +87,14 @@
             margin-right: 10%;
             font-size: larger;
             opacity: 0.4;
+
+            @include desktop {
+                font-size: x-large;
+            }
         }
     }
 }
+
 
 
 
