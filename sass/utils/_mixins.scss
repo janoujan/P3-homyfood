@@ -63,11 +63,11 @@
     cursor: pointer;
 }
 
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)) {
-        @content;
-    }
-}
+// @mixin mobile-only {
+//     @media screen and (max-width: map-get($breakpoints, mobile)) {
+//         @content;
+//     }
+// }
 
 @mixin tablet {
     @media (min-width: map-get($breakpoints, tablet_min)) and (max-width: map-get($breakpoints, tablet_max)) {
@@ -76,9 +76,9 @@
 }
 
 @mixin desktop {
-   @media screen and (min-width: map-get($breakpoints, desktop)) {
-       @content;
-   }    
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
 }
 
 
