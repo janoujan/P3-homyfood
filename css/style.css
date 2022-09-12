@@ -891,7 +891,7 @@ footer h4 {
   }
 }
 .card__btn_heart:hover, .card__btn_heart:active {
-  animation: heart-filling both 1s;
+  animation: heart-filling both 1500ms;
   cursor: pointer;
 }
 
@@ -1035,7 +1035,7 @@ footer h4 {
   }
 }
 .venue__photo {
-  background: no-repeat center/115% url(/images/palette.png);
+  background: no-repeat center/115% url(images/palette.png);
 }
 
 .starter__choice,
@@ -1155,7 +1155,7 @@ footer h4 {
 .dessert__choice:active .starter__choice_check,
 .dessert__choice:active .main__choice_check,
 .dessert__choice:active .dessert__choice_check {
-  transform: translateX(1%);
+  transform: translateX(0%);
   opacity: 1;
 }
 .starter__choice:hover .starter__choice_left, .starter__choice:hover .main__choice_left, .starter__choice:hover .dessert__choice_left, .starter__choice:active .starter__choice_left, .starter__choice:active .main__choice_left, .starter__choice:active .dessert__choice_left,

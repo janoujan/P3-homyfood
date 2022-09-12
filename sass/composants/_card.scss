@@ -102,7 +102,7 @@
 
             &:hover,
             &:active {
-                animation: heart-filling both 1s;
+                animation: heart-filling both 1500ms;
                 cursor: pointer;
             }
         }
@@ -120,3 +120,8 @@
         stroke-opacity: 0;
     }
 }
+
+
+
+
+
