@@ -541,19 +541,8 @@ footer h4 {
     margin: 0;
     background-color: #99E2D0;
   }
-  #courses .starter {
-    width: 31.6%;
-    padding-top: 0;
-    padding-bottom: 80px;
-  }
-  #courses .main {
-    width: 31.6%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  #courses .dessert {
-    width: 31.6%;
-    padding-top: 80px;
+  #courses .starter, #courses .main, #courses .dessert {
+    width: 33%;
   }
 }
 .command {
@@ -1035,7 +1024,7 @@ footer h4 {
   }
 }
 .venue__photo {
-  background: no-repeat center/115% url(images/palette.png);
+  background: no-repeao center/115% url(https://github.com/janoujan/homyfood/blob/main/images/palette.png);
 }
 
 .starter__choice,
