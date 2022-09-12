@@ -16,7 +16,7 @@
 
     @include desktop {
         width: 100%;
-        justify-content: first baseline;
+        justify-content: center;
         align-items: center;
     }
 
@@ -41,7 +41,6 @@
     #courses {
         display: flex;
         justify-content: space-around;
-        // height: 100%;
         padding: 0;
         margin: 0;
         background-color: $tertary_color;

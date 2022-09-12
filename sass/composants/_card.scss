@@ -14,7 +14,6 @@
 
     @include tablet {
         width: 380px;
-        flex: 0 1 450px
     }
 
     @include desktop {
@@ -121,16 +120,3 @@
         stroke-opacity: 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -9,14 +9,15 @@
         list-style-type: none;
         list-style-position: outside;
 
+
         @include tablet {
             justify-content: center;
-            width: 40%;
+            width: fit-content;
         }
 
         @include desktop {
             justify-content: center;
-            width: 40%;
+            width: fit-content;
         }
     }
 
@@ -29,15 +30,15 @@
         margin-left: -2.4rem;
 
         @include tablet {
-            margin-left: 25%;
             justify-content: center;
             margin-bottom: 4%;
+            white-space: nowrap;
         }
 
         @include desktop {
-            margin-left: 25%;
             justify-content: center;
             margin-bottom: 4%;
+            white-space: nowrap;
         }
 
         & a {
@@ -129,8 +130,6 @@
         opacity: 1;
     }
 }
-
-
 
 
 
