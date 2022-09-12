@@ -16,29 +16,36 @@
         }
 
         @include desktop {
-            justify-content: center;
-            width: fit-content;
-        }
+             width: 90%;
+             display: inline-flex;
+             justify-content: space-around;
+             flex-direction: row;
+             border: 2px solid red;
+             columns: 2;
+            }
     }
-
+    
     &__link {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: left;
         align-self: flex-start;
         width: 100%;
         margin-left: -2.4rem;
-
+        
         @include tablet {
             justify-content: center;
             margin-bottom: 4%;
             white-space: nowrap;
         }
-
+        
         @include desktop {
-            justify-content: center;
+            display: i;
             margin-bottom: 4%;
             white-space: nowrap;
+            width: fit-content;
+            columns: 2;
+            border: 2px solid green;
         }
 
         & a {
@@ -58,6 +65,7 @@
 
             @include desktop {
                 font-size: x-large;
+                width: 100%;
             }
 
             &:visited {
