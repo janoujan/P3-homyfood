@@ -23,7 +23,11 @@
 
         &:hover {
             transform: scale(110%);
+            }
+        &:hover .card__btn_heart {
+            border: 2px solid red;
         }
+        
     }
 
     &__photo {
@@ -94,6 +98,7 @@
             stroke: $black_color;
             fill: url(images/heart.svg#gradient_heart);
             fill-opacity: 0;
+            transform: scale(100%);
 
             @include tablet {
                 height: 28px;
@@ -102,8 +107,13 @@
 
             &:hover,
             &:active {
-                animation: heart-filling both 1500ms;
+                animation: heart-filling both 1800ms;
                 cursor: pointer;
+
+                // @include desktop {
+                //     animation: heart-filling both 1800ms, heart-growth 800ms both;
+                // }
+
             }
         }
     }
@@ -115,13 +125,22 @@
         stroke-opacity: 1;
     }
 
+    50% {
+        stroke-opacity: 0;
+    }
+
     100% {
         fill-opacity: 1;
         stroke-opacity: 0;
     }
 }
 
+@keyframes heart-growth {
+    from {
+        transform: scale(100%);
+    }
 
-
-
-
+    to {
+        transform: scale(200%);
+    }
+}
