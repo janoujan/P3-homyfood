@@ -183,13 +183,6 @@ button {
   margin: 0;
   margin-right: 3rem;
 }
-@media (min-width: 768.6px) and (max-width: 1279.5px) {
-  .header__arrow {
-    margin: 0;
-    margin-top: 15px;
-    padding-bottom: 0;
-  }
-}
 @media screen and (min-width: 1279.6px) {
   .header__arrow {
     width: fit-content;
