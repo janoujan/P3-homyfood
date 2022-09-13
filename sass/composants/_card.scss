@@ -17,23 +17,25 @@
     }
 
     @include desktop {
-        min-width: 300px;
+        // min-width: 320px;
+        width: 100%;
+        max-width: 450px;
         transform: scale(100%);
-        transition: transform 400ms;
+        transition: transform 1s;
 
         &:hover {
-            transform: scale(110%);
-            }
-        &:hover .card__btn_heart {
-            border: 2px solid red;
+            transform: scale(104%);
         }
-        
     }
 
     &__photo {
         @include photo-card-size;
         @include border-top-radius;
         object-fit: cover;
+
+        @include desktop {
+            object-fit: contain;
+        }
     }
 
     &__insert {
@@ -110,10 +112,9 @@
                 animation: heart-filling both 1800ms;
                 cursor: pointer;
 
-                // @include desktop {
-                //     animation: heart-filling both 1800ms, heart-growth 800ms both;
-                // }
-
+                @include desktop {
+                    animation: heart-filling both 1800ms, heart-growth 1500ms both;
+                }
             }
         }
     }
@@ -141,6 +142,13 @@
     }
 
     to {
-        transform: scale(200%);
+        transform: scale(120%);
     }
 }
+
+
+
+
+
+
+

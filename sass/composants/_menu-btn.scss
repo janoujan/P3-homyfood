@@ -12,10 +12,8 @@
     @include shadows (lighten($color:$shadow_grey, $amount:20%), $shadow-size: $shadow-size_btn_greyBG);
     animation-name: btn-apparition;
     animation-fill-mode: both;
-    
 
     // this condition applies iteration with delay and duration to animation-name: btn-apparition 
-    //  then if needed to increase time delay u got to increase selector numbers
     @for $i from 1 to 13 {
         &--#{$i} {
             animation-delay: 1s*$i;
