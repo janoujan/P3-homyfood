@@ -8,6 +8,7 @@
         margin: 0;
         list-style-type: none;
         list-style-position: outside;
+        border: 2px solid blue;
 
 
         @include tablet {
@@ -20,7 +21,6 @@
              display: inline-flex;
              justify-content: space-around;
              flex-direction: row;
-             border: 2px solid red;
              columns: 2;
             }
     }
@@ -45,7 +45,7 @@
             white-space: nowrap;
             width: fit-content;
             columns: 2;
-            border: 2px solid green;
+            // border: 2px solid green;
         }
 
         & a {
@@ -98,8 +98,9 @@
                 font-size: larger;
             }
 
-            @include desktop {
-                font-size: 2rem;
+            @include desktop { 
+                font-size: xx-small;
+                border: 2px solid red;
             }
         }
     }
@@ -115,6 +116,7 @@
 
     @include desktop {
         font-size: large;
+        border: 2px solid green;
     }
 }
 
