@@ -177,9 +177,10 @@ button {
   display: flex;
   justify-content: left;
   align-items: flex-end;
-  width: 10%;
+  width: fit-content;
   height: 100%;
   padding-bottom: 25px;
+  margin: 0;
   margin-right: 3rem;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
@@ -424,20 +425,21 @@ footer h4 {
   display: flex;
   flex-direction: row;
   height: 30%;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   padding-bottom: 5px;
   margin-top: -40px;
-  padding-left: 1.3rem;
+  margin-left: 0;
   background-color: #f6f6f6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
 }
 .venue__title_name {
-  margin-inline: 0;
+  margin: 0;
   font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.7rem;
   font-weight: 400;
+  margin-left: -10%;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   .venue__title_name {
@@ -468,25 +470,24 @@ footer h4 {
     left: 80px;
   }
 }
-
-.heart {
+.venue__title_heart {
   display: flex;
   fill: url(#gradient_heart);
   fill-opacity: 0;
   stroke: #110000;
-  height: 28px;
+  height: 24px;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
-  .heart {
+  .venue__title_heart {
     height: 32px;
   }
 }
 @media screen and (min-width: 1279.6px) {
-  .heart {
+  .venue__title_heart {
     height: 34px;
   }
 }
-.heart:hover, .heart:active {
+.venue__title_heart:hover, .venue__title_heart:active {
   animation: heart-filling both 1800ms;
   cursor: pointer;
 }

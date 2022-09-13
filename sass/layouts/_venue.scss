@@ -22,21 +22,21 @@
         display: flex;
         flex-direction: row;
         height: 30%;
-        justify-content: left;
+        justify-content: center;
         align-items: center;
         padding-bottom: 5px;
         margin-top: -40px;
-        padding-left: 1.3rem;
+        margin-left: 0;
         background-color: $lightgrey_color;
         border-top-right-radius: 40px;
         border-top-left-radius: 40px;
 
-
         &_name {
-            margin-inline: 0;
+            margin: 0;
             @include typo-shrikhand;
             font-size: 1.7rem;
             font-weight: 400;
+            margin-left: -10%;
 
             @include tablet {
                 font-size: 2.5rem;
@@ -64,28 +64,29 @@
                 left: 80px;
             }
         }
-    }
-}
 
-.heart {
-    display: flex;
-    fill: url(#gradient_heart);
-    fill-opacity: 0;
-    stroke: $black_color;
-    height: 28px;
+        &_heart {
+            display: flex;
+            fill: url(#gradient_heart);
+            fill-opacity: 0;
+            stroke: $black_color;
+            height: 24px;
+            
+            @include tablet {
+                height: 32px;
+            }
 
-    @include tablet {
-        height: 32px;
-    }
+            @include desktop {
+                height: 34px;
+            }
 
-    @include desktop {
-        height: 34px;
-    }
+            &:hover,
+            &:active {
+                animation: heart-filling both 1800ms;
+                cursor: pointer;
+            }
+        }
 
-    &:hover,
-    &:active {
-        animation: heart-filling both 1800ms;
-        cursor: pointer;
     }
 }
 
@@ -104,7 +105,6 @@
         stroke-opacity: 0;
     }
 }
-
 
 
 
