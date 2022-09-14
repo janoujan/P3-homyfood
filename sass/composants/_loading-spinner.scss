@@ -126,6 +126,137 @@
     }
 }
 
+// alternative loading spinner
+
+.loader2 {
+    &__container {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        z-index: 102;
+        animation: 3s 400ms both disappear;
+        backdrop-filter: blur(18px);
+    }
+
+    &__circle1 {
+        display: flex;
+        width: 29%;
+        fill: transparent;
+        stroke: $primary_color;
+        stroke-width: 10;
+        stroke-linecap: round;
+        transform-origin: 50% 50%;
+        stroke-dasharray: 283;
+        stroke-dashoffset: 280;
+        animation: 1.4s ease-in-out infinite both circle-animation;
+
+        & svg {
+            transform-origin: center;
+            animation: 2s linear 2 svg-animation infinite;
+        }
+    }
+
+    &__circle2 {
+        display: flex;
+        width: 29%;
+        fill: transparent;
+        stroke: $secondary_color;
+        stroke-width: 10;
+        stroke-linecap: round;
+        transform-origin: 50% 50%;
+        stroke-dasharray: 283;
+        stroke-dashoffset: 280;
+        animation: 1.4s 200ms ease-in-out 2 forwards circle-animation;
+
+        & svg {
+            transform-origin: center;
+            animation: 2s linear 2 svg-animation both;
+        }
+    }
+
+    &__circle3 {
+        display: flex;
+        width: 29%;
+        fill: transparent;
+        stroke: $primary_color;
+        stroke-width: 10;
+        stroke-linecap: round;
+        transform-origin: 50% 50%;
+        stroke-dasharray: 283;
+        stroke-dashoffset: 280;
+        animation: 1.4s 400ms ease-in-out 2 forwards circle-animation;
+
+        & svg {
+            transform-origin: center;
+            animation: 2s linear 2 svg-animation both;
+        }
+    }
+}
+
+//  primary animation
+
+@keyframes circle-animation {
+
+    0% {
+        stroke-dasharray: 280;
+    }
+
+    25% {
+        stroke-dashoffset: 280;
+        transform: rotate(0);
+    }
+
+    // Very long dash, slightly rotated for 25% of animation.
+    // This is the "head" of the stroke getting away from the tail.
+    50% {
+        stroke-dashoffset: 75;
+        transform: rotate(90deg);
+    }
+
+    75% {
+        stroke-dashoffset: 75;
+        transform: rotate(90deg);
+    }
+
+    // Back to short dash, rotated back to starting position with a loop.
+    // This is the "tail" of the stroke catching up to the head.
+    // The stroke moves backwards while at the same time the 
+    // entire circle is rotated forward to return to its 
+    // starting position.
+    100% {
+        stroke-dashoffset: 280;
+        transform: rotate(720deg);
+    }
+}
+
+// secondary animation
+@keyframes svg-animation {
+    0% {
+        transform: rotateZ(0deg);
+        transform: scaleX(100%);
+    }
+
+    100% {
+        transform: rotateZ(720deg);
+    }
+}
+
+@keyframes container disappear {
+
+    0% {
+        transform: scale(100%);
+    }
+
+    80% {
+        transform: scale(100%);
+    }
+
+    100% {
+        backdrop-filter: blur(10px);
+    }
+}
 
 
 

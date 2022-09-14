@@ -102,44 +102,101 @@
 .loader2__container {
   position: fixed;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   z-index: 102;
-  border: 2px solid green;
+  animation: 3s 400ms both disappear;
+  backdrop-filter: blur(18px);
 }
 .loader2__circle1 {
+  display: flex;
+  width: 29%;
   fill: transparent;
   stroke: #9356DC;
   stroke-width: 10;
   stroke-linecap: round;
+  transform-origin: 50% 50%;
   stroke-dasharray: 283;
   stroke-dashoffset: 280;
   animation: 1.4s ease-in-out infinite both circle-animation;
 }
 .loader2__circle1 svg {
-  transform-origin: right;
+  transform-origin: center;
+  animation: 2s linear 2 svg-animation infinite;
+}
+.loader2__circle2 {
+  display: flex;
+  width: 29%;
+  fill: transparent;
+  stroke: #FF79DA;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 280;
+  animation: 1.4s 200ms ease-in-out 2 forwards circle-animation;
+}
+.loader2__circle2 svg {
+  transform-origin: center;
+  animation: 2s linear 2 svg-animation both;
+}
+.loader2__circle3 {
+  display: flex;
+  width: 29%;
+  fill: transparent;
+  stroke: #9356DC;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 280;
+  animation: 1.4s 400ms ease-in-out 2 forwards circle-animation;
+}
+.loader2__circle3 svg {
+  transform-origin: center;
+  animation: 2s linear 2 svg-animation both;
 }
 
 @keyframes circle-animation {
-  0%, 25% {
+  0% {
+    stroke-dasharray: 280;
+  }
+  25% {
     stroke-dashoffset: 280;
     transform: rotate(0);
   }
-  50%, 75% {
+  50% {
     stroke-dashoffset: 75;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
+  }
+  75% {
+    stroke-dashoffset: 75;
+    transform: rotate(90deg);
   }
   100% {
     stroke-dashoffset: 280;
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
 }
 @keyframes svg-animation {
   0% {
     transform: rotateZ(0deg);
+    transform: scaleX(100%);
   }
   100% {
-    transform: rotateZ(360deg);
+    transform: rotateZ(720deg);
+  }
+}
+@keyframes container disappear {
+  0% {
+    transform: scale(100%);
+  }
+  80% {
+    transform: scale(100%);
+  }
+  100% {
+    backdrop-filter: blur(10px);
   }
 }
 html {
