@@ -120,6 +120,10 @@
                 animation: heart-filling both 1800ms;
                 cursor: pointer;
 
+                @include tablet {
+                    animation: heart-filling both 1800ms, heart-growth 1500ms both;
+                }
+
                 @include desktop {
                     animation: heart-filling both 1800ms, heart-growth 1500ms both;
                 }
