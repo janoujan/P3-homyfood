@@ -30,7 +30,7 @@
 
         &_o {
             transform: translateY(400%);
-            animation: rebound 2500ms forwards;
+            animation: rebound 2200ms 1400ms both;
         }
 
         &_my {
@@ -97,6 +97,14 @@
     0% {
         transform: translateY(-200%);
         animation-timing-function: cubic-bezier(.42, 0, 1, 0);
+    }
+
+    10% {
+        transform: translateY(-100%);
+    }
+
+    20% {
+        transform: translateY(0%);
     }
 
     25% {
