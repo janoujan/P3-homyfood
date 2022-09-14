@@ -4,7 +4,7 @@ ce site embarque Sass mais n'utilise aucun framework.
 le brief technique du projet et les maquettes donnés pour la réalisation du projet sont visibles dans le dossier "brief".
 ce site est codé en anglais.
 developpé en mobile-first.
-(visitez moi](https://janoujan.github.io/homyfood/accueil.html)
+[visitez moi](https://janoujan.github.io/homyfood/accueil.html)
 
 
 **
