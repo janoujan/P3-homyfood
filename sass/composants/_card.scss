@@ -14,6 +14,12 @@
 
     @include tablet {
         width: 380px;
+        transform: scale(100%);
+        transition: transform 600ms;
+
+        &:hover {
+            transform: scale(101%);
+        }
     }
 
     @include desktop {
@@ -26,9 +32,9 @@
         }
     }
 
-     @include ultraHD {
+    @include ultraHD {
         width: 600px;
-     }
+    }
 
     &__photo {
         @include photo-card-size;
@@ -147,8 +153,3 @@
         transform: scale(120%);
     }
 }
-
-
-
-
-
