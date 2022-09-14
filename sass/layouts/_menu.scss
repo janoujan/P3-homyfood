@@ -52,6 +52,10 @@
         & .main,
         & .dessert {
             width: 33%;
+
+            &__choice--invisible {
+                visibility: hidden;
+            }
         }
     }
 }

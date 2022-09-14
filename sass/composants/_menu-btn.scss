@@ -36,7 +36,7 @@
         & .starter__choice_check,
         & .main__choice_check,
         & .dessert__choice_check {
-            transform: translateX(0%);
+            transform: translateX(1%);
             opacity: 1;
         }
 
@@ -78,6 +78,7 @@
         margin-left: 2%;
         transform: translateX(0);
         transition: transform 800ms 100ms ease-in-out;
+        overflow: hidden;
     }
 
     &_name {
