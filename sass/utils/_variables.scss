@@ -22,7 +22,7 @@ $lightgrey_color: #f6f6f6;
 // find shadows fo violet buttons in @mixin violet-button-shadow
 $shadow_grey: #aca9a9;
 $dark_shadow_grey: #9b9999;
- $shadow_size_btn: 0px 3px 6px;
+$shadow_size_btn: 0px 3px 6px;
 $shadow-size_btn_greyBG: 0px 4px 8px 3px;
 
 // $var used to increment condition for menu apparition's animation
@@ -38,42 +38,19 @@ $num_choices:1,
 10,
 11,
 12,
-13,
-14,
-15,
-16;
+13;
 
 // media queries
-
-$breakpoints: (
-    mobile: 768.5px,
-    tablet_min: 768.6px,
+$breakpoints: (tablet_min: 768.6px,
     tablet_max: 1279.5px,
     desktop: 1279.6px,
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// map pour les photos des menus
+// $photo: (palette: /homyfood/images/palette.png,
+//     delice: /homyfood/images/delice.png,
+//     francaise: /homyfood/images/française.png,
+//     note: /homyfood/images/note.png, );
 
 
 
