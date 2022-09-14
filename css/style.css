@@ -191,31 +191,22 @@ button {
 .header__arrow i {
   font-size: x-large;
   color: #110000;
+  transform: scale(100%);
+  transition: transform 800ms;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   .header__arrow i {
     font-size: xx-large;
-    font-weight: 800;
   }
 }
 @media screen and (min-width: 1279.6px) {
   .header__arrow i {
-    font-size: 2.8rem;
+    font-size: xx-large;
   }
 }
 .header__arrow i:hover, .header__arrow i:active {
-  color: #9356DC;
-  font-size: xx-large;
-}
-@media (min-width: 768.6px) and (max-width: 1279.5px) {
-  .header__arrow i:hover, .header__arrow i:active {
-    font-size: 2.3rem;
-  }
-}
-@media screen and (min-width: 1279.6px) {
-  .header__arrow i:hover, .header__arrow i:active {
-    font-size: 3rem;
-  }
+  animation: arrow-filling 1s both;
+  transform: scale(110%);
 }
 .header__title {
   display: flex;
@@ -238,6 +229,18 @@ button {
   }
 }
 
+@keyframes arrow-filling {
+  0% {
+    color: #110000;
+  }
+  50% {
+    color: #110000;
+  }
+  100% {
+    opacity: 1;
+    color: #9356DC;
+  }
+}
 #presentation {
   width: 100%;
   height: fit-content;
@@ -414,7 +417,7 @@ footer h4 {
   display: inline-flex;
   width: 100%;
   height: 280px;
-  object-fit: cover;
+  object-fit: fill;
   overflow: hidden;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
@@ -831,13 +834,12 @@ footer h4 {
 }
 @media screen and (min-width: 1279.6px) {
   .card {
-    width: 100%;
-    max-width: 450px;
+    min-width: 330px;
     transform: scale(100%);
-    transition: transform 1s;
+    transition: transform 600ms;
   }
   .card:hover {
-    transform: scale(104%);
+    transform: scale(103%);
   }
 }
 .card__photo {
@@ -851,11 +853,6 @@ footer h4 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
-}
-@media screen and (min-width: 1279.6px) {
-  .card__photo {
-    object-fit: contain;
-  }
 }
 .card__insert {
   display: inline-flex;

@@ -27,7 +27,7 @@
         padding-bottom: 25px;
         margin: 0;
         margin-right: 3rem;
-        
+
         @include desktop {
             width: fit-content;
         }
@@ -35,29 +35,21 @@
         i {
             font-size: x-large;
             color: $black_color;
+            transform: scale(100%);
+            transition: transform 800ms;
 
             @include tablet {
                 font-size: xx-large;
-                font-weight: 800;
             }
 
             @include desktop {
-                font-size: 2.8rem;
-
+                font-size: xx-large;
             }
 
             &:hover,
             &:active {
-                color: $primary_color;
-                font-size: xx-large;
-
-                @include tablet {
-                    font-size: 2.3rem;
-                }
-
-                @include desktop {
-                    font-size: 3rem;
-                }
+                animation: arrow-filling 1s both;
+                transform: scale(110%);
             }
         }
     }
@@ -79,6 +71,21 @@
             font-size: 4.5rem;
             height: 90px;
         }
+    }
+}
+
+@keyframes arrow-filling {
+    0% {
+        color: $black_color;
+    }
+
+    50% {
+        color: $black_color;
+    }
+
+    100% {
+        opacity: 1;
+        color: $primary_color;
     }
 }
 
