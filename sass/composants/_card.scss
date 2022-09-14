@@ -26,6 +26,10 @@
         }
     }
 
+     @include ultraHD {
+        width: 600px;
+     }
+
     &__photo {
         @include photo-card-size;
         @include border-top-radius;
@@ -87,6 +91,10 @@
         color: transparent;
         background-color: $white_color;
         border: none;
+
+        @include ultraHD {
+            left: 90%;
+        }
 
         &_heart {
             display: flex;

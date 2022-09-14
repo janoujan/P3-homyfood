@@ -17,6 +17,10 @@
         padding-bottom: 20px;
     }
 
+    @include ultraHD {
+        background-color: $white_color;
+    }
+
     &__arrow {
         visibility: visible;
         display: flex;

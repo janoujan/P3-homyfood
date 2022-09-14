@@ -16,6 +16,10 @@
         margin: 0;
     }
 
+    @include ultraHD {
+        background-color: $white_color;
+    }
+
     & h2 {
         @include tablet {
             display: flex;
