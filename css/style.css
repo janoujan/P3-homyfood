@@ -834,7 +834,7 @@ footer h4 {
 }
 @media screen and (min-width: 1279.6px) {
   .card {
-    min-width: 330px;
+    min-width: 310px;
     transform: scale(100%);
     transition: transform 600ms;
   }
