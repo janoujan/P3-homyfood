@@ -720,8 +720,9 @@ footer h4 {
 }
 .presentation__position i {
   position: relative;
+  display: flex;
+  justify-content: center;
   margin-left: 0;
-  padding-right: 28px;
   font-size: medium;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
@@ -735,20 +736,25 @@ footer h4 {
   }
 }
 .presentation__position_input {
+  display: flex;
+  justify-content: center;
   width: min-content;
   background-color: #eaeaea;
   color: #110000;
   font-size: 1rem;
+  padding-left: 45px;
   border: none;
 }
 @media (min-width: 768.6px) and (max-width: 1279.5px) {
   .presentation__position_input {
     font-size: large;
+    padding-left: 60px;
   }
 }
 @media screen and (min-width: 1279.6px) {
   .presentation__position_input {
     font-size: larger;
+    padding-left: 80px;
   }
 }
 .presentation__position_input::placeholder {

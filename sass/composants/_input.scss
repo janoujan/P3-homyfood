@@ -9,8 +9,10 @@
 
     & i {
         position: relative;
+        display: flex;
+        justify-content: center;
         margin-left: 0;
-        padding-right: 28px;
+        // padding-right: 28px;
         font-size: medium;
 
         @include tablet {
@@ -23,18 +25,23 @@
     }
 
     &_input {
+        display: flex;
+        justify-content: center;
         width: min-content;
         background-color: $darkgrey_color;
         color: $black_color;
         font-size: 1rem;
+        padding-left: 45px;
         border: none;
-
+        
         @include tablet {
             font-size: large;
+            padding-left: 60px;
         }
 
         @include desktop {
             font-size: larger;
+            padding-left: 80px;
         }
 
         &::placeholder {
@@ -42,3 +49,9 @@
         }
     }
 }
+
+
+
+
+
+
