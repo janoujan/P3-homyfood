@@ -14,22 +14,10 @@
 
     @include tablet {
         width: 380px;
-        transform: scale(100%);
-        transition: transform 600ms;
-
-        &:hover {
-            transform: scale(102%);
-        }
     }
 
     @include desktop {
         min-width: 310px;
-        transform: scale(100%);
-        transition: transform 600ms;
-
-        &:hover {
-            transform: scale(103%);
-        }
     }
 
     @include ultraHD {
@@ -97,6 +85,8 @@
         color: transparent;
         background-color: $white_color;
         border: none;
+        transform: scale(100%);
+        transition: transform 400ms;
 
         @include ultraHD {
             left: 90%;
@@ -108,25 +98,107 @@
             stroke: $black_color;
             fill: url(images/heart.svg#gradient_heart);
             fill-opacity: 0;
-            transform: scale(100%);
 
             @include tablet {
                 height: 28px;
                 width: 28px;
             }
 
+            @include desktop {
+                height: 32px;
+                width: 32px;
+            }
+
             &:hover,
             &:active {
                 animation: heart-filling both 1800ms;
                 cursor: pointer;
+            }
+        }
+    }
+}
 
-                @include tablet {
-                    animation: heart-filling both 1800ms, heart-growth 1500ms both;
-                }
+@include tablet {
+    .border {
+        display: inline-block;
+        transform: translateZ(0);
 
-                @include desktop {
-                    animation: heart-filling both 1800ms, heart-growth 1500ms both;
-                }
+
+        &:hover {
+            animation-name: border-float1, border-float2;
+            animation-duration: 200ms, 400ms;
+            animation-delay: 0s, 250ms;
+            animation-timing-function: ease-out, ease-in-out;
+            animation-iteration-count: infinite, 1;
+            animation-fill-mode: forwards;
+            animation-direction: normal, alternate;
+
+            &::before {
+                content: "";
+                background: linear-gradient(45deg,
+                        $primary_color,
+                        $secondary_color,
+                        $tertary_color,
+                        $primary_color,
+                        $secondary_color,
+                        $tertary_color,
+                        $primary_color,
+                        $tertary_color,
+                        $primary_color);
+                position: absolute;
+                top: -4px;
+                left: -3px;
+                background-size: 150%;
+                z-index: -1;
+                filter: blur(3px);
+                width: calc(100% + 6px);
+                height: calc(90% + 4px);
+                animation: glowing 20s linear infinite;
+                transition: opactiy 0.3s ease-in-out;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .border {
+        display: inline-block;
+        transform: translateZ(0);
+
+
+        &:hover {
+            animation-name: border-float1, border-float2;
+            animation-duration: 200ms, 400ms;
+            animation-delay: 0s, 250ms;
+            animation-timing-function: ease-out, ease-in-out;
+            animation-iteration-count: infinite, 1;
+            animation-fill-mode: forwards;
+            animation-direction: normal, alternate;
+
+            &::before {
+                content: "";
+                background: linear-gradient(45deg,
+                        $primary_color,
+                        $secondary_color,
+                        $tertary_color,
+                        $primary_color,
+                        $secondary_color,
+                        $tertary_color,
+                        $primary_color,
+                        $tertary_color,
+                        $primary_color);
+                position: absolute;
+                top: -4px;
+                left: -3px;
+                background-size: 150%;
+                z-index: -1;
+                filter: blur(3px);
+                width: calc(100% + 6px);
+                height: calc(90% + 4px);
+                animation: glowing 20s linear infinite;
+                transition: opactiy 0.3s ease-in-out;
+                border-radius: 20px;
             }
         }
     }
@@ -148,18 +220,36 @@
     }
 }
 
-@keyframes heart-growth {
-    from {
-        transform: scale(100%);
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
     }
 
-    to {
-        transform: scale(120%);
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
     }
 }
 
+@keyframes border-float1 {
+    0% {
+        transform: translateY(-8px);
+    }
 
+    50% {
+        transform: translateY(-4px);
+    }
 
+    100% {
+        transform: translateY(-8px);
+    }
+}
 
-
-
+@keyframes border-float2 {
+    100% {
+        transform: translateY(-4px);
+    }
+}
