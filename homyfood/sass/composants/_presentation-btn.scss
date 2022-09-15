@@ -1,0 +1,31 @@
+.presentation__btn {
+   @include button-violet;
+   @include shadows;
+
+   @include tablet {
+      height: 60px;
+   }
+
+
+   @include desktop {
+      height: 70px;
+      font-size: 1.3rem;
+      font-weight: 700;
+   }
+
+   &:hover,
+   &:active {
+      @include button-violet-hover;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+

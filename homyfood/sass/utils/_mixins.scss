@@ -1,0 +1,88 @@
+@mixin shadows ($color: $shadow_grey, $shadow-size: $shadow_size_btn) {
+    box-shadow: $color $shadow-size;
+}
+
+@mixin typo-roboto {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $black-color;
+}
+
+@mixin typo-shrikhand {
+    font-family: 'Shrikhand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@mixin photo-card-size {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 70%;
+    min-height: 70%;
+    max-height: 70%;
+}
+
+@mixin border-top-radius {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@mixin border-bottom-radius {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@mixin insert-invisibility {
+    display: inline-flex;
+    align-self: flex-end;
+    position: relative;
+    margin-right: 3%;
+    top: -175px;
+    padding: 2%;
+    visibility: hidden;
+}
+
+@mixin decoration-menu {
+    background-image: linear-gradient($tertary_color, $tertary_color);
+    background-repeat: no-repeat;
+    background-size: 2.4rem 4px;
+    background-position: 0 bottom;
+}
+
+@mixin button-violet {
+    padding: 15px;
+    padding-inline: 23px;
+    border-radius: 30px;
+    color: $white_color;
+    border: none;
+    background: linear-gradient(175deg, $secondary_color 0%, $primary_color 100%);
+}
+
+@mixin button-violet-hover {
+    box-shadow: inset 400px 0 0 0 rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(0px 3px 4px rgb(83, 65, 83));
+    cursor: pointer;
+}
+
+@mixin tablet {
+    @media (min-width: map-get($breakpoints, tablet_min)) and (max-width: map-get($breakpoints, tablet_max)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin ultraHD {
+    @media screen and (min-width: map-get($breakpoints, ultraHD)) {
+        @content;
+    }
+}
+
+
+
+
+
+

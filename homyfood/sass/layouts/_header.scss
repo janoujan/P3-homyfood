@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+    @include tablet {
+        height: 120px;
+        padding-bottom: 10px;
+    }
+
+    @include desktop {
+        height: 120px;
+        padding-bottom: 20px;
+    }
+
+    @include ultraHD {
+        background-color: $white_color;
+    }
+
+    &__arrow {
+        visibility: visible;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+        width: fit-content;
+        height: 100%;
+        padding-bottom: 25px;
+        margin: 0;
+        margin-right: 3rem;
+
+        @include desktop {
+            width: fit-content;
+        }
+
+        i {
+            font-size: x-large;
+            color: $black_color;
+            transform: scale(100%);
+            transition: transform 800ms;
+
+            @include tablet {
+                font-size: xx-large;
+            }
+
+            @include desktop {
+                font-size: xx-large;
+            }
+
+            &:hover,
+            &:active {
+                animation: arrow-filling 1s both;
+                transform: scale(110%);
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: flex-start;
+        align-self: center;
+        margin-right: 3.2rem;
+        margin-bottom: 5px;
+        letter-spacing: 0.01rem;
+
+        @include tablet {
+            font-size: 3.5rem;
+            height: 50px;
+        }
+
+        @include desktop {
+            font-size: 4.5rem;
+            height: 90px;
+        }
+    }
+}
+
+@keyframes arrow-filling {
+    0% {
+        color: $black_color;
+    }
+
+    50% {
+        color: $black_color;
+    }
+
+    100% {
+        opacity: 1;
+        color: $primary_color;
+    }
+}
+
+
+
+
+
