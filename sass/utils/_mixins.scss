@@ -41,6 +41,11 @@
     visibility: hidden;
 }
 
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin decoration-menu {
     background-image: linear-gradient($tertary_color, $tertary_color);
     background-repeat: no-repeat;

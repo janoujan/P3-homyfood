@@ -1,7 +1,6 @@
 .header {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     width: 100%;
     height: 70px;
     margin-bottom: 0px;
@@ -31,8 +30,7 @@
         padding-bottom: 1.5rem;
         margin: 0;
         margin-right: 3rem;
-        background-color: aqua;
-        
+                
         @include desktop {
             width: fit-content;
         }

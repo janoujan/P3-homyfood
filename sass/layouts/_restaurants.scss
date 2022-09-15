@@ -44,8 +44,7 @@
     @include tablet {
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        align-items: center;
-        justify-content: center;
+        @include center;
         justify-items: center;
     }
 

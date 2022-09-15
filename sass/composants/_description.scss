@@ -1,8 +1,7 @@
 #presentation__description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include center;
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -36,6 +35,8 @@
         }
     }
 }
+
+
 
 
 

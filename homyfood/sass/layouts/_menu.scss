@@ -10,14 +10,12 @@
 
     @include tablet {
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        @include center;
     }
 
     @include desktop {
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        @include center;
     }
 
     &__choice_title {
@@ -59,6 +57,7 @@
         }
     }
 }
+
 
 
 

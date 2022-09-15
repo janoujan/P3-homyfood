@@ -8,14 +8,12 @@ footer {
     background-color: $black_background;
 
     @include tablet {
-        justify-content: center;
-        align-items: center;
+        @include center;
         padding-left: 0;
     }
 
     @include desktop {
-        justify-content: center;
-        align-items: center;
+        @include center;
         padding-left: 0;
         padding-bottom: 4%;
         padding-top: 0;
@@ -37,7 +35,6 @@ footer {
         }
     }
 }
-
 
 
 

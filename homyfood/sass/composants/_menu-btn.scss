@@ -17,7 +17,7 @@
     @for $i from 1 to 13 {
         &--#{$i} {
             animation-delay: 1s*$i;
-             animation-duration: 1s;
+            animation-duration: 1s;
         }
     }
 
@@ -148,8 +148,7 @@
 
     &_check {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         height: 70px;
         width: 100%;
         padding-right: 0;
@@ -195,6 +194,8 @@
         opacity: 1;
     }
 }
+
+
 
 
 
