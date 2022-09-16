@@ -62,12 +62,6 @@
     background: linear-gradient(175deg, $secondary_color 0%, $primary_color 100%);
 }
 
-@mixin button-violet-hover {
-    box-shadow: inset 400px 0 0 0 rgba(255, 255, 255, 0.1);
-    filter: drop-shadow(0px 3px 4px rgb(83, 65, 83));
-    cursor: pointer;
-}
-
 @mixin tablet {
     @media (min-width: map-get($breakpoints, tablet_min)) and (max-width: map-get($breakpoints, tablet_max)) {
         @content;
