@@ -11,6 +11,12 @@
     background-color: $white_color;
     @include shadows($color: lighten($color:$shadow_grey, $amount:20%), $shadow-size: 0px 6px 12px 2px);
     @include border-top-radius;
+    filter: brightness(1);
+
+    &:hover {
+        filter: brightness(1.08);
+        @include shadows($color: lighten($color:$shadow_grey, $amount:10%), $shadow-size: 0px 6px 12px 2px);
+    }
 
     @include tablet {
         width: 380px;
@@ -133,31 +139,36 @@
             animation-fill-mode: forwards;
             animation-direction: normal, alternate;
 
-            &::before {
-                content: "";
-                background: linear-gradient(45deg,
-                        $primary_color,
-                        $secondary_color,
-                        $tertary_color,
-                        $primary_color,
-                        $secondary_color,
-                        $tertary_color,
-                        $primary_color,
-                        $tertary_color,
-                        $primary_color);
-                position: absolute;
-                top: -4px;
-                left: -3px;
-                background-size: 150%;
-                z-index: -1;
-                filter: blur(3px);
-                width: calc(100% + 6px);
-                height: calc(90% + 4px);
-                animation: glowing 20s linear infinite;
-                transition: opactiy 0.3s ease-in-out;
-                border-radius: 20px;
-            }
+            // for demo purpose we block this effect,
+            // then client can see effects isolated then stacked,
+            // so the client can have a better vue to choose his own set of effects...  
+
+            // &::before {
+            //     content: "";
+            //     background: linear-gradient(45deg,
+            //             $primary_color,
+            //             $secondary_color,
+            //             $tertary_color,
+            //             $primary_color,
+            //             $secondary_color,
+            //             $tertary_color,
+            //             $primary_color,
+            //             $tertary_color,
+            //             $primary_color);
+            //     position: absolute;
+            //     top: -4px;
+            //     left: -3px;
+            //     background-size: 150%;
+            //     z-index: -1;
+            //     filter: blur(3px);
+            //     width: calc(100% + 6px);
+            //     height: calc(90% + 4px);
+            //     animation: glowing 20s linear infinite;
+            //     transition: opactiy 0.3s ease-in-out;
+            //     border-radius: 20px;
+            //    }
         }
+
     }
 }
 
@@ -201,61 +212,62 @@
             }
         }
     }
+}
 
-    @keyframes heart-filling {
+@keyframes heart-filling {
 
-        0% {
-            fill-opacity: 0;
-            stroke-opacity: 1;
-        }
-
-        50% {
-            stroke-opacity: 0;
-        }
-
-        100% {
-            fill-opacity: 1;
-            stroke-opacity: 0;
-        }
+    0% {
+        fill-opacity: 0;
+        stroke-opacity: 1;
     }
 
-    @keyframes glowing {
-
-        0% {
-            background-position: 0 0;
-        }
-
-        50% {
-            background-position: 400% 0;
-        }
-
-        100% {
-            background-position: 0 0;
-        }
+    50% {
+        stroke-opacity: 0;
     }
 
-    @keyframes border-float1 {
-
-        0% {
-            transform: translateY(-8px);
-        }
-
-        50% {
-            transform: translateY(-4px);
-        }
-
-        100% {
-            transform: translateY(-8px);
-        }
-    }
-
-    @keyframes border-float2 {
-
-        100% {
-            transform: translateY(-4px);
-        }
+    100% {
+        fill-opacity: 1;
+        stroke-opacity: 0;
     }
 }
+
+@keyframes glowing {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes border-float1 {
+
+    0% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes border-float2 {
+
+    100% {
+        transform: translateY(-4px);
+    }
+}
+
 
 
 
