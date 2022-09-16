@@ -1,11 +1,15 @@
 .command {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     padding-top: 2rem;
     padding-bottom: 4rem;
     background-color: $lightgrey_color ;
 }
+
+
+
+
+
 
 
 

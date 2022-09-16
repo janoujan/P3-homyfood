@@ -166,7 +166,6 @@
         display: inline-block;
         transform: translateZ(0);
 
-
         &:hover {
             animation-name: border-float1, border-float2;
             animation-duration: 200ms, 400ms;
@@ -202,54 +201,63 @@
             }
         }
     }
+
+    @keyframes heart-filling {
+
+        0% {
+            fill-opacity: 0;
+            stroke-opacity: 1;
+        }
+
+        50% {
+            stroke-opacity: 0;
+        }
+
+        100% {
+            fill-opacity: 1;
+            stroke-opacity: 0;
+        }
+    }
+
+    @keyframes glowing {
+
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    @keyframes border-float1 {
+
+        0% {
+            transform: translateY(-8px);
+        }
+
+        50% {
+            transform: translateY(-4px);
+        }
+
+        100% {
+            transform: translateY(-8px);
+        }
+    }
+
+    @keyframes border-float2 {
+
+        100% {
+            transform: translateY(-4px);
+        }
+    }
 }
 
-@keyframes heart-filling {
-    0% {
-        fill-opacity: 0;
-        stroke-opacity: 1;
-    }
 
-    50% {
-        stroke-opacity: 0;
-    }
 
-    100% {
-        fill-opacity: 1;
-        stroke-opacity: 0;
-    }
-}
 
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
 
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes border-float1 {
-    0% {
-        transform: translateY(-8px);
-    }
-
-    50% {
-        transform: translateY(-4px);
-    }
-
-    100% {
-        transform: translateY(-8px);
-    }
-}
-
-@keyframes border-float2 {
-    100% {
-        transform: translateY(-4px);
-    }
-}

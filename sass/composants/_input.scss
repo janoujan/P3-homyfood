@@ -1,9 +1,8 @@
 .presentation__position {
     display: flex;
-    justify-content: center;
     width: 100%;
+    @include center;
     margin: auto;
-    align-items: center;
     height: 50px;
     background: linear-gradient(to bottom, #CFCFCF 0%, $darkgrey_color 15%, $darkgrey_color 100%);
 
