@@ -33,7 +33,7 @@
     &__photo {
         @include photo-card-size;
         @include border-top-radius;
-        object-fit: cover;
+        object-fit: fill;
     }
 
     &__insert {
