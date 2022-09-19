@@ -129,13 +129,12 @@
         display: inline-block;
         transform: translateZ(0);
 
-
         &:hover {
             animation-name: border-float1, border-float2;
-            animation-duration: 200ms, 400ms;
-            animation-delay: 0s, 250ms;
+            animation-duration: 1500ms, 800ms;
+            animation-delay: 800ms, 1000ms;
             animation-timing-function: ease-out, ease-in-out;
-            animation-iteration-count: infinite, 1;
+            animation-iteration-count: infinite, infinite;
             animation-fill-mode: forwards;
             animation-direction: normal, alternate;
 
@@ -179,8 +178,8 @@
 
         &:hover {
             animation-name: border-float1, border-float2;
-            animation-duration: 200ms, 400ms;
-            animation-delay: 0s, 250ms;
+            animation-duration: 1500ms, 800ms;
+            animation-delay: 600ms, 1500ms;
             animation-timing-function: ease-out, ease-in-out;
             animation-iteration-count: infinite, 1;
             animation-fill-mode: forwards;
@@ -249,26 +248,32 @@
 @keyframes border-float1 {
 
     0% {
-        transform: translateY(-8px);
+        transform: translateY(0);
     }
 
+    15% {
+         transform: translateY(-6px);
+        }
+ 
     50% {
         transform: translateY(-4px);
     }
 
     100% {
-        transform: translateY(-8px);
+        transform: translateY(-2px);
     }
 }
 
-@keyframes border-float2 {
+ @keyframes border-float2 {
+     100% {
+         transform: translateY(-4px);
+     }
+ }
 
-    100% {
-        transform: translateY(-4px);
-    }
-}
 
 
+
+ 
 
 
 

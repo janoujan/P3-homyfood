@@ -24,9 +24,9 @@
       content="Ohmyfood! un site de réservation de repas dans notre sélection de restaurants d'exception."
     />
     <!--normalize-->
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="css/prefixed/style.css" />
+    <link rel="stylesheet" href="/css/prefixed/style.css" />
     <!-- police Shrikhand-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,7 +50,7 @@
   <body>
     <header>
       <div class="header">
-        <a class="header__arrow" href="accueil.html"
+        <a class="header__arrow" href="/accueil.html"
           ><i class="fa-solid fa-arrow-left"></i>
         </a>
         <h1 class="header__title">ohmyfood</h1>
@@ -60,15 +60,15 @@
       <section class="venue">
         <div class="venue__photo">
           <img
-            src="images/françaiseBig.png"
-            alt="photo du restaurant À la française"
+            src="/images/deliceBig.png"
+            alt="photo du restaurant Le délice des sens"
           />
         </div>
         <div class="venue__title">
-          <h2 class="venue__title_name">À la française</h2>
+          <h2 class="venue__title_name">Le délice des sens</h2>
           <button class="venue__title_button" type="button">
             <svg class="venue__title_heart" viewBox="-2 -2 36 36">
-              <use xlink:href="images\heart.svg#heart"></use>
+              <use xlink:href="/images\heart.svg#heart"></use>
             </svg>
           </button>
         </div>
@@ -78,8 +78,8 @@
           <h3 class="starter__choice_title">entrées</h3>
           <a href="#" class="starter__choice starter__choice--1">
             <div class="starter__choice_left">
-              <h4 class="starter__choice_name">Tartare de poulpe acidulé</h4>
-              <p class="starter__choice_quote">Aux zestes d'orange</p>
+              <h4 class="starter__choice_name">Tartare de thon</h4>
+              <p class="starter__choice_quote">Assaisonné au yuzu</p>
             </div>
             <div class="starter__choice_right">
               <span class="starter__choice_price">25€</span>
@@ -90,8 +90,12 @@
           </a>
           <a href="#" class="starter__choice starter__choice--2">
             <div class="starter__choice_left">
-              <h4 class="starter__choice_name">Velouté de légumes d'antan</h4>
-              <p class="starter__choice_quote">Carotte, panais, topinambour</p>
+              <h4 class="starter__choice_name">
+                Bouchée de homard croustillant
+              </h4>
+              <p class="starter__choice_quote">
+                Et sa farandole de petits légumes
+              </p>
             </div>
             <div class="starter__choice_right">
               <span class="starter__choice_price">35€</span>
@@ -102,8 +106,8 @@
           </a>
           <a href="#" class="starter__choice starter__choice--3">
             <div class="starter__choice_left">
-              <h4 class="starter__choice_name">Soupe à l'oignon</h4>
-              <p class="starter__choice_quote">Revisitée</p>
+              <h4 class="starter__choice_name">Velouté de cèpes</h4>
+              <p class="starter__choice_quote">Aux truffes</p>
             </div>
             <div class="starter__choice_right">
               <span class="starter__choice_price">20€</span>
@@ -117,10 +121,10 @@
           <h3 class="main__choice_title">PLATS</h3>
           <a href="#" class="main__choice main__choice--4">
             <div class="main__choice_left">
-              <h4 class="main__choice_name">Coquilles Saint-Jacques</h4>
-              <p class="main__choice_quote">
-                Accompagnées d'une purée de panais
-              </p>
+              <h4 class="main__choice_name">
+                Poulet rôti aux herbes de Provence
+              </h4>
+              <p class="main__choice_quote">Et sa crème de truffe</p>
             </div>
             <div class="main__choice_right">
               <span class="main__choice_price">40€</span>
@@ -131,8 +135,8 @@
           </a>
           <a href="#" class="main__choice main__choice--5">
             <div class="main__choice_left">
-              <h4 class="main__choice_name">Magret de canard</h4>
-              <p class="main__choice_quote">Et parmentier de pommes de terre</p>
+              <h4 class="main__choice_name">Langouste rôtie</h4>
+              <p class="main__choice_quote">Et ses légumes de saison</p>
             </div>
             <div class="main__choice_right">
               <span class="main__choice_price">35€</span>
@@ -143,10 +147,8 @@
           </a>
           <a href="#" class="main__choice main__choice--6">
             <div class="main__choice_left">
-              <h4 class="main__choice_name">Pigeonneau d’Ille-et-Vilaine</h4>
-              <p class="main__choice_quote">
-                Sur son lit de gnocchis aux légumes
-              </p>
+              <h4 class="main__choice_name">Côte de boeuf Angus</h4>
+              <p class="main__choice_quote">Et sa purée de panais</p>
             </div>
             <div class="main__choice_right">
               <span class="main__choice_price">44€</span>
@@ -160,8 +162,8 @@
           <h3 class="dessert__choice_title">DESSERTS</h3>
           <a href="#" class="dessert__choice dessert__choice--7">
             <div class="dessert__choice_left">
-              <h4 class="dessert__choice_name">Pétales de violettes glacés</h4>
-              <p class="dessert__choice_quote">Et purée de noisettes</p>
+              <h4 class="dessert__choice_name">Farandole de desserts</h4>
+              <p class="dessert__choice_quote">Du chef</p>
             </div>
             <div class="dessert__choice_right">
               <span class="dessert__choice_price">18€</span>
@@ -172,8 +174,8 @@
           </a>
           <a href="#" class="dessert__choice dessert__choice--8">
             <div class="dessert__choice_left">
-              <h4 class="dessert__choice_name">Fondant au chocolat</h4>
-              <p class="dessert__choice_quote">Revisité</p>
+              <h4 class="dessert__choice_name">Crème brulée</h4>
+              <p class="dessert__choice_quote">Revisitée</p>
             </div>
             <div class="dessert__choice_right">
               <span class="dessert__choice_price">22€</span>
@@ -184,8 +186,8 @@
           </a>
           <a href="#" class="dessert__choice dessert__choice--9">
             <div class="dessert__choice_left">
-              <h4 class="dessert__choice_name">Millefeuille croustillant</h4>
-              <p class="dessert__choice_quote">Myrtilles et pâte d’amande</p>
+              <h4 class="dessert__choice_name">Tiramisu</h4>
+              <p class="dessert__choice_quote">À la noisette</p>
             </div>
             <div class="dessert__choice_right">
               <span class="dessert__choice_price">23€</span>
@@ -224,7 +226,6 @@
     </footer>
   </body>
 </html>
-
 
 
 
