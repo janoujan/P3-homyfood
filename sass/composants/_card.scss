@@ -130,13 +130,7 @@
         transform: translateZ(0);
 
         &:hover {
-            animation-name: border-float1, border-float2;
-            animation-duration: 1500ms, 800ms;
-            animation-delay: 800ms, 1000ms;
-            animation-timing-function: ease-out, ease-in-out;
-            animation-iteration-count: infinite, infinite;
-            animation-fill-mode: forwards;
-            animation-direction: normal, alternate;
+            animation: border-float 1500ms 800ms ease-out 5 forwards alternate;
 
             // for demo purpose we block this effect,
             // then client can see effects isolated then stacked,
@@ -177,13 +171,7 @@
         transform: translateZ(0);
 
         &:hover {
-            animation-name: border-float1, border-float2;
-            animation-duration: 1500ms, 800ms;
-            animation-delay: 600ms, 1500ms;
-            animation-timing-function: ease-out, ease-in-out;
-            animation-iteration-count: infinite, 1;
-            animation-fill-mode: forwards;
-            animation-direction: normal, alternate;
+            animation: border-float 1500ms 800ms ease-out infinite forwards alternate;
 
             &::before {
                 content: "";
@@ -245,14 +233,14 @@
     }
 }
 
-@keyframes border-float1 {
+@keyframes border-float {
 
     0% {
         transform: translateY(0);
     }
 
     15% {
-        transform: translateY(-6px);
+        transform: translateY(-2px);
     }
 
     50% {
@@ -261,11 +249,5 @@
 
     100% {
         transform: translateY(-2px);
-    }
-}
-
-@keyframes border-float2 {
-    100% {
-        transform: translateY(-4px);
     }
 }
