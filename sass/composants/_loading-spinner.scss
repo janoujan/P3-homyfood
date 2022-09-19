@@ -35,8 +35,8 @@
 
         &_my {
             transform-origin: center;
-            transform: rotate(2turn);
-            transition: transform 2500ms;
+            animation: my-rotation 2100ms 1650ms ease-out;
+
         }
     }
 }
@@ -127,6 +127,24 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes my-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    75% {
+        transform: rotate(390deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -268,3 +286,8 @@
         transform: scale(0);
     }
 }
+
+
+
+
+
