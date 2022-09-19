@@ -6,28 +6,21 @@
         height: 100%;
         z-index: 102;
         animation: 1600ms ease-out forwards running appear, disappear 1600ms 2s ease-in forwards running;
-    }
-
-    &__logo {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        top: 100%;
         opacity: 1;
         fill-opacity: 1;
         stroke-width: 1px;
         stroke: $tertary_color;
-        z-index: 101;
-
-        // boxing effect
+                    
         border: 10px solid hsl(317, 100%, 74%);
         box-shadow:
             0 0 0 10px hsl(317, 100%, 80%) inset,
             0 0 0 15px hsl(317, 100%, 85%) inset,
             0 0 0 20px hsl(317, 100%, 90%) inset,
             0 0 0 25px hsl(317, 100%, 95%) inset;
+    }
 
-
+    &__logo {
+        
         &_o {
             transform: translateY(400%);
             animation: rebound 1800ms 1400ms both;
@@ -35,28 +28,20 @@
 
         &_my {
             transform-origin: center;
-            animation: my-rotation 2100ms 1650ms ease-out;
-
+            animation: my-rotation 2100ms 1600ms ease;
         }
     }
 }
 
 @keyframes appear {
     0% {
-        backdrop-filter: blur(0px);
+        backdrop-filter: blur(25px);
         transform: rotate3d(1, 1, 1, 0deg);
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 1;
-        backdrop-filter: blur(2px);
     }
 
     100% {
         transform: rotate3d(1, 1, 1, 1turn);
-        opacity: 0.5;
-        backdrop-filter: blur(18px);
+        backdrop-filter: blur(20px);
     }
 }
 
@@ -73,7 +58,7 @@
     }
 
     75% {
-        opacity: 1;
+        opacity: 0.7;
         transform: translateY(10%);
         transform: scale(0.75);
     }
@@ -140,7 +125,8 @@
     }
 
     75% {
-        transform: rotate(390deg);
+        transform: rotate(380deg);
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     }
 
     100% {
