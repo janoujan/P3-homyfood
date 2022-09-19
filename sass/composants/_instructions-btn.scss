@@ -71,7 +71,8 @@
                 font-size: 1.4rem;
             }
 
-            &:hover {
+            &:hover,
+            &:active {
                 background-color: lighten($color: $primary_color, $amount: 35%);
 
                 & i {
