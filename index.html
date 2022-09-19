@@ -51,7 +51,7 @@
     
   <div class="loader__container">
     <svg viewBox="0 0 196 60" xmlns="http://www.w3.org/2000/svg">
-    <g viewBox="0 0 196 60" id="logo">
+    <g id="logo">
         <defs>
             <linearGradient id="gradient_logo" x1="0" x2="0" y1="0" y2="1">
                 <stop class="stop1" offset="0%" stop-color="#9356DC" />
@@ -77,8 +77,8 @@
   </div> 
 
     <!-- an altenate loader -->
-<!-- 
-    <div class="loader2__container">
+ 
+    <!-- <div class="loader2__container">
       <div class="loader2__circle1">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="45" />
@@ -173,7 +173,7 @@
             </a>
             <button class="card__btn" type="button">
               <svg viewBox="-2 -2 36 36" xmlns="http://www.w3.org/2000/svg" class="card__btn_heart">
-                <g viewBox="-2 -2 36 36" id="heart">
+                <g id="heart">
                   <path fill="url(#gradient_heart)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
                   <defs>
                     <linearGradient id="gradient_heart" x1="0" x2="0" y1="0" y2="1">
@@ -201,16 +201,8 @@
               </figure>
             </a>
             <button class="card__btn" type="button">
-              <svg viewBox="-2 -2 36 36" xmlns="http://www.w3.org/2000/svg" class="card__btn_heart">
-                <g viewBox="-2 -2 36 36" id="heart">
-                  <path fill="url(#gradient_heart)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-                  <defs>
-                    <linearGradient id="gradient_heart" x1="0" x2="0" y1="0" y2="1">
-                      <stop class="stop1" offset="0%" stop-color="#9356DC" />
-                      <stop class="stop2" offset="100%" stop-color="#FF79DA" />
-                    </linearGradient>
-                  </defs>
-                </g>
+              <svg xmlns="http://www.w3.org/2000/svg" class="card__btn_heart" viewBox="-2 -2 36 36">
+                <use xlink:href="#heart"  ></use>
               </svg>
             </button>
           </div>
@@ -230,16 +222,8 @@
               </figure>
             </a>
             <button class="card__btn" type="button">
-              <svg viewBox="-2 -2 36 36" xmlns="http://www.w3.org/2000/svg" class="card__btn_heart">
-                <g viewBox="-2 -2 36 36" id="heart">
-                  <path fill="url(#gradient_heart)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-                  <defs>
-                    <linearGradient id="gradient_heart" x1="0" x2="0" y1="0" y2="1">
-                      <stop class="stop1" offset="0%" stop-color="#9356DC" />
-                      <stop class="stop2" offset="100%" stop-color="#FF79DA" />
-                    </linearGradient>
-                  </defs>
-                </g>
+              <svg xmlns="http://www.w3.org/2000/svg" class="card__btn_heart" viewBox="-2 -2 36 36">
+                <use xlink:href="#heart"  ></use>
               </svg>
             </button>
           </div>
@@ -259,16 +243,8 @@
               </figure>
             </a>
             <button class="card__btn" type="button">
-              <svg viewBox="-2 -2 36 36" xmlns="http://www.w3.org/2000/svg" class="card__btn_heart">
-                <g viewBox="-2 -2 36 36" id="heart">
-                  <path fill="url(#gradient_heart)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-                  <defs>
-                    <linearGradient id="gradient_heart" x1="0" x2="0" y1="0" y2="1">
-                      <stop class="stop1" offset="0%" stop-color="#9356DC" />
-                      <stop class="stop2" offset="100%" stop-color="#FF79DA" />
-                    </linearGradient>
-                  </defs>
-                </g>
+              <svg xmlns="http://www.w3.org/2000/svg" class="card__btn_heart" viewBox="-2 -2 36 36">
+                <use xlink:href="#heart"  ></use>
               </svg>
             </button>
           </div>
@@ -279,18 +255,14 @@
       <h4>ohmyfood</h4>
       <ul class="footer__list">
         <li class="footer__link">
-          <a href="#"
-            ><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a
-          >
+          <a><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
         </li>
         <li class="footer__link">
-          <a href="#"
-            ><i class="fa-solid fa-handshake-angle" id="handshake"></i> Devenir
-            partenaire</a
-          >
+          <a><i class="fa-solid fa-handshake-angle" id="handshake"></i> Devenir
+            partenaire</a>
         </li>
         <li class="footer__link">
-          <a href="#">Mentions légales</a>
+          <a>Mentions légales</a>
         </li>
         <li class="footer__link">
           <a href="mailto:eve-ribodi@i2pmail.org">Contact</a>
