@@ -7,7 +7,7 @@
     align-items: flex-start;
     padding-left: 1.3rem;
     background-color: $lightgrey_color;
-    
+
     @include tablet {
         width: 100%;
         @include center;
@@ -36,7 +36,12 @@
             align-self: center;
         }
     }
+
+    &__choice--invisible {
+        visibility: hidden;
+    }
 }
+
 
 @include desktop {
     #courses {
@@ -50,10 +55,6 @@
         & .main,
         & .dessert {
             width: 33%;
-
-            &__choice--invisible {
-                visibility: hidden;
-            }
         }
     }
 }
