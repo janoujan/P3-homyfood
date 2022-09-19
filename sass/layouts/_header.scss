@@ -38,7 +38,7 @@
         i {
             font-size: x-large;
             color: $black_color;
-            transform: scale(100%);
+            transform: scale(1);
             transition: transform 800ms;
 
             @include tablet {
@@ -52,7 +52,7 @@
             &:hover,
             &:active {
                 animation: arrow-filling 1s both;
-                transform: scale(110%);
+                transform: scale(1.1);
             }
         }
     }
