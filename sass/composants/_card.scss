@@ -102,7 +102,7 @@
             display: flex;
             height: 22px;
             stroke: $black_color;
-            fill: url(images/heart.svg#gradient_heart);
+            fill: url(/images/heart.svg#gradient_heart);
             fill-opacity: 0;
 
             @include tablet {
@@ -252,9 +252,9 @@
     }
 
     15% {
-         transform: translateY(-6px);
-        }
- 
+        transform: translateY(-6px);
+    }
+
     50% {
         transform: translateY(-4px);
     }
@@ -264,17 +264,8 @@
     }
 }
 
- @keyframes border-float2 {
-     100% {
-         transform: translateY(-4px);
-     }
- }
-
-
-
-
-
-
-
-
-
+@keyframes border-float2 {
+    100% {
+        transform: translateY(-4px);
+    }
+}
