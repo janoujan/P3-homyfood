@@ -32,6 +32,7 @@
                 height: 410px;
                 max-width: 2400px;
                 min-width: 2400px;
+                @include border-top-radius;
             }
         }
     }
