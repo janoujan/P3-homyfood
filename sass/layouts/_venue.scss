@@ -18,6 +18,10 @@
         margin-right: auto;
         margin-left: auto;
 
+        @include ultraHD {
+            width: 2400px;
+        }
+
         & img {
             display: inline-flex;
             width: 100%;
@@ -32,8 +36,11 @@
             @include desktop {
                 height: 410px;
                 max-width: 2400px;
-                @include border-top-radius;
             }
+
+             @include ultraHD {
+                @include border-top-radius;
+             }
         }
     }
 
@@ -125,6 +132,7 @@
         stroke-opacity: 0;
     }
 }
+
 
 
 
