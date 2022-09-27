@@ -24,9 +24,10 @@
 
         & img {
             display: inline-flex;
+            @include center;
             width: 100%;
             height: 280px;
-            object-fit: fill;
+            object-fit: cover;
             overflow: hidden;
 
             @include tablet {
