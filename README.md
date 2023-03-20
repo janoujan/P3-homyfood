@@ -1,4 +1,4 @@
-![](/BannerOhmyfood.jpg)
+![](/bannerOhmyfood.jpg)
 # Openclassrooms Web developper training: project n°3: OhMyFood!
 
  ### Liven up a web page with CSS animations
