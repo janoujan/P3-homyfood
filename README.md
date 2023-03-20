@@ -9,7 +9,7 @@
 
 ## Scenario and requirements
 
-You have just been recruited at Ohmyfood!, as a junior developer. Congratulation !  
+You have just been recruited at Ohmyfood!, as a junior developer.
 
 Ohmyfood! is a young startup that would like to impose itself on the catering market. The goal is to develop a 100% mobile site that lists the menus of gourmet restaurants. In addition to traditional reservation systems, customers will be able to compose their meal menu so that the dishes are ready when they arrive. No more waiting times at the restaurant!  
 
@@ -49,9 +49,9 @@ For this project, you version all your code on Github with regular commits to fo
 
 ### What I learned
 
-Saas (...and how to program CSS 😉),   
-The 12s animations principles of Walt Dysney
+Saas (...and how to program CSS  😉)     
+The 12s animation's principles of Walt Dysney
 
 ### what I can improve
 
-Almost there, good basis... IMHO, some lack of dynamism !!! 🤣😆🤣
+Almost there, good basis... IMHO, a small lack of dynamism !!! 🤣😆🤣
