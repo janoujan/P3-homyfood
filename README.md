@@ -54,4 +54,4 @@ The 12s animations principles of Walt Dysney
 
 ### what I can improve
 
-Almost there, good basis but i need dynamism !!! 🤣😆🤣
+Almost there, good basis... IMHO, some lack of dynamism !!! 🤣😆🤣
