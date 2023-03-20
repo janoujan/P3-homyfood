@@ -1,4 +1,4 @@
-![](/BannerOhmyfood.png)
+![](/BannerOhmyfood.jpg)
 # Openclassrooms Web developper training: project n°3: OhMyFood!
 
  ### Liven up a web page with CSS animations
@@ -31,7 +31,7 @@ Back at your office, you find an email from Fanny who sends you the models of th
 
 For this project, you version all your code on Github with regular commits to follow its progress and publish the site online more easily.  
 
-![](/bannerOhmyfood.jpg)
+![](/material/logo/ohmyfood.png)
 ### Creative brief: 
 
 [link to the creative brief](/brief.pdf)
