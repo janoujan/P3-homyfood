@@ -44,12 +44,12 @@ For this project, you version all your code on Github with regular commits to fo
 ### materials
 
 [link to given materials](/material/)
-🤣
+
 ## personal toughts:
 
 ### What I learned
 
-Saas (...and how to program CSS),   
+Saas (...and how to program CSS 😉),   
 The 12s animations principles of Walt Dysney
 
 ### what I can improve
