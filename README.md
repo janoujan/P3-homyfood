@@ -55,5 +55,5 @@ Ensure the graphic consistency of a website
 Implement advanced graphical CSS effects  
 Set up a navigation structure for a website  
 Saas  
-The 12s animation's principles of Walt Dysney  
+Walt Dysney's 12 principle of animation  
 
