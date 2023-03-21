@@ -54,4 +54,5 @@ The 12s animation's principles of Walt Dysney
 
 ### what I can improve
 
-Almost there, good basis... IMHO, a small lack of dynamism !!! 😆 i need to learn Js !!! 🤣😆🤣
+Almost there, good basis... IMHO, a small lack of dynamism !!! 😆  
+At this point i can't wait to learn Js but SEO, accessibility and performances are waiting for me !!! 🤣😆🤣
