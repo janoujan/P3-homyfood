@@ -45,9 +45,7 @@ For this project, you version all your code on Github with regular commits to fo
 
 [link to given materials](/material/)
 
-## personal toughts:
-
-### What I learned
+## What I learned
 
 Set up your Front-End environment  
 Use a version control system for project tracking and hosting  
